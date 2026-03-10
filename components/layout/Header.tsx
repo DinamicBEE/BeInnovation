@@ -1,7 +1,10 @@
 import Link from "next/link";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "../navigation-menu";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "../ui/navigation-menu";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "../ui/dropdown-menu"
+import { Button } from "../ui/button"
+import { US, MX } from 'country-flag-icons/react/3x2'
 import { MdLanguage } from "react-icons/md";
-import { Button } from "../button";
+
 import Image from "next/image";
 import "./layout.css";
 
@@ -54,9 +57,23 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
         
-        <Button variant="default">
-          <MdLanguage />
-        </Button>
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <Button variant="ghost" size="icon">
+              <MdLanguage />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="rounded-lg">
+            <DropdownMenuItem>
+              <US title="United States" />
+              Español
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <MX title="México" />
+              Ingles
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   )

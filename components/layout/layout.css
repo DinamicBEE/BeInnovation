@@ -3,8 +3,9 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0.5rem;
+    top: 0.75rem;
     left: 10%;
     width: 80%;
     border-radius: 24px;
+    z-index: 2;
 }
