@@ -65,11 +65,11 @@ export default function Header() {
           <DropdownMenuContent className="rounded-lg">
             <DropdownMenuItem>
               <US title="United States" />
-              Español
+              Ingles
             </DropdownMenuItem>
             <DropdownMenuItem>
               <MX title="México" />
-              Ingles
+              Español
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

@@ -9,3 +9,23 @@ header{
     border-radius: 24px;
     z-index: 2;
 }
+
+ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+ul li svg {
+    width: 24px;
+}
