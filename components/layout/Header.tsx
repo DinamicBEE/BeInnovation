@@ -4,7 +4,6 @@ import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuIte
 import { Button } from "../ui/button"
 import { US, MX } from 'country-flag-icons/react/3x2'
 import { MdLanguage } from "react-icons/md";
-
 import Image from "next/image";
 import "./layout.css";
 
