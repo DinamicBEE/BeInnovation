@@ -49,45 +49,45 @@ export const SERVICES_INFO = [
     }
 ]
 
-export const Clients = [
+export const CLIENTS = [
     {
-        title: "Aplicaciones moviles",
-        description: "Desarrollamos aplicaciones móviles personalizadas para iOS y Android, utilizando tecnologías como React Native, Flutter o desarrollo nativo, para ofrecer experiencias de usuario excepcionales y un rendimiento óptimo.",
-        image: "/cards/mobile_development.png"
+        title: "Wing Stop",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/wing_stop.png"
     },
     {
-        title: "Sistema de Gestión de Pagos",
-        description: "Desarrollamos plataformas web robustas para el control y administración de pagos, con integración de múltiples pasarelas de pago, facturación automatizada, reportes financieros en tiempo real y panel de control intuitivo para una gestión financiera eficiente.",
-        image: "/cards/payment_system_3.png"
+        title: "Little Caesars",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/little_caesars_2.png"
     },
     {
-        title: "Inteligencia Artificial y Machine Learning",
-        description: "Implementamos soluciones de IA y aprendizaje automático a medida, desde sistemas de recomendación hasta análisis predictivo, utilizando algoritmos avanzados que permiten a tu empresa tomar decisiones basadas en datos y optimizar procesos complejos.",
-        image: "/cards/IA_ML.png"
+        title: "Serviap Global",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/serviap_global.png"
     },
     {
-        title: "Chatbots Inteligentes y Asistentes Virtuales",
-        description: "Creamos asistentes virtuales potenciados con IA y procesamiento de lenguaje natural para automatizar la atención al cliente, resolver consultas en tiempo real y mejorar la experiencia de usuario en tu sitio web o aplicación las 24 horas del día.",
-        image: "/cards/ChatBot.png"
+        title: "La Parroquia de Veracruz",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/parroquia_veracruz.png"
     },
     {
-        title: "Análisis Predictivo y Business Intelligence",
-        description: "Transformamos tus datos en información valiosa con sistemas predictivos y herramientas de analítica avanzada, identificando patrones, tendencias y oportunidades de negocio para anticiparte al mercado y tomar decisiones estratégicas fundamentadas.",
-        image: "/cards/Business_Intelligence.png"
+        title: "Serviap Global",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/serviap_global.png"
     },
     {
-        title: "Automatización de Tareas Repetitivas",
-        description: "Optimizamos tu productividad mediante la automatización de procesos rutinarios, eliminando tareas manuales y reduciendo errores, permitiendo que tu equipo se enfoque en actividades de mayor valor para tu negocio.",
-        image: "/cards/Repetitive_Tasks.png"
+        title: "Wing Stop",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/wing_stop.png"
     },
     {
-        title: "Automatización de Flujos de Trabajo",
-        description: "Diseñamos e implementamos sistemas inteligentes que automatizan y optimizan tus flujos de trabajo empresariales, integrando diferentes herramientas y plataformas para crear procesos más ágiles, eficientes y escalables.",
-        image:"/cards/Workflow_Automation.png"
+        title: "La Parroquia de Veracruz",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/parroquia_veracruz.png"
     },
     {
-        title: "Desarrollo Web y Aplicaciones Empresariales",
-        description: "Construimos soluciones web personalizadas y aplicaciones empresariales de alto rendimiento, desde sitios corporativos hasta sistemas de gestión complejos, con interfaces intuitivas y arquitectura escalable para impulsar la transformación digital de tu empresa.",
-        image: "/cards/Business_Applications.png"
-    }
+        title: "Little Caesars",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores, ab, adipisci officiis quas facere veniam earum dolorem fuga, eveniet nam accusantium voluptates enim nostrum nesciunt itaque!",
+        image: "/clients/little_caesars_2.png"
+    },
 ]
