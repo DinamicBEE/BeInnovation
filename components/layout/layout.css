@@ -7,7 +7,7 @@ header{
     left: 10%;
     width: 80%;
     border-radius: 24px;
-    z-index: 2;
+    z-index: 20;
 }
 
 ul li a {

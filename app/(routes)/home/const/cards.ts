@@ -1,3 +1,5 @@
+import { KeyPoint } from "../models/common.model";
+
 export const SERVICES_INFO = [
     {
         title: "Aplicaciones moviles",
@@ -91,3 +93,128 @@ export const CLIENTS = [
         image: "/clients/little_caesars_2.png"
     },
 ]
+
+export const INDUSTRIES = [
+{
+    id: 1,
+    title: "Restaurantero",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/restaurant.png",
+    bgImage: "/industries/restaurant.png" // Imagen de fondo
+  },
+  {
+    id: 2,
+    title: "Hoteleria",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/hotel.png",
+    bgImage: "/industries/hotel.png"
+  },
+    {
+    id: 3,
+    title: "Manufactura",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/manufacturing.png",
+    bgImage: "/industries/manufacturing.png"
+  },
+  {
+    id: 4,
+    title: "Automotriz",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/automotive.png",
+    bgImage: "/industries/automotive.png"
+  },
+  {
+    id: 5,
+    title: "Financiero",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/financial.png",
+    bgImage: "/industries/financial.png"
+  },
+  {
+    id: 6,
+    title: "Salud",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/health.png",
+    bgImage: "/industries/health.png"
+  },
+  {
+    id: 7,
+    title: "Educación",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/education.png",
+    bgImage: "/industries/education.png" // Imagen de fondo
+  },
+  {
+    id: 8,
+    title: "Transporte y logística",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos consequatur vitae asperiores.",
+    imageUrl: "/industries/transport.png",
+    bgImage: "/industries/transport.png"
+  }
+]
+
+export const STEPS_DATA = [
+  {
+    id: 1,
+    title: "Descubrimiento",
+    description: "Analizamos tus necesidades y objetivos para entender tu negocio a fondo.",
+    icon: "🔍",
+  },
+  {
+    id: 2,
+    title: "Estrategia",
+    description: "Diseñamos un plan personalizado con las mejores soluciones para tu proyecto.",
+    icon: "📊",
+  },
+  {
+    id: 3,
+    title: "Desarrollo",
+    description: "Implementamos las soluciones con las tecnologías más avanzadas del mercado.",
+    icon: "💻",
+  },
+  {
+    id: 4,
+    title: "Pruebas",
+    description: "Realizamos tests exhaustivos para garantizar la calidad y el rendimiento.",
+    icon: "✅",
+  },
+  {
+    id: 5,
+    title: "Lanzamiento",
+    description: "Desplegamos tu proyecto y te acompañamos en las primeras etapas.",
+    icon: "🚀",
+  },
+];
+
+export const KEYPOINTS_DATA: KeyPoint[] = [
+  {
+    id: 1,
+    icon: "mdi:earth",
+    value: "3",
+    label: "Países",
+  },
+  {
+    id: 2,
+    icon: "mdi:clock-outline",
+    value: "8+",
+    label: "Años de experiencia",
+  },
+  {
+    id: 3,
+    icon: "mdi:account-group",
+    value: "21+",
+    label: "Clientes",
+  },
+  {
+    id: 4,
+    icon: "mdi:laptop",
+    value: "25+",
+    label: "Profesionales",
+  },
+  {
+    id: 5,
+    icon: "mdi:rocket-launch",
+    value: "50+",
+    label: "Proyectos exitosos",
+  },
+];

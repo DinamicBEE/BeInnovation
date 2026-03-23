@@ -5,8 +5,8 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import "./home.css";
 import { CLIENTS } from "./const/cards";
+import "./home.css";
 
 export default function AutoCarousel() {
 
@@ -33,7 +33,7 @@ export default function AutoCarousel() {
       >
         <CarouselContent className="-ml-4">
           {CLIENTS.map((client, index) => (
-            <CarouselItem key={index} className="p-2 pl-4 basis-1/3">
+            <CarouselItem key={index} className="p-2 pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
              
               <Card className="h-full card-teal relative pt-12">
                 <div className="flex flex-col h-full">
