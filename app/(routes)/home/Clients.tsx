@@ -19,7 +19,7 @@ export default function AutoCarousel() {
   );
 
   return (
-    <div className="w-full px-32 mx-auto py-2 bg-bg-secondary dark:bg-bg-secondary">
+    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 mx-auto py-2 bg-bg-secondary dark:bg-bg-secondary">
       <Carousel
         opts={{
           align: "start",
