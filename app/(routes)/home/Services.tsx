@@ -31,9 +31,9 @@ export default function Services() {
     fetchServices();
     }, []);
 
-    const handleCardClick = (serviceId: string) => {
-        router.push(`/services/${serviceId}`);
-    };
+    // const handleCardClick = (serviceId: string) => {
+    //     router.push(`/services/${serviceId}`);
+    // };
 
     const handleViewAllClick = () => {
         router.push('/services');
@@ -61,7 +61,7 @@ export default function Services() {
                         <Card  className="home-cards card-navy relative my-2 mx-auto w-full max-w-sm py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                             <div className="flex flex-col h-full">
                                 {service.coverImageUrl && (
-                                    <div className="w-full aspect-video sm:aspect-auto bg-linear-to-br from-primary-dark/5 to-accent-teal/5 overflow-hidden flex-shrink-0">
+                                    <div className="w-full aspect-video sm:aspect-auto bg-linear-to-br from-primary-dark/5 to-accent-teal/5 overflow-hidden shrink-0">
                                         <Image src={service.coverImageUrl } alt={service.shortName} width={100} height={100} className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"/>
                                         <div className="absolute top-3 left-3">
                                             <Badge className="bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300">

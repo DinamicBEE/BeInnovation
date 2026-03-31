@@ -2,8 +2,8 @@ export interface ImplementationFee {
   id: string;
   name: string;
   description: string;
-  pricingModel: "FIXED" | "USAGE" | "TIERED" | "PER_USER";
-  billingType: "ONE_TIME" | "RECURRING" | "HYBRID";
+  pricingModel: string;//"FIXED" | "USAGE" | "TIERED" | "PER_USER";
+  billingType: string;//"ONE_TIME" | "RECURRING" | "HYBRID";
   amount: number;
   currency: string;
   isRequired: boolean;
@@ -65,4 +65,8 @@ export interface ApiResponse<T> {
   data: T;
   status: number;
   message?: string;
+}
+
+export interface ServiceCardProps {
+  service: Service;
 }

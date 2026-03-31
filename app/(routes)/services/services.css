@@ -1,0 +1,26 @@
+.cardService-green {
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(124, 180, 76, 0.08);
+    backdrop-filter: blur(2px);
+    border: 1.5px solid rgba(124, 180, 76, 0.5);
+    box-shadow: 0 8px 20px -6px rgba(124, 180, 76, 0.2);
+}
+
+.cardService-navy {
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(45, 75, 143, 0.08);
+    backdrop-filter: blur(2px);
+    border: 1.5px solid rgba(45, 75, 143, 0.5);
+    box-shadow: 0 8px 20px -6px rgba(45, 75, 143, 0.2);
+}
+
+.cardService-teal {
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(40, 157, 187, 0.08);
+    backdrop-filter: blur(2px);
+    border: 1.5px solid rgba(40, 157, 187, 0.5);
+    box-shadow: 0 8px 20px -6px rgba(40, 157, 187, 0.2);
+}
