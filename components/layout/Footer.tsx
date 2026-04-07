@@ -29,7 +29,7 @@ export default function Footer() {
             <Image className="block sm:hidden" src="/BeInnovation_3.png" alt="Be Innovate" width={40} height={34} priority />
 
             <div className="flex flex-col items-center mt-2">
-                <h1 className="text-center text-xs text-gray-600">© 2026 {t("footer.company")}. {t("footer.copyright")}.</h1>
+                <h1 className="text-center text-xs text-gray-600">© 2026 {t("footer.company")}. {t("footer.copyright")}</h1>
                 <div className="flex flex-col md:flex-row items-center">
                     <a href="/privacy" className="text-xs text-gray-600 hover:text-gray-900">{t("footer.privacy")}</a> 
                     <div className="hidden md:block"> | </div> 

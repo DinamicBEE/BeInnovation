@@ -35,8 +35,8 @@ export default function Header() {
   }, [pathname]);
 
   const changeLanguage = (newLocale: string) => {
-    document.cookie = `NEXT_LOCALE=${newLocale}; path=/`;
-    window.location.href = `/${newLocale}${pathname?.replace(/^\/[a-z]{2}/, '') || '/'}`;
+    const currentPath = pathname?.replace(/^\/[a-z]{2}/, '') || '';
+    window.location.href = `/${newLocale}${currentPath}`;
   };
 
   return (

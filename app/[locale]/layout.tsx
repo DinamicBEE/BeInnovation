@@ -16,15 +16,17 @@ export const metadata: Metadata = {
   description: "Somos una empresa multicultural especializada en la innovación, desarrollo e integración de soluciones tecnológicas a la medida.",
 };
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
   return (
-    <html lang={params.locale} className={`${openSans.className} antialiased`}>
+    <html lang={locale} className={`${openSans.className} antialiased`}>
       <body>
         <Header />
         <main className="min-h-screen">
