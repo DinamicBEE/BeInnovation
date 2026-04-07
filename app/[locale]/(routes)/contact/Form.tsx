@@ -5,10 +5,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-//import Image from "next/image";
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
 import "../home/home.css";
 
 export default function ContactForm() {
+
+    const params = useParams();
+    const locale = params.locale as string;
+    const { t } = useTranslation(locale);
     
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -20,16 +25,6 @@ export default function ContactForm() {
         <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
             <div className="relative w-full max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden card-navy">
 
-                {/* <div className="absolute inset-0 w-full h-full">
-                    <Image
-                    src="/background/background_4.png"
-                    alt="Fondo decorativo"
-                    fill
-                    className="object-cover opacity-20" // Opacidad baja para no interferir con la legibilidad
-                    priority={false}
-                    />
-                </div> */}
-
                 <div className="relative z-10 p-8 md:p-10">
 
                     <form onSubmit={handleSubmit} className="space-y-6">
@@ -37,12 +32,12 @@ export default function ContactForm() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                            <div className="space-y-2">
                                 <Label htmlFor="name" className="text-gray-700 dark:text-gray-200">
-                                    Nombre completo
+                                    {t("contact.name")}
                                 </Label>
                                 <Input
                                     id="name"
                                     type="text"
-                                    placeholder="Juan Pérez"
+                                    placeholder={t("contact.name")}
                                     required
                                     className="w-full bg-white/90 dark:bg-gray-800/90 border-gray-300 dark:border-gray-600"
                                 />
@@ -50,12 +45,12 @@ export default function ContactForm() {
 
                             <div className="space-y-2">
                                 <Label htmlFor="email" className="text-gray-700 dark:text-gray-200">
-                                Correo electrónico
+                                {t("contact.email")}
                                 </Label>
                                 <Input
                                 id="email"
                                 type="email"
-                                placeholder="juan@ejemplo.com"
+                                placeholder={t("contact.email")}
                                 required
                                 className="w-full bg-white/90 dark:bg-gray-800/90 border-gray-300 dark:border-gray-600"
                                 />
@@ -63,12 +58,12 @@ export default function ContactForm() {
                             
                             <div className="space-y-2">
                                 <Label htmlFor="phone" className="text-gray-700 dark:text-gray-200">
-                                Teléfono móvil
+                                {t("contact.phone")}
                                 </Label>
                                 <Input
                                 id="phone"
                                 type="tel"
-                                placeholder="+52 555 123 4567"
+                                placeholder={t("contact.phone")}
                                 required
                                 className="w-full bg-white/90 dark:bg-gray-800/90 border-gray-300 dark:border-gray-600"
                                 />
@@ -76,12 +71,12 @@ export default function ContactForm() {
 
                             <div className="space-y-2">
                                 <Label htmlFor="company" className="text-gray-700 dark:text-gray-200">
-                                Empresa
+                                {t("contact.company")}
                                 </Label>
                                 <Input
                                 id="company"
                                 type="text"
-                                placeholder="Mi Empresa S.A."
+                                placeholder={t("contact.company")}
                                 required
                                 className="w-full bg-white/90 dark:bg-gray-800/90 border-gray-300 dark:border-gray-600"
                                 />
@@ -92,11 +87,11 @@ export default function ContactForm() {
 
                         <div className="space-y-2">
                             <Label htmlFor="message" className="text-gray-700 dark:text-gray-200">
-                                Mensaje
+                               {t("contact.message")}
                             </Label>
                             <Textarea
                                 id="message"
-                                placeholder="Escribe tu mensaje aquí..."
+                                placeholder={t("contact.message")}
                                 required
                                 className="w-full min-h-30 bg-white/90 dark:bg-gray-800/90 border-gray-300 dark:border-gray-600"
                             />
@@ -108,7 +103,7 @@ export default function ContactForm() {
                                 size="lg"
                                 className="px-8 py-6 text-base bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105"
                             >
-                                Enviar mensaje
+                                {t("contact.send")}
                             </Button>
                         </div>
                         

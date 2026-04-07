@@ -5,9 +5,16 @@ import Image from "next/image";
 import { LOGOS } from "./const/icons"
 import Clients from './Clients';
 import ContactForm from './Form';
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
 
 
 export default function ContactPage() {
+
+  const params = useParams();
+  const locale = params.locale as string;
+  const { t } = useTranslation(locale);
+
   return (
     <div className="flex flex-col items-center justify-center font-sans">
       
@@ -30,14 +37,13 @@ export default function ContactPage() {
             <div className="text-center max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white drop-shadow-lg tracking-tight">
-                Contáctenos
+                {t("contact.title")}
               </h1>
               
               <div className="w-16 sm:w-20 h-1 bg-[#7cb44c] mx-auto rounded-full" />
               
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed px-2">
-                ¿Tienes un proyecto en mente? Estamos aquí para hacerlo realidad. 
-                Cuéntanos tus ideas y te ayudaremos a transformarlas en soluciones innovadoras.
+                {t("contact.subtitle")}
               </p>
             </div>
           </div>

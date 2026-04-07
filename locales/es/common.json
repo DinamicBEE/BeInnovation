@@ -27,14 +27,13 @@
   },
   "contact": {
     "title": "Contáctanos",
-    "subtitle": "Déjanos tus datos y te contactaremos a la brevedad",
+    "subtitle": "¿Tienes un proyecto en mente? Estamos aquí para hacerlo realidad. Cuéntanos tus ideas y te ayudaremos a transformarlas en soluciones innovadoras.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "phone": "Teléfono",
     "company": "Empresa",
     "message": "Mensaje",
-    "send": "Enviar mensaje",
-    "required": "Campos obligatorios"
+    "send": "Enviar mensaje"
   },
   "language": {
     "en": "Inglés",

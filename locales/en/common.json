@@ -27,14 +27,13 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Leave us your details and we will contact you shortly",
+    "subtitle": "Do you have a project in mind? We are here to make it happen. Tell us your ideas and we will help you transform them into innovative solutions.",
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
     "company": "Company",
     "message": "Message",
-    "send": "Send message",
-    "required": "Required fields"
+    "send": "Send message"
   },
   "language": {
     "en": "English",
