@@ -3,21 +3,28 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { locales } from "@/lib/i18n/config";
 
 const openSans = Open_Sans({subsets:['latin'],  weight: ['400', '700']})
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export const metadata: Metadata = {
   title: "Be Innovate",
   description: "Somos una empresa multicultural especializada en la innovación, desarrollo e integración de soluciones tecnológicas a la medida.",
 };
 
-export default function RootLayout({
+export default function LocaleLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
-    <html lang="en" className={`${openSans.className} antialiased`}>
+    <html lang={params.locale} className={`${openSans.className} antialiased`}>
       <body>
         <Header />
         <main className="min-h-screen">

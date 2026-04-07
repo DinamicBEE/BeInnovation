@@ -10,45 +10,55 @@ import { Button } from "../ui/button";
 import { US, MX } from 'country-flag-icons/react/3x2';
 import { MdLanguage, MdHome, MdInfo, MdWork, MdBusiness, MdContactMail, MdMenu, MdClose } from "react-icons/md";
 import { cn } from "@/lib/utils";
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
 import "./layout.css";
 
 const navItems = [
-  { href: "/home", label: "Home", icon: MdHome },
-  { href: "/about", label: "About", icon: MdInfo },
-  { href: "/services", label: "Services", icon: MdWork },
-  { href: "/industries", label: "Industries", icon: MdBusiness },
-  { href: "/contact", label: "Contact", icon: MdContactMail },
+  { href: "/home", labelKey: "nav.home", icon: MdHome },
+  { href: "/about", labelKey: "nav.about", icon: MdInfo },
+  { href: "/services", labelKey: "nav.services", icon: MdWork },
+  { href: "/industries", labelKey: "nav.industries", icon: MdBusiness },
+  { href: "/contact", labelKey: "nav.contact", icon: MdContactMail },
 ];
 
 export default function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();
+  const params = useParams();
+  const locale = params.locale as string;
+  const { t } = useTranslation(locale);
 
   React.useEffect(() => {
     setIsMenuOpen(false);
   }, [pathname]);
+
+  const changeLanguage = (newLocale: string) => {
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/`;
+    window.location.href = `/${newLocale}${pathname?.replace(/^\/[a-z]{2}/, '') || '/'}`;
+  };
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
 
-          <Link href="/home" className="hidden sm:block text-2xl font-bold">
+          <Link href={`/${locale}/home`} className="hidden sm:block text-2xl font-bold">
             <Image src="/BeInnovation_3.png" alt="Be Innovate" width={56} height={48} priority />
           </Link>
 
-          <Link href="/home" className="block sm:hidden">
+          <Link href={`/${locale}/home`} className="block sm:hidden">
             <Image src="/BeInnovation_3.png" alt="Be Innovate" width={40} height={34} priority />
           </Link>
 
           <NavigationMenu className="hidden md:block">
             <NavigationMenuList className="flex space-x-2 lg:space-x-6">
               {navItems.map((item) => {
-                const isActive = pathname === item.href;
+                const isActive = pathname === `/${locale}${item.href}`;
                 return (
                   <NavigationMenuItem key={item.href}>
-                    <Link href={item.href} passHref>
+                    <Link href={`/${locale}${item.href}`} passHref>
                       <NavigationMenuLink
                         className={cn(
                           "px-3 py-2 text-sm lg:text-base transition-colors hover:text-[#7cb44c]",
@@ -57,7 +67,7 @@ export default function Header() {
                             : "text-gray-600"
                         )}
                       >
-                        {item.label}
+                        {t(item.labelKey)}
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
@@ -75,13 +85,13 @@ export default function Header() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="rounded-lg">
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('en')}>
                   <US title="United States" className="mr-2 h-4 w-4" />
-                  English
+                  {t('language.en')}
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('es')}>
                   <MX title="México" className="mr-2 h-4 w-4" />
-                  Español
+                  {t('language.es')}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -106,11 +116,11 @@ export default function Header() {
           <nav className="flex flex-col space-y-2 pb-4">
             {navItems.map((item) => {
               const Icon = item.icon;
-              const isActive = pathname === item.href;
+              const isActive = pathname === `/${locale}${item.href}`;
               return (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={`/${locale}${item.href}`}
                   className={cn(
                     "flex items-center gap-3 px-4 py-3 rounded-lg transition-colors",
                     isActive
@@ -119,20 +129,20 @@ export default function Header() {
                   )}
                 >
                   <Icon className="h-5 w-5" />
-                  <span>{item.label}</span>
+                  <span>{t(item.labelKey)}</span>
                 </Link>
               );
             })}
             
             <div className="border-t border-gray-200 pt-3 mt-2">
               <div className="flex gap-2 px-4 py-2">
-                <Button variant="outline" size="sm" className="flex-1 gap-2">
+                <Button variant="outline" size="sm" className="flex-1 gap-2" onClick={() => changeLanguage('en')}>
                   <US className="h-4 w-4" />
-                  English
+                  {t('language.en')}
                 </Button>
-                <Button variant="outline" size="sm" className="flex-1 gap-2">
+                <Button variant="outline" size="sm" className="flex-1 gap-2" onClick={() => changeLanguage('es')}>
                   <MX className="h-4 w-4" />
-                  Español
+                  {t('language.es')}
                 </Button>
               </div>
             </div>

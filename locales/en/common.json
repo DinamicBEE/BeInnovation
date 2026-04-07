@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "industries": "Industries",
+    "contact": "Contact"
+  },
+  "footer": {
+    "company": "COMPANY",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome to",
+    "subtitle": "Innovative professional solutions to take your business to the next level.",
+    "innovation": "Innovation",
+    "innovation_desc": "Cutting-edge technology for your projects",
+    "quality": "Quality",
+    "quality_desc": "International standards of excellence",
+    "support": "Support",
+    "support_desc": "Continuous support for your growth",
+    "start": "Start now",
+    "services": "View services"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Leave us your details and we will contact you shortly",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "message": "Message",
+    "send": "Send message",
+    "required": "Required fields"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

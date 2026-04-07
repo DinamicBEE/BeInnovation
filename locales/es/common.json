@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "industries": "Industrias",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "company": "EMPRESA",
+    "copyright": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "contact": "Contacto"
+  },
+  "home": {
+    "welcome": "Bienvenido a",
+    "subtitle": "Soluciones profesionales innovadoras para impulsar tu negocio al siguiente nivel.",
+    "innovation": "Innovación",
+    "innovation_desc": "Tecnología de vanguardia para tus proyectos",
+    "quality": "Calidad",
+    "quality_desc": "Estándares internacionales de excelencia",
+    "support": "Soporte",
+    "support_desc": "Acompañamiento continuo en tu crecimiento",
+    "start": "Comenzar ahora",
+    "services": "Ver servicios"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Déjanos tus datos y te contactaremos a la brevedad",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "company": "Empresa",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "required": "Campos obligatorios"
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  }
+}
