@@ -19,7 +19,7 @@ export default function Clients() {
   );
 
   return (
-    <div className="w-full px-32 mx-auto py-2 bg-bg-secondary dark:bg-bg-secondary">
+    <section className="w-full px-32 mx-auto py-2 bg-bg-secondary dark:bg-bg-secondary">
       <Carousel
         opts={{
           align: "start",
@@ -47,7 +47,7 @@ export default function Clients() {
           ))}
         </CarouselContent>
       </Carousel>
-    </div>
+    </section>
   );
 }
 

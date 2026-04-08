@@ -31,10 +31,6 @@ export default function Services() {
     fetchServices();
     }, []);
 
-    // const handleCardClick = (serviceId: string) => {
-    //     router.push(`/services/${serviceId}`);
-    // };
-
     const handleViewAllClick = () => {
         router.push('/services');
     };
@@ -52,7 +48,7 @@ export default function Services() {
     }
 
     return (
-        <main className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-stretch py-16 px-8 bg-bg-secondary dark:bg-bg-secondary">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-stretch py-16 px-8 bg-bg-secondary dark:bg-bg-secondary">
 
                 {services.map((service, index) => (
                     
@@ -100,7 +96,7 @@ export default function Services() {
                 </div>
             
 
-        </main>
+        </section>
     )
 }
 

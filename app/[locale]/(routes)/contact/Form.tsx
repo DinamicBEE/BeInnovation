@@ -22,7 +22,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
+        <section className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
             <div className="relative w-full max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden card-navy">
 
                 <div className="relative z-10 p-8 md:p-10">
@@ -112,6 +112,6 @@ export default function ContactForm() {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }

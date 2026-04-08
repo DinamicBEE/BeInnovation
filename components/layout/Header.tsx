@@ -18,7 +18,7 @@ const navItems = [
   { href: "/home", labelKey: "nav.home", icon: MdHome },
   { href: "/about", labelKey: "nav.about", icon: MdInfo },
   { href: "/services", labelKey: "nav.services", icon: MdWork },
-  { href: "/industries", labelKey: "nav.industries", icon: MdBusiness },
+  // { href: "/industries", labelKey: "nav.industries", icon: MdBusiness },
   { href: "/contact", labelKey: "nav.contact", icon: MdContactMail },
 ];
 

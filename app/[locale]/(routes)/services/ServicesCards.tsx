@@ -5,8 +5,8 @@ import { ServiceCardProps } from "@/Models/products.types";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { MdExpandMore, MdCheckCircleOutline, MdOutlineStar, MdLightbulb } from "react-icons/md";
-import "./services.css";
 import clsx from "clsx";
+import "./services.css";
 
 export default function ServicesCards({ service }: ServiceCardProps) {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,18 +14,18 @@ export default function ServicesCards({ service }: ServiceCardProps) {
     return (
         <div>
 
-            <div className="w-full max-w-7xl mx-auto mb-4 bg-white dark:bg-gray-900 rounded-xl shadow-xl overflow-hidden">
+            <div className="w-full mb-4 bg-white dark:bg-gray-900 shadow-xl overflow-hidden">
                 <div className="flex flex-col md:flex-row">
 
                 <div className="relative w-full md:w-2/5 lg:w-2/5 shrink-0" >
                     {service.coverImageUrl && (
-                    <div className="relative aspect-video md:aspect-auto md:h-full w-full overflow-hidden">
+                    <div className="relative aspect-video md:aspect-auto md:h-full w-full overflow-hidden image-fade-overlay">
                         <Image src={service.coverImageUrl} alt={service.name}  width={100} height={100} className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" priority />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-black/70 to-transparent">
                         {service.addons && service.addons.length > 0 && (
                             <div className="flex flex-wrap gap-2 mb-2">
                             {service.addons.map((addon, idx) => (
-                                <Badge key={idx} className="card-navy bg-[#2d4b8f] hover:bg-[#2d4b8f]/90 text-white border-none">
+                                <Badge key={idx} className="card-navy bg-[#2d4b8f] hover:bg-[#2d4b8f]/90 text-white border-none z-10">
                                 {addon.name}
                                 </Badge>
                             ))}
@@ -35,7 +35,7 @@ export default function ServicesCards({ service }: ServiceCardProps) {
                         {service.targetIndustries && service.targetIndustries.length > 0 && (
                             <div className="flex flex-wrap gap-2">
                             {service.targetIndustries.map((industry, idx) => (
-                                <Badge key={idx} className="card-green bg-[#7cb44c] hover:bg-[#7cb44c]/90 text-white border-none">
+                                <Badge key={idx} className="card-green bg-[#7cb44c] hover:bg-[#7cb44c]/90 text-white border-none z-10">
                                 {industry}
                                 </Badge>
                             ))}
@@ -47,8 +47,8 @@ export default function ServicesCards({ service }: ServiceCardProps) {
                     )}
                 </div>
 
-                <div className="hidden md:block w-2 h-full shrink-0" style={{background: "linear-gradient(115deg, #2d4b8f, #2d4b8f00)",}}/>
-                <div className="block md:hidden h-2 w-full" style={{background: "linear-gradient(115deg, #2d4b8f, #2d4b8f00)",}} />
+                {/* <div className="hidden md:block w-2 h-full shrink-0" style={{background: "linear-gradient(115deg, #2d4b8f, #2d4b8f00)",}}/>
+                <div className="block md:hidden h-2 w-full" style={{background: "linear-gradient(115deg, #2d4b8f, #2d4b8f00)",}} /> */}
 
                 <div className="flex-1 p-6 md:p-8 flex flex-col">
                     <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white text-left mb-4">

@@ -29,7 +29,7 @@ export default function ServicesPage() {
 
   return (
     <div className="flex flex-col items-center justify-center font-sans">
-      <div className="relative mb-4 w-full h-[40vh] md:h-[50vh] lg:h-[60vh]">
+      <div className="relative mb-4 w-full h-[55vh] md:h-[65vh] lg:h-[75vh]">
 
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -47,7 +47,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 sm:px-6">
           <div className="text-center max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white drop-shadow-lg tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white drop-shadow-lg text-shadow-lg/30 tracking-tight">
               Nuestros productos
             </h1>
             

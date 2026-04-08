@@ -24,3 +24,46 @@
     border: 1.5px solid rgba(40, 157, 187, 0.5);
     box-shadow: 0 8px 20px -6px rgba(40, 157, 187, 0.2);
 }
+
+.image-fade-overlay {
+  position: relative;
+
+}
+
+.image-fade-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  background: linear-gradient(to left, 
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.7) 20%,
+    transparent 100%
+  );
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 768px) {
+
+  .image-fade-overlay {
+    position: relative;
+    border-top-right-radius: 0px;
+  }
+
+  .image-fade-overlay::after {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, 
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.7) 20%,
+      transparent 100%
+    );
+  }
+}
