@@ -48,7 +48,16 @@ export default function Services() {
     }
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-stretch py-16 px-8 bg-bg-secondary dark:bg-bg-secondary">
+        <section className="relative grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-stretch py-16 px-8 bg-bg-secondary dark:bg-bg-secondary">
+                    {/* <div className="absolute inset-0 z-0 w-full h-full">
+                      <Image
+                        src="/background/Invert_flow_concept.png"
+                        alt="Background"
+                        fill
+                        className="object-cover"
+                        priority={false}
+                      />
+                    </div> */}
 
                 {services.map((service, index) => (
                     

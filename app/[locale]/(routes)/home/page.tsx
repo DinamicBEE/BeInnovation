@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/background/background_3.png"
+            src="/background/Focused_steam_velocity.png"
             alt="BeInnovate"
             fill
             className="object-cover"
@@ -76,7 +76,17 @@ export default function Home() {
 
       </section> */}
 
-      <section className="flex w-full min-h-screen flex-col lg:flex-row items-stretch py-4 px-4 sm:px-8 lg:px-16 bg-bg-secondary dark:bg-bg-secondary">
+      <section className="relative flex w-full min-h-screen flex-col lg:flex-row items-stretch py-4 px-4 sm:px-8 lg:px-16">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/background/Flow_concept.png"
+            alt="Background"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          
+        </div>
         
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
           <KeyPoints />

@@ -35,6 +35,18 @@
     "message": "Message",
     "send": "Send message"
   },
+  "about":{
+    "title": "About Us",
+    "subtitle": "At BeInnovate, we are a multicultural team passionate about innovation and excellence. We work hand in hand with companies from various industries to transform their ideas into innovative realities.",
+    "mission_title": "Our Mission",
+    "mission_desc": "Provide innovative technological solutions that drive growth and digital transformation of our clients, offering quality service and continuous support.",
+    "vision_title": "Our Vision",
+    "vision_desc": "To be recognized as leaders in technological innovation, transforming ideas into solutions that drive our clients' success globally.",
+    "carousel_1": "Multicultural team specialized in the most innovative technologies on the market.",
+    "carousel_2": "We offer cutting-edge technology solutions that drive growth for our customers.",
+    "carousel_3": "With a focus on quality and continuous support.",
+    "carousel_4": "We help companies innovate in their processes and teams to succeed in the digital age."
+  },
   "language": {
     "en": "English",
     "es": "Spanish"

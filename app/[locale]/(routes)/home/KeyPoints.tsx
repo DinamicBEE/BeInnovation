@@ -27,7 +27,7 @@ export function KeyPoints() {
             <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#7cb44c]/10 flex items-center justify-center mb-3 sm:mb-4">
               <Icon
                 icon={point.icon}
-                className="w-7 h-7 sm:w-8 sm:h-8 text-[#7cb44c]"
+                className="w-7 h-7 sm:w-8 sm:h-8 text-[#2d4b8f]"
               />
             </div>
 
@@ -35,7 +35,7 @@ export function KeyPoints() {
               {point.value}
             </div>
 
-            <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1">
+            <div className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-1">
               {point.label}
             </div>
           </div>

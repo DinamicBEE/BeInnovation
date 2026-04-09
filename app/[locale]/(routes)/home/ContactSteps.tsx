@@ -36,11 +36,11 @@ export function ContactSteps({ steps, className }: ProcessStepperRightProps) {
                 )}
               </div>
 
-              <div className="flex-1 pb-6">
+              <div className="flex-1 pb-6 p-4 sm:p-6 rounded-2xl bg-white/50 dark:bg-gray-800/30 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-lg w-full">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="mt-2 text-gray-700 dark:text-gray-300 leading-relaxed">
                   {step.description}
                 </p>
               </div>

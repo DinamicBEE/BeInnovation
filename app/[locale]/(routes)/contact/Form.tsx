@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useTranslation } from '@/lib/i18n/client';
 import { useParams } from 'next/navigation';
+import Image from "next/image";
 import "../home/home.css";
 
 export default function ContactForm() {
@@ -22,8 +23,20 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
+        <section className="relative w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
+
+                        <div className="absolute inset-0 z-0">
+                          <Image
+                            src="/background/Flow_concept.png"
+                            alt="Background"
+                            fill
+                            className="object-cover object-center"
+                            priority
+                          />
+                        </div>
+
             <div className="relative w-full max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden card-navy">
+
 
                 <div className="relative z-10 p-8 md:p-10">
 

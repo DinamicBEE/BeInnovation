@@ -22,7 +22,7 @@ export default function ContactPage() {
 
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/background/background_3.png"
+            src="/background/Focused_steam_velocity.png"
             alt="BeInnovate"
             fill
             className="object-cover"
