@@ -15,12 +15,13 @@
   },
   "home": {
     "welcome": "Bienvenido a",
-    "subtitle": "Soluciones profesionales innovadoras para impulsar tu negocio al siguiente nivel.",
-    "innovation": "Innovación",
-    "innovation_desc": "Tecnología de vanguardia para tus proyectos",
-    "quality": "Calidad",
-    "quality_desc": "Estándares internacionales de excelencia",
-    "support": "Soporte",
+    "subtitle": "Damos vida a su visión con tecnología de vanguardia y soluciones creativas.",
+    "keyPoint_1": "Presencia global",
+    "keyPoint_2": "Años de experiencia",
+    "keyPoint_3": "Clientes satisfechos",
+    "keyPoint_4": "Profesionales",
+    "keyPoint_5": "Proyectos exitosos",
+
     "support_desc": "Acompañamiento continuo en tu crecimiento",
     "start": "Comenzar ahora",
     "services": "Ver servicios"
@@ -45,7 +46,9 @@
     "carousel_1": "Equipo Multicultural especializado en las tecnologías más innovadoras del mercado.",
     "carousel_2": "Ofrecemos soluciones tecnológicas de vanguardia que impulsan el crecimiento de nuestros clientes.",
     "carousel_3": "Con enfoque centrado en la calidad y el soporte continuo.",
-    "carousel_4": "Ayudamos a las empresas a innovar en sus procesos y en sus equipos para alcanzar el éxito en la era digital."
+    "carousel_4": "Ayudamos a las empresas a innovar en sus procesos y en sus equipos para alcanzar el éxito en la era digital.",
+    "team_title": "Un equipo de talla mundial",
+    "team_desc": "En BeInnovate contamos con un equipo de profesionales altamente capacitados y apasionados por la tecnología. Nuestros colaboladores se encuentran en diferentes partes de mundo, lo que nos permite tener una perspectiva global y diversa."
   },
   "language": {
     "en": "Inglés",

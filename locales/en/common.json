@@ -15,12 +15,13 @@
   },
   "home": {
     "welcome": "Welcome to",
-    "subtitle": "Innovative professional solutions to take your business to the next level.",
-    "innovation": "Innovation",
-    "innovation_desc": "Cutting-edge technology for your projects",
-    "quality": "Quality",
-    "quality_desc": "International standards of excellence",
-    "support": "Support",
+    "subtitle": "We bring your vision to life with cutting-edge technology and creative solutions.",
+    "keyPoint_1": "Global presence",
+    "keyPoint_2": "Years of experience",
+    "keyPoint_3": "Satisfied customers",
+    "keyPoint_4": "Professionals",
+    "keyPoint_5": "Successful projects",
+
     "support_desc": "Continuous support for your growth",
     "start": "Start now",
     "services": "View services"
@@ -45,7 +46,9 @@
     "carousel_1": "Multicultural team specialized in the most innovative technologies on the market.",
     "carousel_2": "We offer cutting-edge technology solutions that drive growth for our customers.",
     "carousel_3": "With a focus on quality and continuous support.",
-    "carousel_4": "We help companies innovate in their processes and teams to succeed in the digital age."
+    "carousel_4": "We help companies innovate in their processes and teams to succeed in the digital age.",
+    "team_title": "A Global team",
+    "team_desc": "At BeInnovate we have a team of highly trained professionals passionate about technology. Our colabolators are located in different parts of the world, which allows us to have a global and diverse perspective."
   },
   "language": {
     "en": "English",

@@ -3,8 +3,14 @@
 import { Icon } from "@iconify/react";
 import { cn } from "@/lib/utils";
 import { KEYPOINTS_DATA } from "./const/cards";
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
 
 export function KeyPoints() {
+  const params = useParams();
+  const locale = params.locale as string;
+  const { t } = useTranslation(locale);
+
   return (
     <div className={cn("w-full h-full flex flex-col justify-center py-8")}>
       
@@ -36,7 +42,7 @@ export function KeyPoints() {
             </div>
 
             <div className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-1">
-              {point.label}
+              {t(point.label)}
             </div>
           </div>
         ))}

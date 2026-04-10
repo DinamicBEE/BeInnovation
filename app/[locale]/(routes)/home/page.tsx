@@ -7,8 +7,14 @@ import Image from "next/image";
 import { STEPS_DATA } from './const/cards';
 import { ContactSteps } from './ContactSteps';
 import { KeyPoints } from './KeyPoints';
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
 
 export default function Home() {
+  const params = useParams();
+  const locale = params.locale as string;
+  const { t } = useTranslation(locale);
+
   return (
     <main className="flex flex-col items-center justify-center font-sans">
 
@@ -39,7 +45,7 @@ export default function Home() {
             <div className="w-20 h-1 bg-[#7cb44c] mx-auto rounded-full" />
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed px-2">
-              We bring your vision to life with cutting-edge technology and creative solutions
+              {t("home.subtitle")}
             </p>
             
           </div>

@@ -111,12 +111,12 @@ export default function AboutPage() {
       <section className="relative w-full h-[55vh] md:h-[65vh] lg:h-[75vh]">
         <div className="flex flex-col md:flex-row h-full">
           <div className="flex-1 p-6 md:p-8 flex flex-col text-center max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
-              Un equipo de talla mundial
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold drop-shadow-lg text-shadow-lg/10">
+              {t("about.team_title")}
             </h2> 
 
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base ">
-              En BeInnovate contamos con un equipo de profesionales altamente capacitados y apasionados por la tecnología. Nuestros colaboladores se encuentran en diferentes partes de mundo, lo que nos permite tener una perspectiva global y diversa. 
+              {t("about.team_desc")} 
             </p>
 
           </div>
