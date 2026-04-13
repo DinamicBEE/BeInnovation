@@ -21,9 +21,20 @@
     "keyPoint_3": "Clientes satisfechos",
     "keyPoint_4": "Profesionales",
     "keyPoint_5": "Proyectos exitosos",
+    "step1_title": "Descubrimiento",
+    "step1_desc": "Analizamos tus necesidades y objetivos para entender tu negocio a fondo.",
+    "step2_title": "Estrategia",
+    "step2_desc": "Diseñamos un plan personalizado con las mejores soluciones para tu proyecto.",
+    "step3_title": "Desarrollo",
+    "step3_desc": "Implementamos las soluciones con las tecnologías más avanzadas del mercado.",
+    "step4_title": "Pruebas",
+    "step4_desc": "Realizamos tests exhaustivos para garantizar la calidad y el rendimiento.",
+    "step5_title": "Lanzamiento",
+    "step5_desc": "Desplegamos tu proyecto y te acompañamos en las primeras etapas.",
+    "contact_tittle": "¿Listo para empezar?",
+    "contact_subtitle": "Cuéntanos sobre tu proyecto. Nuestro equipo está listo para ayudarte a hacerlo realidad.",
+    "contact_button": "Contáctanos",
 
-    "support_desc": "Acompañamiento continuo en tu crecimiento",
-    "start": "Comenzar ahora",
     "services": "Ver servicios"
   },
   "contact": {

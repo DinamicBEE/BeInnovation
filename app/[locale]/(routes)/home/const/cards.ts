@@ -156,32 +156,32 @@ export const INDUSTRIES = [
 export const STEPS_DATA = [
   {
     id: 1,
-    title: "Descubrimiento",
-    description: "Analizamos tus necesidades y objetivos para entender tu negocio a fondo.",
+    title: "home.step1_title",
+    description: "home.step1_desc",
     icon: "🔍",
   },
   {
     id: 2,
-    title: "Estrategia",
-    description: "Diseñamos un plan personalizado con las mejores soluciones para tu proyecto.",
+    title: "home.step2_title",
+    description: "home.step2_desc",
     icon: "📊",
   },
   {
     id: 3,
-    title: "Desarrollo",
-    description: "Implementamos las soluciones con las tecnologías más avanzadas del mercado.",
+    title: "home.step3_title",
+    description: "home.step3_desc",
     icon: "💻",
   },
   {
     id: 4,
-    title: "Pruebas",
-    description: "Realizamos tests exhaustivos para garantizar la calidad y el rendimiento.",
+    title: "home.step4_title",
+    description: "home.step4_desc",
     icon: "✅",
   },
   {
     id: 5,
-    title: "Lanzamiento",
-    description: "Desplegamos tu proyecto y te acompañamos en las primeras etapas.",
+    title: "home.step5_title",
+    description: "home.step5_desc",
     icon: "🚀",
   },
 ];

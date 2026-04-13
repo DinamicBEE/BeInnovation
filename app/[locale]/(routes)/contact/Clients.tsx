@@ -12,14 +12,14 @@ export default function Clients() {
 
   const plugin = React.useRef(
     Autoplay({
-      delay: 2000,
+      delay: 1000,
       stopOnInteraction: false,
       stopOnMouseEnter: true,
     })
   );
 
   return (
-    <section className="w-full px-32 mx-auto py-2 bg-bg-secondary dark:bg-bg-secondary">
+    <section className="w-full px-32 mx-auto py-2">
       <Carousel
         opts={{
           align: "start",
@@ -31,17 +31,31 @@ export default function Clients() {
         plugins={[plugin.current]}
         className="w-full overflow-visible"
       >
-        <CarouselContent className="-ml-4">
+        <CarouselContent className="-ml-4 items-center">
           {CLIENTS.map((client, index) => (
             <CarouselItem 
               key={index} 
-              className="pl-4 basis-full sm:basis-1/2 md:basis-1/3"
+              className="pl-4 basis-full sm:basis-1/4 md:basis-1/5"
             >
               <div className="flex justify-center items-center p-2">
-                <CircularClientCard
+                <Image
+                  src={client.image}
+                  alt={client.title}
+                  width={150}
+                  height={150}
+                  className="
+                    w-full 
+                    h-full 
+                    object-contain 
+                    transition-all 
+                    duration-500
+                    group-hover:scale-100
+                  "
+                />
+                {/* <CircularClientCard
                   title={client.title}
                   image={client.image}
-                />
+                /> */}
               </div>
             </CarouselItem>
           ))}

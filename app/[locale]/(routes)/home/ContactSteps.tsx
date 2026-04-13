@@ -2,6 +2,8 @@
 
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
 import "./home.css";
 
 export type Step = {
@@ -16,6 +18,10 @@ interface ProcessStepperRightProps {
 }
 
 export function ContactSteps({ steps, className }: ProcessStepperRightProps) {
+  const params = useParams();
+  const locale = params.locale as string;
+  const { t } = useTranslation(locale);
+
   return (
     <div className={cn("w-full max-w-3xl mx-auto py-12 px-6", className)}>
       <div className="space-y-12">
@@ -38,10 +44,10 @@ export function ContactSteps({ steps, className }: ProcessStepperRightProps) {
 
               <div className="flex-1 pb-6 p-4 sm:p-6 rounded-2xl bg-white/50 dark:bg-gray-800/30 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-lg w-full">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  {step.title}
+                  {t(step.title)}
                 </h3>
                 <p className="mt-2 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {step.description}
+                  {t(step.description)}
                 </p>
               </div>
             </div>
@@ -53,15 +59,15 @@ export function ContactSteps({ steps, className }: ProcessStepperRightProps) {
               <div className="p-6">
 
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  ¿Listo para empezar?
+                  {t("home.contact_tittle")}
                 </h4>
                 <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  Cuéntanos sobre tu proyecto. Nuestro equipo está listo para ayudarte a hacerlo realidad.
+                  {t("home.contact_subtitle")}
                 </p>
 
                 <Link href="/contact">
                   <button className="w-full bg-[#7cb44c] hover:bg-[#6aa03c] text-white font-medium py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg">
-                    Contáctanos
+                    {t("home.contact_button")}
                   </button>
                 </Link>
               </div>
