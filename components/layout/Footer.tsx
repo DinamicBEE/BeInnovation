@@ -20,7 +20,7 @@ export default function Footer() {
             <h3 className="hidden md:block font-bold mb-4">{t("footer.company")}</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li><a href="https://www.linkedin.com/company/beexponential/posts/?feedView=all" target="_blank"><CiLinkedin size={24} /> <span className="hidden md:block"> Be Exponential</span> </a></li>
-              <li><a href="https://www.linkedin.com/company/dinamic-software/posts/?feedView=all" target="_blank"><CiLinkedin size={24} /> <span className="hidden md:block"> Dinamic Software </span> </a></li>
+              <li><a href="https://www.linkedin.com/company/dinamic-software/posts/?feedView=all" target="_blank"><CiLinkedin size={24} /> <span className="hidden md:block"> Be Innovate </span> </a></li>
             </ul>
           </div>
           <div className="flex flex-col items-center">
@@ -30,7 +30,7 @@ export default function Footer() {
 
             <div className="flex flex-col items-center mt-2">
                 <h1 className="text-center text-xs text-gray-600">© 2026 {t("footer.company")}. {t("footer.copyright")}</h1>
-                <div className="flex flex-col md:flex-row items-center">
+                <div className="flex flex-col md:flex-row items-center text-center">
                     <a href="/privacy" className="text-xs text-gray-600 hover:text-gray-900">{t("footer.privacy")}</a> 
                     <div className="hidden md:block"> | </div> 
                     <a href="/terms" className="text-xs text-gray-600 hover:text-gray-900">{t("footer.terms")}</a>

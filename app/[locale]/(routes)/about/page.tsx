@@ -110,9 +110,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="relative w-full h-[55vh] md:h-[65vh] lg:h-[75vh]">
+      <section className="relative w-full h-[50vh] md:h-[60vh] lg:h-[70vh]">
         <div className="flex flex-col md:flex-row h-full">
-          <div className="flex-1 p-6 md:p-8 flex flex-col text-center max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
+          <div className="p-6 md:p-8 flex flex-col text-center justify-evenly max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold drop-shadow-lg text-shadow-lg/10">
               {t("about.team_title")}
             </h2> 
@@ -122,8 +122,8 @@ export default function AboutPage() {
             </p>
 
           </div>
-          <div className="relative w-full md:w-3/5 lg:w-3/5 shrink-0" >
-            <div className="relative aspect-video md:aspect-auto md:h-full w-full rounded-lg overflow-hidden">
+          <div className="relative w-full md:w-3/5 lg:w-3/5 shrink-0 p-4">
+            <div className="relative aspect-video md:aspect-auto md:h-full w-full rounded-xl overflow-hidden">
               <Image
                 src="/background/about_map.png"
                 alt="BeInnovate"
@@ -188,50 +188,40 @@ export default function AboutPage() {
 
 function CardsAbout () {
   return (
-    // <div className={clsx("relative rounded-2xl overflow-hidden")}
-    // >
-
-      <div className="relative flex flex-col h-full">
+    <div className="relative flex flex-col h-full">
         
-        <div className="relative inset-0 h-38">
-          <div className="absolute left-1/2 transform -translate-x-1/2" >
-            <div className="relative rounded-full bg-white p-1 shadow-md " style={{ width: '150px', height: '150px' }} >
-              <div className="rounded-full overflow-hidden w-full h-full">
-                <Image
-                  src="/Mario.png"
-                  alt="CEO"
-                  width={92}
-                  height={92}
-                  className="w-full h-full object-cover rounded-full z-10"
-                />
-              </div>
+      <div className="relative inset-0 h-38">
+        <div className="absolute left-1/2 transform -translate-x-1/2" >
+          <div className="relative rounded-full bg-white p-1 shadow-md " style={{ width: '150px', height: '150px' }} >
+            <div className="rounded-full overflow-hidden w-full h-full">
+              <Image
+                src="/Mario.png"
+                alt="CEO"
+                width={92}
+                height={92}
+                className="w-full h-full object-cover rounded-full z-10"
+              />
             </div>
-            
           </div>
-
         </div>
-
-
-
-        <div className={clsx("relative bottom-0 left-0 right-0 bg-white overflow-hidden transition-all duration-500 ease-in-out p-6 rounded-b-2xl")}>
-            <div className="flex flex-col md:flex-row items-center justify-between px-4">
-
-            <h3 className="text-xl font-bold text-gray-800 mb-2">
-              Mario Vasquez
-            </h3>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
-                CEO
-              </h3>
-            </div>
-          <p className="text-gray-600 text-sm leading-relaxed text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
-          </p>
-        </div>
-
       </div>
 
-    // </div>
+      <div className={clsx("relative bottom-0 left-0 right-0 bg-white overflow-hidden transition-all duration-500 ease-in-out p-6 rounded-b-2xl")}>
+        <div className="flex flex-col md:flex-row items-center justify-between px-4">
+          <h3 className="text-xl font-bold text-gray-800 mb-2">
+            Mario Vasquez
+          </h3>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">
+            CEO
+          </h3>
+        </div>
+        <p className="text-gray-600 text-sm leading-relaxed text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
+        </p>
+      </div>
+
+    </div>
   )
 }
