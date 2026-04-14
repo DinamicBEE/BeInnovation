@@ -25,7 +25,7 @@ export default function ContactForm() {
     return (
         <section className="relative w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
 
-                        <div className="absolute inset-0 z-0">
+                        {/* <div className="absolute inset-0 z-0">
                           <Image
                             src="/background/Flow_concept.png"
                             alt="Background"
@@ -33,7 +33,7 @@ export default function ContactForm() {
                             className="object-cover object-center"
                             priority
                           />
-                        </div>
+                        </div> */}
 
             <div className="relative w-full max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden card-navy">
 

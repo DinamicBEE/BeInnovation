@@ -23,7 +23,7 @@ export function ContactSteps({ steps, className }: ProcessStepperRightProps) {
   const { t } = useTranslation(locale);
 
   return (
-    <div className={cn("w-full max-w-3xl mx-auto py-12 px-6", className)}>
+    <div className={cn("w-full max-w-3xl mx-auto py-6 px-6", className)}>
       <div className="space-y-12">
         {steps.map((step, idx) => {
           const isLast = idx === steps.length - 1;
@@ -54,25 +54,25 @@ export function ContactSteps({ steps, className }: ProcessStepperRightProps) {
           );
         })}
 
-        <div className="flex justify-end mt-8">
-            <div className="w-full sm:w-80 md:w-96 card-green rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-              <div className="p-6">
+        {/* <div className="flex justify-end mt-8">
+          <div className="w-full sm:w-80 md:w-96 card-green rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div className="p-6">
 
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  {t("home.contact_tittle")}
-                </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  {t("home.contact_subtitle")}
-                </p>
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {t("home.contact_tittle")}
+              </h4>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                {t("home.contact_subtitle")}
+              </p>
 
-                <Link href="/contact">
-                  <button className="w-full bg-[#7cb44c] hover:bg-[#6aa03c] text-white font-medium py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg">
-                    {t("home.contact_button")}
-                  </button>
-                </Link>
-              </div>
+              <Link href="/contact">
+                <button className="w-full bg-[#7cb44c] hover:bg-[#6aa03c] text-white font-medium py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg">
+                  {t("home.contact_button")}
+                </button>
+              </Link>
             </div>
           </div>
+        </div> */}
 
       </div>
     </div>

@@ -12,13 +12,13 @@ export function KeyPoints() {
   const { t } = useTranslation(locale);
 
   return (
-    <div className={cn("w-full h-full flex flex-col justify-center py-8")}>
+    <div className={cn("w-full h-full flex flex-col justify-evenly py-6")}>
       
-      <div className="text-center mb-8 lg:mb-12">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-          Nuestros números
+      <div className="text-center mb-8 lg:mb-12 space-y-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white drop-shadow-lg text-shadow-lg/10">
+          Be Innovate en números
         </h2>
-        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mt-2">
+        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mt-2 font-bold drop-shadow-lg">
           La confianza que respalda nuestro trabajo
         </p>
       </div>

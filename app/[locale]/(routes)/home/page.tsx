@@ -9,6 +9,7 @@ import { ContactSteps } from './ContactSteps';
 import { KeyPoints } from './KeyPoints';
 import { useTranslation } from '@/lib/i18n/client';
 import { useParams } from 'next/navigation';
+import Link from "next/link";
 
 export default function Home() {
   const params = useParams();
@@ -82,7 +83,7 @@ export default function Home() {
 
       </section> */}
 
-      <section className="relative flex w-full min-h-screen flex-col lg:flex-row items-stretch py-4 px-4 sm:px-8 lg:px-16">
+      <section className="relative flex w-full min-h-screen flex-col py-4 px-4 sm:px-8 lg:px-16">
         <div className="absolute inset-0 z-0">
           <Image
             src="/background/Flow_concept.png"
@@ -95,12 +96,34 @@ export default function Home() {
           
         </div>
         
-        <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
-          <KeyPoints />
+        <div className='flex flex-col lg:flex-row'>
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+            <KeyPoints />
+          </div>
+
+          <div className="w-full lg:w-1/2 lg:pl-8">
+            <ContactSteps steps={STEPS_DATA} />
+          </div>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:pl-8">
-          <ContactSteps steps={STEPS_DATA} />
+        <div className="flex justify-center">
+          <div className="w-full sm:w-80 md:w-96 card-green rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div className="p-6">
+
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {t("home.contact_tittle")}
+              </h4>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                {t("home.contact_subtitle")}
+              </p>
+
+              <Link href="/contact">
+                <button className="w-full bg-[#7cb44c] hover:bg-[#6aa03c] text-white font-medium py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-md hover:shadow-lg">
+                  {t("home.contact_button")}
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
 
       </section>

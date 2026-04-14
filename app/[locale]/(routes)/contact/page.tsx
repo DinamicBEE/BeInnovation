@@ -49,11 +49,7 @@ export default function ContactPage() {
           </div>
 
       </section>
-
-      <Clients />
-
-      <ContactForm />
-
+      
       <section className="container mx-auto px-4 py-8" style={{ position: 'relative', overflow: 'hidden'}}>
         <LogoLoop
           logos={LOGOS}
@@ -69,6 +65,13 @@ export default function ContactPage() {
         />
 
       </section>
+
+      
+      <ContactForm />
+      
+      <Clients />
+
+
 
     </main>
   )
