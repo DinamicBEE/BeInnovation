@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslation } from '@/lib/i18n/client';
 import { useParams } from 'next/navigation';
 import { Icon } from '@iconify/react'
+import clsx from "clsx";
 
 export default function AboutPage() {
   const [indiceActual, setIndiceActual] = useState(0);
@@ -13,11 +14,12 @@ export default function AboutPage() {
   const locale = params.locale as string;
   const { t } = useTranslation(locale);
 
+  const [cardsData] = useState([1,2,3]);
 
   useEffect(() => {
     const intervalo = setInterval(() => {
       setIndiceActual((prev) => (prev + 1) % sentences.length);
-    }, 2500); 
+    }, 5000); 
 
     return () => clearInterval(intervalo);
   }, []);
@@ -169,9 +171,67 @@ export default function AboutPage() {
 
       </section>
 
-      {/* <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
-        Los jefazos
-      </div> */}
+      <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+          {
+            cardsData.map((_,idx) => (
+              <CardsAbout key={idx} />
+
+            ))
+          }
+        </div>
+      </div>
     </main>
+  )
+}
+
+function CardsAbout () {
+  return (
+    // <div className={clsx("relative rounded-2xl overflow-hidden")}
+    // >
+
+      <div className="relative flex flex-col h-full">
+        
+        <div className="relative inset-0 h-38">
+          <div className="absolute left-1/2 transform -translate-x-1/2" >
+            <div className="relative rounded-full bg-white p-1 shadow-md " style={{ width: '150px', height: '150px' }} >
+              <div className="rounded-full overflow-hidden w-full h-full">
+                <Image
+                  src="/Mario.png"
+                  alt="CEO"
+                  width={92}
+                  height={92}
+                  className="w-full h-full object-cover rounded-full z-10"
+                />
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+
+        <div className={clsx("relative bottom-0 left-0 right-0 bg-white overflow-hidden transition-all duration-500 ease-in-out p-6 rounded-b-2xl")}>
+            <div className="flex flex-col md:flex-row items-center justify-between px-4">
+
+            <h3 className="text-xl font-bold text-gray-800 mb-2">
+              Mario Vasquez
+            </h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">
+                CEO
+              </h3>
+            </div>
+          <p className="text-gray-600 text-sm leading-relaxed text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maxime aut sunt voluptates dolor laborum soluta commodi architecto ad, doloremque exercitationem vitae perferendis at? Enim esse ipsam minus odio quasi.
+          </p>
+        </div>
+
+      </div>
+
+    // </div>
   )
 }
