@@ -171,7 +171,7 @@ export default function AboutPage() {
 
       </section>
 
-      <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
+      {/* <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 
           {
@@ -181,7 +181,7 @@ export default function AboutPage() {
             ))
           }
         </div>
-      </div>
+      </div> */}
     </main>
   )
 }

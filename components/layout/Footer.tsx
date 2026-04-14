@@ -40,9 +40,9 @@ export default function Footer() {
           <div className="flex flex-col items-end">
             <h4 className="hidden md:block font-semibold mb-4">{t("footer.contact")}</h4>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li><US title="United States" /> <span className="hidden md:block"> Email: info@empresa.com</span></li>
-              <li><MX title="México" /> <span className="hidden md:block"> Email: info@empresa.com</span></li>
-              <li><CO title="Colombia" /> <span className="hidden md:block"> Email: info@empresa.com</span></li>
+              <li><US title="United States" className="w-6" /> <span className="hidden md:block"> Email: info@empresa.com</span></li>
+              <li><MX title="México" className="w-6" /> <span className="hidden md:block"> Email: info@empresa.com</span></li>
+              <li><CO title="Colombia" className="w-6" /> <span className="hidden md:block"> Email: info@empresa.com</span></li>
             </ul>
           </div>
         </div>

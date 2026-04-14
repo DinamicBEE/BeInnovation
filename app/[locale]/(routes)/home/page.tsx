@@ -90,6 +90,7 @@ export default function Home() {
             fill
             className="object-cover object-center"
             priority
+            unoptimized
           />
           
         </div>

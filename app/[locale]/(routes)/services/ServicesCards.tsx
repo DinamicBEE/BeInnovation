@@ -19,8 +19,8 @@ export default function ServicesCards({ service }: ServiceCardProps) {
 
                 <div className="relative w-full md:w-2/5 lg:w-2/5 shrink-0" >
                     {service.coverImageUrl && (
-                    <div className="relative aspect-video md:aspect-auto md:h-full w-full overflow-hidden image-fade-overlay">
-                        <Image src={service.coverImageUrl} alt={service.name}  width={100} height={100} className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" priority />
+                    <div className="relative aspect-video md:h-full w-full overflow-hidden image-fade-overlay">
+                        <Image src={service.coverImageUrl} alt={service.name}  width={100} height={100} unoptimized className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" priority />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-black/70 to-transparent">
                         {service.addons && service.addons.length > 0 && (
                             <div className="flex flex-wrap gap-2 mb-2">

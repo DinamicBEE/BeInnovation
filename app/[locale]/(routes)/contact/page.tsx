@@ -54,7 +54,7 @@ export default function ContactPage() {
 
       <ContactForm />
 
-      <section className="container mx-auto px-4" style={{ position: 'relative', overflow: 'hidden'}}>
+      <section className="container mx-auto px-4 py-8" style={{ position: 'relative', overflow: 'hidden'}}>
         <LogoLoop
           logos={LOGOS}
           speed={25}
