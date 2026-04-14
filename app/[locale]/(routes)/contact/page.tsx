@@ -62,7 +62,7 @@ export default function ContactPage() {
           logoHeight={80}
           gap={60}
           hoverSpeed={0}
-          scaleOnHover
+          scaleOnHover={false}
           fadeOut
           fadeOutColor="#ffffff"
           ariaLabel="Technology partners"

@@ -44,7 +44,7 @@ export default function ContactForm() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                            <div className="space-y-2">
-                                <Label htmlFor="name" className="text-gray-700 dark:text-gray-200">
+                                <Label htmlFor="name">
                                     {t("contact.name")}
                                 </Label>
                                 <Input
@@ -57,7 +57,7 @@ export default function ContactForm() {
                             </div>
 
                             <div className="space-y-2">
-                                <Label htmlFor="email" className="text-gray-700 dark:text-gray-200">
+                                <Label htmlFor="email">
                                 {t("contact.email")}
                                 </Label>
                                 <Input
@@ -70,7 +70,7 @@ export default function ContactForm() {
                             </div>
                             
                             <div className="space-y-2">
-                                <Label htmlFor="phone" className="text-gray-700 dark:text-gray-200">
+                                <Label htmlFor="phone">
                                 {t("contact.phone")}
                                 </Label>
                                 <Input
@@ -83,7 +83,7 @@ export default function ContactForm() {
                             </div>
 
                             <div className="space-y-2">
-                                <Label htmlFor="company" className="text-gray-700 dark:text-gray-200">
+                                <Label htmlFor="company">
                                 {t("contact.company")}
                                 </Label>
                                 <Input
@@ -99,7 +99,7 @@ export default function ContactForm() {
 
 
                         <div className="space-y-2">
-                            <Label htmlFor="message" className="text-gray-700 dark:text-gray-200">
+                            <Label htmlFor="message">
                                {t("contact.message")}
                             </Label>
                             <Textarea
