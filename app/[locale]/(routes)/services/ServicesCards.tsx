@@ -1,15 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { ServiceCardProps } from "@/Models/products.types";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { MdExpandMore, MdCheckCircleOutline, MdOutlineStar, MdLightbulb } from "react-icons/md";
-import clsx from "clsx";
+//import clsx from "clsx";
 import "./services.css";
 
 export default function ServicesCards({ service }: ServiceCardProps) {
-    const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
+    // const [isOpen, setIsOpen] = useState(false);
+
+    const handleCardClick = (serviceId: string) => {
+        router.push(`/services/${serviceId}`);
+    };
+
 
     return (
         <div>
@@ -61,10 +68,11 @@ export default function ServicesCards({ service }: ServiceCardProps) {
                     </p>
                     </div>
 
-                    <div className="flex justify-end mt-auto" onClick={() => setIsOpen(!isOpen)}>
+                    {/* <div className="flex justify-end mt-auto" onClick={() => setIsOpen(!isOpen)}> */}
+                    <div className="flex justify-end mt-auto" onClick={() => handleCardClick(service.id)}>
                     
                     <span className="text-sm font-medium">Ver detalles</span>
-                    <MdExpandMore className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+                    {/* <MdExpandMore className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} /> */}
                     </div>
                     
                 </div>
@@ -72,7 +80,7 @@ export default function ServicesCards({ service }: ServiceCardProps) {
                 </div>
             </div>
 
-            {isOpen && (
+            {/* {isOpen && (
                 <div className="w-full max-w-7xl p-8 mx-auto mb-2 rounded-xl shadow-xl space-y-4 text-gray-600 dark:text-gray-300">
                 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -157,7 +165,7 @@ export default function ServicesCards({ service }: ServiceCardProps) {
                     
                 
                 </div>
-            )}
+            )} */}
 
         </div>
     );
