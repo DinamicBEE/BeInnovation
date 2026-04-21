@@ -2,7 +2,7 @@ import { createInstance } from 'i18next';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import { initReactI18next } from 'react-i18next/initReactI18next';
 
-export async function initI18next(locale:string){
+export async function initI18next(locale:string, ns: string[] = ['common']){
     const i18Instance = createInstance();
 
     await i18Instance
@@ -16,7 +16,7 @@ export async function initI18next(locale:string){
         .init({
             lng: locale,
             fallbackLng: 'es',
-            ns: ['common'],
+            ns: ns,
             defaultNS: 'common',
             interpolation: {
                 escapeValue: false,

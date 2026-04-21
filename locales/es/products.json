@@ -1,0 +1,56 @@
+{
+    "SHOP-NS-001":{
+        "summary": "Conecta tu tienda Shopify, tu operador logístico Melonn y tu ERP NetSuite en una integración fluida. Automatiza la sincronización de clientes, órdenes, facturas, pagos, notas de crédito e inventario. Ideal para negocios omnicanal (en línea y tiendas físicas) que necesitan un solo lugar para consolidar información comercial, financiera y logística. Menos errores, más eficiencia.",
+        "cardSummary": "Automatiza clientes, órdenes, pagos e inventario entre Shopify, Melonn y NetSuite. Ideal para omnicanal real.",
+        "category": "Integración E-commerce"
+    },
+    "AI-KM-001":{
+        "summary": "Convierte manuales, políticas, SOPs, wikis y contratos en una base de conocimiento inteligente. Nuestro sistema indexa tus archivos con embeddings vectoriales y permite que cualquier empleado pregunte en lenguaje natural. Obtén respuestas precisas, con la fuente original citada. El conocimiento de tu empresa, disponible sin buscadores tediosos.",
+        "cardSummary": "Pregunta en lenguaje natural. Obtén respuestas con fuente. Convierte manuales, políticas y contratos en una base de conocimiento inteligente. Respuestas precisas citando el documento original.",
+        "category": "Inteligencia Artificial Empresarial"
+    },
+    "DEV-INT-001":{
+        "summary": "¿Tienes sistemas que no se comunican nativamente? Diseñamos puentes a medida: ERP con e‑commerce, CRM con plataformas de marketing, sistemas legacy con aplicaciones cloud, o APIs de terceros con procesos internos. Automatizamos flujos de datos donde antes había silos. Sin parches, sin caos: integraciones limpias y confiables.",
+        "cardSummary": "ERP con e‑commerce, CRM con marketing, legacy con cloud. Flujos de datos automatizados, limpios y confiables.",
+        "category": "Desarrollo de Software"
+    },
+    "DEV-MOB-001":{
+        "summary": "Creamos apps para iOS y Android (nativas o multiplataforma) orientadas a resultados: aplicaciones de campo para equipos operativos, apps de autoservicio para clientes, herramientas de productividad interna o extensiones móviles de tus sistemas empresariales. Diseño funcional, rendimiento real y experiencia de usuario profesional.",
+        "cardSummary": "Campo, autoservicio, productividad interna o extensión de tus sistemas existentes.",
+        "category": "Desarrollo de Software"
+    },
+    "DEV-WEB-001":{
+        "summary": "Construimos aplicaciones web responsivas, rápidas y preparadas para crecer: portales corporativos, plataformas SaaS, dashboards operativos, intranets o apps de autoservicio para clientes o empleados. Utilizamos frameworks modernos y despliegue en la nube. Tecnología limpia, diseño minimalista y rendimiento que impulsa tu operación.",
+        "cardSummary": "Portales, SaaS, dashboards, intranets o autoservicio. Frameworks modernos, diseño minimalista.",
+        "category": "Desarrollo de Software"
+    },
+  "detail": {
+    "title": "Detalle del Producto",
+    "description": "Descripción",
+    "price": "Precio",
+    "category": "Categoría",
+    "stock": "Stock disponible",
+    "add_to_cart": "Agregar al carrito",
+    "buy_now": "Comprar ahora",
+    "related_products": "Productos relacionados",
+    "reviews": "Reseñas",
+    "specifications": "Especificaciones técnicas",
+    "features": "Características",
+    "availability": {
+      "in_stock": "En stock",
+      "out_of_stock": "Agotado",
+      "low_stock": "Pocas unidades disponibles"
+    },
+    "shipping": {
+      "free": "Envío gratis",
+      "cost": "Costo de envío",
+      "estimated": "Tiempo estimado de entrega"
+    }
+  },
+  "categories": {
+    "electronics": "Electrónicos",
+    "clothing": "Ropa",
+    "books": "Libros",
+    "home": "Hogar"
+  }
+}

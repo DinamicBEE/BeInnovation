@@ -8,12 +8,18 @@ import { getAllServices } from "@/services/productServices";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
 import "./home.css";
 
 export default function Services() {
     const router = useRouter();
     const [services, setServices] = useState<Service[]>([]);
     const [loading, setLoading] = useState(true);
+
+    const params = useParams();
+    const locale = params.locale as string;
+    const { t } = useTranslation(locale, 'products');
 
     useEffect(() => {
         const fetchServices = async () => {
@@ -52,7 +58,7 @@ export default function Services() {
     }
 
     return (
-        <section className="relative grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-stretch py-16 px-8 bg-bg-secondary dark:bg-bg-secondary">
+        <section className="relative container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-stretch py-16 px-8">
                     {/* <div className="absolute inset-0 z-0 w-full h-full">
                       <Image
                         src="/background/Invert_flow_concept.png"
@@ -68,14 +74,14 @@ export default function Services() {
                     // <div key={index} className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group" onClick={() => handleCardClick(service.id)}>
                     <div key={index} className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group" onClick={() => handleViewAllClick()}>
                     
-                        <Card  className="home-cards card-navy relative my-2 mx-auto w-full max-w-sm py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                        <Card  className="card-navy relative my-2 mx-auto w-full max-w-lg py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                             <div className="flex flex-col h-full">
                                 {service.coverImageUrl && (
                                     <div className="relative w-full aspect-video bg-linear-to-br from-primary-dark/5 to-accent-teal/5 overflow-hidden shrink-0">
                                         <Image src={service.coverImageUrl } alt={service.shortName} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" priority={false} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"/>
                                         <div className="absolute top-3 left-3">
                                             <Badge className="bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300">
-                                                {service.category}
+                                                {t(`${service.code}.category`)}
                                             </Badge>
                                         </div>
                                     </div>
@@ -83,7 +89,7 @@ export default function Services() {
                                 <CardHeader className="w-full py-4 bg-linear-to-t from-white to-bg-tertiary/30 flex-1">
                                     <CardTitle className="text-text-primary">{service.name}</CardTitle>
                                     <CardDescription className="text-text-secondary">
-                                        {service.summary}
+                                        {t(`${service.code}.cardSummary`)}
                                     </CardDescription>
                                 </CardHeader>
                             </div>

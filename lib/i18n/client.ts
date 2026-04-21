@@ -18,15 +18,15 @@ i18next
     .init({
         lng: 'es',
         fallbackLng: 'es',
-        ns: ['common'],
+        ns: ['common', 'products'],
         defaultNS: 'common',
         interpolation: {
             escapeValue: false,
         },
     });
 
-export function useTranslation(locale: string) {
-    const { t, i18n } = useTranslationOrg();
+export function useTranslation(locale: string, ns: string | string[] = 'common') {
+    const { t, i18n } = useTranslationOrg(ns);
 
     useEffect(() => {
         if (i18n.resolvedLanguage !== locale) {

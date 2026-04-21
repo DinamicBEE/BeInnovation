@@ -1,0 +1,56 @@
+{
+    "SHOP-NS-001":{
+        "summary": "Connect your Shopify store, Melonn logistics operator, and NetSuite ERP in a seamless integration. Automate synchronization of customers, orders, invoices, payments, credit notes, and inventory. Ideal for omnichannel businesses (online and physical stores) that need a single place to consolidate commercial, financial, and logistics information. Fewer errors, more efficiency.",
+        "cardSummary": "Automates customers, orders, payments and inventory between Shopify, Melonn and NetSuite. Ideal for real omnichannel.",
+        "category": "E-commerce Integration"
+    },
+    "AI-KM-001":{
+        "summary": "Turn manuals, policies, SOPs, wikis, and contracts into an intelligent knowledge base. Our system indexes your files using vector embeddings and allows any employee to ask questions in natural language. Get accurate answers with the original source cited. Your company's knowledge, available without tedious searching.",
+        "cardSummary": "Ask in natural language. Get answers with sources. Ingests manuals, policies, and contracts. Accurate answers citing the original document.",
+        "category": "Enterprise Artificial Intelligence"
+    },
+    "DEV-INT-001":{
+        "summary": "Have systems that don't communicate natively? We design custom bridges: ERP with e‑commerce, CRM with marketing platforms, legacy systems with cloud applications, or third-party APIs with internal processes. We automate data flows where silos once existed. No patches, no chaos: clean and reliable integrations.",
+        "cardSummary": "ERP with e‑commerce, CRM with marketing, legacy with cloud. Automated, clean, and reliable data flows.",
+        "category": "Software Development"
+    },
+    "DEV-MOB-001":{
+        "summary": "We create iOS and Android apps (native or cross-platform) focused on results: field apps for operational teams, self-service apps for customers, internal productivity tools, or mobile extensions of your enterprise systems. Functional design, real performance, and professional user experience.",
+        "cardSummary": "Field, self-service, internal productivity, or extension of your existing systems.",
+        "category": "Software Development"
+    },
+    "DEV-WEB-001":{
+        "summary": "We build responsive, fast, and scalable web applications: corporate portals, SaaS platforms, operational dashboards, intranets, or self-service apps for customers or employees. We use modern frameworks and cloud deployment. Clean technology, minimalist design, and performance that drives your operation.",
+        "cardSummary": "Portals, SaaS, dashboards, intranets or self-service. Modern frameworks, minimalist design.",
+        "category": "Software Development"
+    },
+  "detail": {
+    "title": "Product Details",
+    "description": "Description",
+    "price": "Price",
+    "category": "Category",
+    "stock": "Stock available",
+    "add_to_cart": "Add to cart",
+    "buy_now": "Buy now",
+    "related_products": "Related products",
+    "reviews": "Reviews",
+    "specifications": "Technical specifications",
+    "features": "Features",
+    "availability": {
+      "in_stock": "In stock",
+      "out_of_stock": "Out of stock",
+      "low_stock": "Low stock"
+    },
+    "shipping": {
+      "free": "Free shipping",
+      "cost": "Shipping cost",
+      "estimated": "Estimated delivery time"
+    }
+  },
+  "categories": {
+    "electronics": "Electronics",
+    "clothing": "Clothing",
+    "books": "Books",
+    "home": "Home"
+  }
+}
