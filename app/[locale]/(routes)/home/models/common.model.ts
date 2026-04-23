@@ -1,6 +1,5 @@
 export interface BackgroundCardProps {
-  title: string;
-  description: string;
+  code: string;
   bgImage: string;
 }
 

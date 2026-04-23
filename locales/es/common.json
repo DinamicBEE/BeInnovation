@@ -34,8 +34,9 @@
     "contact_tittle": "¿Listo para empezar?",
     "contact_subtitle": "Cuéntanos sobre tu proyecto. Nuestro equipo está listo para ayudarte a hacerlo realidad.",
     "contact_button": "Contáctanos",
-
-    "services": "Ver servicios"
+    "services_contactTitle": "¿Buscas más opciones?",
+    "services_contactSubtitle": "Explora nuestro catálogo completo de servicios",
+    "services_details": "Conoce más"
   },
   "contact": {
     "title": "Contáctanos",

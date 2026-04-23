@@ -1,56 +1,178 @@
 {
-    "SHOP-NS-001":{
-        "summary": "Connect your Shopify store, Melonn logistics operator, and NetSuite ERP in a seamless integration. Automate synchronization of customers, orders, invoices, payments, credit notes, and inventory. Ideal for omnichannel businesses (online and physical stores) that need a single place to consolidate commercial, financial, and logistics information. Fewer errors, more efficiency.",
-        "cardSummary": "Automates customers, orders, payments and inventory between Shopify, Melonn and NetSuite. Ideal for real omnichannel.",
-        "category": "E-commerce Integration"
-    },
-    "AI-KM-001":{
-        "summary": "Turn manuals, policies, SOPs, wikis, and contracts into an intelligent knowledge base. Our system indexes your files using vector embeddings and allows any employee to ask questions in natural language. Get accurate answers with the original source cited. Your company's knowledge, available without tedious searching.",
-        "cardSummary": "Ask in natural language. Get answers with sources. Ingests manuals, policies, and contracts. Accurate answers citing the original document.",
-        "category": "Enterprise Artificial Intelligence"
-    },
-    "DEV-INT-001":{
-        "summary": "Have systems that don't communicate natively? We design custom bridges: ERP with e‑commerce, CRM with marketing platforms, legacy systems with cloud applications, or third-party APIs with internal processes. We automate data flows where silos once existed. No patches, no chaos: clean and reliable integrations.",
-        "cardSummary": "ERP with e‑commerce, CRM with marketing, legacy with cloud. Automated, clean, and reliable data flows.",
-        "category": "Software Development"
-    },
-    "DEV-MOB-001":{
-        "summary": "We create iOS and Android apps (native or cross-platform) focused on results: field apps for operational teams, self-service apps for customers, internal productivity tools, or mobile extensions of your enterprise systems. Functional design, real performance, and professional user experience.",
-        "cardSummary": "Field, self-service, internal productivity, or extension of your existing systems.",
-        "category": "Software Development"
-    },
-    "DEV-WEB-001":{
-        "summary": "We build responsive, fast, and scalable web applications: corporate portals, SaaS platforms, operational dashboards, intranets, or self-service apps for customers or employees. We use modern frameworks and cloud deployment. Clean technology, minimalist design, and performance that drives your operation.",
-        "cardSummary": "Portals, SaaS, dashboards, intranets or self-service. Modern frameworks, minimalist design.",
-        "category": "Software Development"
-    },
-  "detail": {
-    "title": "Product Details",
-    "description": "Description",
-    "price": "Price",
-    "category": "Category",
-    "stock": "Stock available",
-    "add_to_cart": "Add to cart",
-    "buy_now": "Buy now",
-    "related_products": "Related products",
-    "reviews": "Reviews",
-    "specifications": "Technical specifications",
-    "features": "Features",
-    "availability": {
-      "in_stock": "In stock",
-      "out_of_stock": "Out of stock",
-      "low_stock": "Low stock"
-    },
-    "shipping": {
-      "free": "Free shipping",
-      "cost": "Shipping cost",
-      "estimated": "Estimated delivery time"
-    }
+  "SHOP-NS-001": {
+    "title": "Shopify integration - NetSuite",
+    "summaryTitle": "Shopify + Melonn + NetSuite Integration",
+    "summary": "Connect your Shopify store, your Melonn logistics operator, and your NetSuite ERP in a seamless integration. Automate the synchronization of customers, orders, invoices, payments, credit notes, and inventory. Ideal for omnichannel businesses (online and physical stores) that need a single place to consolidate commercial, financial, and logistics information. Fewer errors, more efficiency.",
+    "cardSummaryTitle": "True Omnichannel",
+    "cardSummary": "Sync sales, logistics, and finance. Customers, orders, payments, and inventory always up to date.",
+    "category": "E-commerce Integration"
   },
-  "categories": {
-    "electronics": "Electronics",
-    "clothing": "Clothing",
-    "books": "Books",
-    "home": "Home"
+  "AI-KM-001": {
+    "title": "KnowledgeHub AI - Smart knowledge base with conversational search",
+    "summaryTitle": "AI-Powered Enterprise Search (Knowledge GPT)",
+    "summary": "Turn manuals, policies, SOPs, wikis, and contracts into an intelligent knowledge base. Our system indexes your files using vector embeddings and allows any employee to ask questions in natural language. Get accurate answers with the original source cited. Your company's knowledge, available without tedious searching.",
+    "cardSummaryTitle": "Ask and get the source",
+    "cardSummary": "Ask in natural language. Accurate answers citing manuals, policies, or contracts.",
+    "category": "Enterprise Artificial Intelligence"
+  },
+  "DEV-INT-001": {
+    "title": "Custom Integrations and Connectors",
+    "summaryTitle": "Custom System Integrations",
+    "summary": "Have systems that don't communicate natively? We design custom bridges: ERP with e-commerce, CRM with marketing platforms, legacy systems with cloud applications, or third-party APIs with internal processes. We automate data flows where silos once existed. No patches, no chaos: clean and reliable integrations.",
+    "cardSummaryTitle": "Connecting the disconnected",
+    "cardSummary": "ERP, CRM, legacy, or APIs. Smooth, automated data flows.",
+    "category": "Software Development"
+  },
+  "DEV-MOB-001": {
+    "title": "Mobile app development",
+    "summaryTitle": "Enterprise Mobile Apps (iOS/Android)",
+    "summary": "We create iOS and Android apps (native or cross-platform) focused on results: field apps for operational teams, self-service apps for customers, internal productivity tools, or mobile extensions of your enterprise systems. Functional design, real performance, and professional user experience.",
+    "cardSummaryTitle": "Empower your mobile operations",
+    "cardSummary": "For field, customers, or internal productivity. Native or cross-platform apps.",
+    "category": "Software Development"
+  },
+  "DEV-WEB-001": {
+    "title": "Web Application Development",
+    "summaryTitle": "Modern & Scalable Web Applications",
+    "summary": "We build responsive, fast, and scalable web applications: corporate portals, SaaS platforms, operational dashboards, intranets, or self-service apps for customers or employees. We use modern frameworks and cloud deployment. Clean technology, minimalist design, and performance that drives your operation.",
+    "cardSummaryTitle": "Platforms that grow with you",
+    "cardSummary": "Portals, SaaS, dashboards, intranets. Modern, responsive, cloud-native.",
+    "category": "Software Development"
+  },
+  "DEV-CUSTOM-001": {
+    "title": "Custom software development",
+    "summaryTitle": "Custom Software",
+    "summary": "When off-the-shelf solutions don't meet your needs, we develop custom software that solves your exact problem. Includes requirements analysis, architecture, development, testing, deployment, and post-launch support. An exact solution for a specific business.",
+    "cardSummaryTitle": "Build, not buy",
+    "cardSummary": "Solutions where no commercial product exists. From analysis to post-launch support.",
+    "category": "Software Development"
+  },
+  "AI-IPA-001": {
+    "title": "FlowMind AI - Intelligent business process automation",
+    "summaryTitle": "Intelligent Process Automation (RPA + AI)",
+    "summary": "We combine configurable workflows with artificial intelligence to automate end-to-end business processes: document reading, rule-based and ML decision-making, action execution in systems, exception handling, and intelligent escalation. Your operation on autopilot.",
+    "cardSummaryTitle": "End-to-end processes",
+    "cardSummary": "Reads documents, decides, executes, and escalates exceptions. No human intervention.",
+    "category": "Enterprise Artificial Intelligence"
+  },
+  "AI-VOICE-001": {
+    "title": "VoiceAgent AI - Smart voice agent for phone service",
+    "summaryTitle": "AI Phone Agent",
+    "summary": "Answer calls with natural voice, understand the caller's intent, access internal systems to provide real answers, and escalate to human agents only when necessary. Replace traditional IVRs, reduce call center costs, and dramatically improve customer experience.",
+    "cardSummaryTitle": "Goodbye to IVR",
+    "cardSummary": "Natural voice, real answers, human escalation only when needed.",
+    "category": "Enterprise Artificial Intelligence"
+  },
+  "AI-CHAT-001": {
+    "title": "AssistBot AI - Business transactional chatbot with systems integration",
+    "summaryTitle": "Action-Oriented Enterprise Chatbot",
+    "summary": "It doesn't just answer questions — it takes real actions. Check orders in the ERP, schedule appointments, process requests, generate quotes, and create tickets, all from WhatsApp, web, or messaging channels. Connected to your internal systems. An assistant that truly works.",
+    "cardSummaryTitle": "It doesn't just reply — it acts",
+    "cardSummary": "Check orders, schedule appointments, or generate quotes from WhatsApp.",
+    "category": "Enterprise Artificial Intelligence"
+  },
+  "AI-PRED-001": {
+    "title": "ForecastAI - Demand prediction and forecasting with machine learning",
+    "summaryTitle": "Demand Forecasting with Machine Learning",
+    "summary": "Analyze sales history, seasonality, external events, and market signals to generate forecasts at the SKU, location, and period level. Integrates with your ERP to drive purchasing, production, and inventory planning. Less overstock, fewer stockouts.",
+    "cardSummaryTitle": "Accurate forecasts",
+    "cardSummary": "By SKU and location. Drives purchasing, production, and inventory.",
+    "category": "Enterprise Artificial Intelligence"
+  },
+  "AI-NL2SQL-001": {
+    "title": "DataTalk AI - Natural language database queries",
+    "summaryTitle": "Query Databases in Natural Language",
+    "summary": "Allow business users to query databases, data warehouses, and enterprise systems in Spanish or English. They get instant answers with tables, charts, and explanatory narratives. No SQL required, no dependence on technical teams. Analytical autonomy for the entire team.",
+    "cardSummaryTitle": "Ask in plain language",
+    "cardSummary": "Get charts and tables. No SQL, no technical teams.",
+    "category": "Enterprise Artificial Intelligence"
+  },
+  "BM-001": {
+    "title": "Minimum Bases",
+    "summaryTitle": "Automatic Tax Withholding (El Salvador)",
+    "summary": "Automate the decision to apply or not apply tax withholdings on purchase invoices, based on minimum amount thresholds established by Salvadoran tax law. Ensures that the 1% withholding on the VAT taxable base is calculated only when the amount exceeds $100 USD. Zero errors, guaranteed compliance.",
+    "cardSummaryTitle": "Comply with the law without manual calculations",
+    "cardSummary": "Applies 1% VAT only if exceeding $100. Automatic and precise.",
+    "category": "Tax & Compliance"
+  },
+  "MEL-001": {
+    "title": "Melonn - Fulfillment integration with NetSuite",
+    "summaryTitle": "Fulfillment + NetSuite: Synchronized Logistics",
+    "summary": "Fulfillment and logistics platform for e-commerce that manages the complete order fulfillment cycle. Its integration with NetSuite automatically synchronizes inventory transfers, adjustments, order execution, invoicing, and returns. Eliminates manual entry and ensures financial and operational traceability.",
+    "cardSummaryTitle": "Frictionless logistics",
+    "cardSummary": "Orders, inventory, and returns synchronized with NetSuite.",
+    "category": "Logistics & Fulfillment"
+  },
+  "NOV-NS-001": {
+    "title": "Novasoft integration - NetSuite ERP",
+    "summaryTitle": "Novasoft Payroll → NetSuite",
+    "summary": "Connect the Novasoft payroll and HR platform with NetSuite to automatically synchronize employees, accounting accounts, and journal entries. Eliminate double data entry and ensure financial and HR consistency.",
+    "cardSummaryTitle": "HR and accounting aligned",
+    "cardSummary": "Employees, accounts, and entries without double entry.",
+    "category": "HR - Finance Integration"
+  },
+  "YUJU-001": {
+    "title": "YUJU - Marketplace integration with NetSuite",
+    "summaryTitle": "Marketplace Connected to NetSuite",
+    "summary": "Marketplace platform with bidirectional integration to NetSuite ERP that synchronizes product catalogs, sales orders, shipping executions, and invoicing. Companies selling through multiple channels manage their entire commercial cycle centralized in NetSuite. Manual operations out, control in.",
+    "cardSummaryTitle": "Sell through channels, operate in NetSuite",
+    "cardSummary": "Catalogs, orders, and invoicing in one place. No manual operation.",
+    "category": "E-commerce Integration"
+  },
+  "PR-001": {
+    "title": "Restrictive budget",
+    "summaryTitle": "Budget Control in NetSuite",
+    "summary": "Define, manage, and enforce spending limits by department or project. Automatically block purchase transactions that exceed budgeted amounts. Financial discipline and real-time visibility of budget execution without relying on spreadsheets.",
+    "cardSummaryTitle": "Spend only what you planned",
+    "cardSummary": "Blocks purchases that exceed budget. Real-time visibility.",
+    "category": "Finance & Internal Control"
+  },
+  "TAX-001": {
+    "title": "TaxMX",
+    "summaryTitle": "Automated Mexican Tax Compliance on NetSuite",
+    "summary": "Automate three critical tax processes for Mexican companies: VAT reclassification upon cash collection/payment, DIOT generation in SAT-importable format, and controlled CFDI cancellation. Meet your tax obligations without manual intervention or errors.",
+    "cardSummaryTitle": "VAT, DIOT, and CFDI without stress",
+    "cardSummary": "Comply with SAT automatically from NetSuite.",
+    "category": "Tax & Compliance"
+  },
+  "PP-001": {
+    "title": "Supplier Portal",
+    "summaryTitle": "Supplier Portal with CFDI",
+    "summary": "Allow your suppliers to access a secure web portal to upload digital tax receipts (CFDI) in XML and PDF, associate them with purchase orders, and automatically generate supplier invoices in NetSuite. Eliminate manual entry, centralize document receipt, and ensure Mexican tax compliance.",
+    "cardSummaryTitle": "They upload, NetSuite invoices",
+    "cardSummary": "Portal for suppliers: upload XML/PDF, the system generates the invoice in NetSuite.",
+    "category": "Tax & Compliance"
+  },
+  "H2H-001": {
+    "title": "H2H (Host to Host) - NetSuite integration with banks",
+    "summaryTitle": "Santander Bank Payments + NetSuite",
+    "summary": "Connect NetSuite with Banco Santander's payment services to automate supplier payment disbursement and bank reconciliation. Eliminate manual mass payment operations, centralizing the generation, approval, and sending of payment files through encrypted secure communication.",
+    "cardSummaryTitle": "Automated disbursement and reconciliation",
+    "cardSummary": "Secure mass payments and effortless bank reconciliation.",
+    "category": "Banking Integration"
+  },
+  "POS-001": {
+    "title": "POS - Point of Sale Integration",
+    "summaryTitle": "POS (JONAS, Micros, Simphony, Aloha) with NetSuite",
+    "summary": "Connect Point of Sale systems (JONAS, Micros 9700, Simphony, Aloha) with NetSuite to automatically record sales, electronic CFDI/SAT invoicing, and the correct accounting impact on revenue accounts. Eliminate manual entry and centralize operational information from your physical stores.",
+    "cardSummaryTitle": "Your POS issues electronic invoices",
+    "cardSummary": "Physical sales with CFDI/SAT invoicing. Automatic accounting impact.",
+    "category": "Retail Integration"
+  },
+  "VXML-001": {
+    "title": "XML Validator",
+    "summaryTitle": "XML Validator in NetSuite",
+    "summary": "Automate the receipt, validation, and assignment of digital tax receipts (XML) to purchase and expense transactions in NetSuite. Ensure Mexican tax compliance by guaranteeing that each invoice has its properly validated and linked XML. No risks, no invalid invoices.",
+    "cardSummaryTitle": "Every invoice with its valid XML",
+    "cardSummary": "Automatic receipt, validation, and linking of CFDI in NetSuite.",
+    "category": "Tax & Compliance"
+  },
+  "AI-DOC-001": {
+    "title": "DocuMind AI - Intelligent platform for automated document extraction and registration",
+    "summaryTitle": "AI Document Reader for ERP",
+    "summary": "Read invoices, purchase orders, XML files, and other documents, automatically extract relevant information, validate it against enterprise catalogs, and generate transactions ready to be recorded in the ERP. Intelligent capture, zero typing errors, faster and more reliable accounts payable processes.",
+    "cardSummaryTitle": "From documents to ready-to-use transactions",
+    "cardSummary": "Extract, validate, and generate ERP entries. No typing errors.",
+    "category": "Enterprise Artificial Intelligence"
   }
 }

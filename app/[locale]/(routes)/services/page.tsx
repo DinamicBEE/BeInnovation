@@ -2,15 +2,19 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Icon } from "@iconify/react";
 import { ServicesByCategory } from "@/Models/products.types";
 import { getServicesByCategory } from "@/services/productServices";
-import "./services.css"
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BackgroundCardProps } from "../home/models/common.model";
 import { useRouter } from "next/navigation";
+import { useTranslation } from '@/lib/i18n/client';
+import { useParams } from 'next/navigation';
+import "./services.css"
 
 export default function ServicesPage() {
-  const router = useRouter();
+
   const [services, setServices] = useState<ServicesByCategory>({} as ServicesByCategory);
   const [loading, setLoading] = useState(true);
 
@@ -30,9 +34,7 @@ export default function ServicesPage() {
   fetchServices();
   }, []);
 
-  const handleCardClick = (serviceId: string) => {
-    router.push(`/services/${serviceId}`);
-  };
+
 
   if (loading) {
     return <ServicesPageSkeleton />;
@@ -101,7 +103,7 @@ export default function ServicesPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
               {services.dev && services.dev.length > 0 && services.dev.map(service => (
-                  <BackgroundCard key={service.id} title={service.shortName} description={service.summary} bgImage={service.coverImageUrl} />
+                  <BackgroundCard key={service.id} code={service.code} bgImage={service.coverImageUrl} />
                 )
               )}
             </div>
@@ -122,7 +124,7 @@ export default function ServicesPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
               {services.ai && services.ai.length > 0 && services.ai.map(service => (
-                  <BackgroundCard key={service.id} title={service.shortName} description={service.summary} bgImage={service.coverImageUrl} />
+                  <BackgroundCard key={service.id} code={service.code} bgImage={service.coverImageUrl} />
                 )
               )}
             </div>
@@ -184,7 +186,7 @@ export default function ServicesPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
               {services.netsuite && services.netsuite.length > 0 && services.netsuite.map(service => (
-                  <BackgroundCard key={service.id} title={service.shortName} description={service.summary} bgImage={service.coverImageUrl} />
+                  <BackgroundCard key={service.id} code={service.code} bgImage={service.coverImageUrl} />
                 )
               )}
             </div>
@@ -306,13 +308,24 @@ function ServicesPageSkeleton() {
   );
 }
 
-function BackgroundCard({ title, description, bgImage }: BackgroundCardProps) {
+function BackgroundCard({ code, bgImage }: BackgroundCardProps) {
+  const params = useParams();
+  const locale = params.locale as string;
+  const router = useRouter();
+
+  const { t: tProducts } = useTranslation(locale, 'products');
+  const { t: tCommon } = useTranslation(locale, 'common');
+
+  const handleCardClick = (serviceId: string) => {
+    router.push(`/services/${serviceId}`);
+  };
+
   return (
-    <Card className="relative w-full h-80 card-green overflow-hidden pt-12 group cursor-pointer transition-all duration-300 hover:shadow-2xl">
+    <Card className="relative w-full h-80 card-green overflow-hidden pt-12 group transition-all duration-300 hover:shadow-2xl">
       <div className="absolute inset-0 w-full h-full">
         <Image
           src={bgImage}
-          alt={title}
+          alt={tProducts(`${code}.title`)}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-700"
@@ -325,10 +338,18 @@ function BackgroundCard({ title, description, bgImage }: BackgroundCardProps) {
       <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
         <CardHeader className="p-0 space-y-2">
           <CardTitle className="text-white text-xl font-bold drop-shadow-lg">
-            {title}
+            {tProducts(`${code}.title`)}
           </CardTitle>
           <CardDescription className="text-white/90 text-sm leading-relaxed line-clamp-3 drop-shadow">
-            {description}
+          <div className="flex flex-col gap-4">
+            {tProducts(`${code}.cardSummary`)}
+
+            <Button variant="outline" className="cursor-pointer">
+                <span className="text-sm font-medium">{tCommon('home.services_details')}</span>
+                <Icon icon="mdi:arrow-right-thin" className="w-7 h-7 sm:w-8 sm:h-8" />
+            </Button>
+          </div>
+
           </CardDescription>
         </CardHeader>
       </div>

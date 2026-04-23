@@ -34,8 +34,9 @@
     "contact_tittle": "Ready to get started?",
     "contact_subtitle": "Tell us about your project. Our team is ready to help you make it happen.",
     "contact_button": "Contact us",
-
-    "services": "View services"
+    "services_contactTitle": "Looking for more options?",
+    "services_contactSubtitle": "Explore our full catalog of services",
+    "services_details": "Learn more"
   },
   "contact": {
     "title": "Contact Us",

@@ -1,17 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ServiceCardProps } from "@/Models/products.types";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { MdExpandMore, MdCheckCircleOutline, MdOutlineStar, MdLightbulb } from "react-icons/md";
-//import clsx from "clsx";
+import { Icon } from "@iconify/react";
 import "./services.css";
+import { Button } from "@/components/ui/button";
 
 export default function ServicesCards({ service }: ServiceCardProps) {
     const router = useRouter();
-    // const [isOpen, setIsOpen] = useState(false);
 
     const handleCardClick = (serviceId: string) => {
         router.push(`/services/${serviceId}`);
@@ -54,12 +52,9 @@ export default function ServicesCards({ service }: ServiceCardProps) {
                     )}
                 </div>
 
-                {/* <div className="hidden md:block w-2 h-full shrink-0" style={{background: "linear-gradient(115deg, #2d4b8f, #2d4b8f00)",}}/>
-                <div className="block md:hidden h-2 w-full" style={{background: "linear-gradient(115deg, #2d4b8f, #2d4b8f00)",}} /> */}
-
                 <div className="flex-1 p-6 md:p-8 flex flex-col">
                     <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white text-left mb-4">
-                    {service.name}
+                        {service.name}
                     </h2> 
 
                     <div className="flex-1 mb-6">
@@ -68,104 +63,17 @@ export default function ServicesCards({ service }: ServiceCardProps) {
                     </p>
                     </div>
 
-                    {/* <div className="flex justify-end mt-auto" onClick={() => setIsOpen(!isOpen)}> */}
-                    <div className="flex justify-end mt-auto" onClick={() => handleCardClick(service.id)}>
+                    <Button variant="outline" onClick={() => handleCardClick(service.id)}>
                     
-                    <span className="text-sm font-medium">Ver detalles</span>
-                    {/* <MdExpandMore className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} /> */}
-                    </div>
+                        <span className="text-sm font-medium">Conoce más</span>
+                        <Icon icon="mdi:arrow-right-thin" className="w-7 h-7 sm:w-8 sm:h-8 text-[#2d4b8f]" />
+                   
+                    </Button>
                     
                 </div>
 
                 </div>
             </div>
-
-            {/* {isOpen && (
-                <div className="w-full max-w-7xl p-8 mx-auto mb-2 rounded-xl shadow-xl space-y-4 text-gray-600 dark:text-gray-300">
-                
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="cardService-teal">
-                            <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Problema que resuelve</h4>
-                            <p className="text-xs md:text-sm">{service.problemSolved}</p>
-                        </div>
-                        
-                        {service.useCases && service.useCases.length > 0 && (
-                        <div className="cardService-teal">
-                            <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Casos de uso</h4>
-                            <ul className="list-disc list-inside text-xs md:text-sm space-y-1">
-                                {service.useCases.slice(0, 2).map((useCase, idx) => (
-                                    <li key={idx} className="line-clamp-2"><MdLightbulb color="#f9b619"/>{useCase}</li>
-                                ))}
-                            </ul>
-                        </div>
-                        )}
-
-                        <div className="cardService-green">
-                            <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Características incluidas</h4>
-                            <ul className="list-disc list-inside text-xs md:text-sm space-y-1">
-                                {service.featuresIncluded?.slice(0, 4).map((feature, idx) => (
-                                    <li key={idx} className="line-clamp-2"><MdCheckCircleOutline color="green" />{feature}</li>
-                                ))}
-                            </ul>
-                        </div>
-                        
-                        <div className="cardService-green">
-                            <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Beneficios clave</h4>
-                            <ul className="list-disc list-inside text-xs md:text-sm space-y-1">
-                                {service.measurableBenefits?.slice(0, 3).map((benefit, idx) => (
-                                    <li key={idx}><MdOutlineStar color="#f9b619"/>{benefit}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-
-                    { service.implementationFees && (
-                        <div className="cardService-navy ">
-                            <div className="flex flex-col md:flex-row px-8 py-2 gap-2 justify-between items-center">
-                                <div>
-                                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">{service.implementationFees[0].name}</h4>
-                                    <p className="text-xs md:text-sm">{service.implementationFees[0].description}</p>
-                                </div>
-
-                                <div className="flex flex-col gap-1 items-center md:items-start md:flex-row cardService-green">
-                                    <h3 className="font-extrabold text-cyan-900 dark:text-white text-2xl">{service.implementationFees[0].currency}</h3>
-                                    <div className="flex flex-col items-end">
-                                        <h3 className="font-bold text-cyan-900 dark:text-white text-2xl">${service.implementationFees[0].amount.toFixed(2)}</h3>
-                                        <h3 className="font-bold text-gray-500 dark:text-white text-md">{service.implementationFees[0].billingType}</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="w-[80%] m-2 h-1 bg-[#7cb44c] mx-auto rounded-full" />
-
-                            <div className="flex flex-col justify-evenly mx-auto py-2 md:flex-row w-[80%]">
-                                <div className="flex flex-col items-center">
-                                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Tipo de precio</h4>
-                                    <p className="text-xs md:text-sm">{service.implementationFees[0].pricingModel}</p>
-                                </div>
-                                
-                                <div className="flex flex-col items-center">
-                                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Requerimiento</h4>
-                                    <p className={clsx("text-xs md:text-sm", {
-                                        'text-red-800': service.implementationFees[0].isRequired,
-                                        'text-green-600': !service.implementationFees[0].isRequired,
-                                    })}>
-                                        {service.implementationFees[0].isRequired ? 'Obligatorio' : 'Opcional'}
-                                    </p>
-                                </div>
-                                
-                                <div className="flex flex-col items-center">
-                                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Duración estimada</h4>
-                                    <p className="text-xs md:text-sm">{service.implementationFees[0].estimatedTimeline}</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    )}
-                    
-                
-                </div>
-            )} */}
 
         </div>
     );

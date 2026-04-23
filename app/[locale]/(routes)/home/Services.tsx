@@ -1,7 +1,9 @@
 "use client";
 
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 import { Service } from "@/Models/products.types";
 import { getAllServices } from "@/services/productServices";
@@ -19,7 +21,8 @@ export default function Services() {
 
     const params = useParams();
     const locale = params.locale as string;
-    const { t } = useTranslation(locale, 'products');
+    const { t: tCommon } = useTranslation(locale, 'common');
+    const { t: tProducts } = useTranslation(locale, 'products');
 
     useEffect(() => {
         const fetchServices = async () => {
@@ -81,15 +84,22 @@ export default function Services() {
                                         <Image src={service.coverImageUrl } alt={service.shortName} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" priority={false} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"/>
                                         <div className="absolute top-3 left-3">
                                             <Badge className="bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300">
-                                                {t(`${service.code}.category`)}
+                                                {tProducts(`${service.code}.category`)}
                                             </Badge>
                                         </div>
                                     </div>
                                 )}
                                 <CardHeader className="w-full py-4 bg-linear-to-t from-white to-bg-tertiary/30 flex-1">
-                                    <CardTitle className="text-text-primary">{service.name}</CardTitle>
+                                    <CardTitle className="text-text-primary">{tProducts(`${service.code}.title`)}</CardTitle>
                                     <CardDescription className="text-text-secondary">
-                                        {t(`${service.code}.cardSummary`)}
+                                        <div className="flex flex-col gap-4">
+                                            {tProducts(`${service.code}.cardSummary`)}
+
+                                            <Button variant="outline" className="cursor-pointer">
+                                                <span className="text-sm font-medium">{tCommon('home.services_details')}</span>
+                                                <Icon icon="mdi:arrow-right-thin" className="w-7 h-7 sm:w-8 sm:h-8" />
+                                            </Button>
+                                        </div>
                                     </CardDescription>
                                 </CardHeader>
                             </div>
@@ -106,10 +116,10 @@ export default function Services() {
                                 <span className="text-2xl font-bold text-[#7cb44c]">+</span>
                             </div>
                             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                                ¿Buscas más opciones?
+                                {tCommon('home.services_contactTitle')}
                             </h3>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
-                                Explora nuestro catálogo completo de servicios
+                                {tCommon('home.services_contactSubtitle')}
                             </p>
                         </div>
                     </Card>
@@ -123,10 +133,6 @@ export default function Services() {
 function ServicesSkeleton() {
   return (
     <div className="container mx-auto px-4 py-8 sm:py-12">
-      <div className="text-center mb-10 sm:mb-12">
-        <Skeleton className="h-10 w-64 mx-auto mb-4" />
-        <Skeleton className="h-5 w-96 mx-auto" />
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[1, 2, 3, 4, 5, 6].map((i) => (
           <div key={i} className="rounded-lg border border-gray-200 dark:border-gray-800 overflow-hidden">
