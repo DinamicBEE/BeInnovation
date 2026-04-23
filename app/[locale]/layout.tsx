@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { locales } from "@/lib/i18n/config";
+import WhatsAppButton from "@/components/ui/whatsAppButton";
 
 const openSans = Open_Sans({subsets:['latin'],  weight: ['400', '700']})
 
@@ -33,6 +34,7 @@ export default async function LocaleLayout({
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
