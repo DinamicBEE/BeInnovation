@@ -5,7 +5,7 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { INDUSTRIES } from "./const/cards";
-import { BackgroundCardProps } from "./models/common.model";
+import { BackgroundCardProps, BackgroundIndustriesCardProps } from "./models/common.model";
 import Image from "next/image";
 import "./home.css";
 
@@ -47,7 +47,7 @@ export default function Industries() {
   );
 }
 
-function BackgroundCard({ title, description, bgImage }: BackgroundCardProps) {
+function BackgroundCard({ title, description, bgImage }: BackgroundIndustriesCardProps) {
   return (
     <Card className="relative w-full h-80 card-green overflow-hidden pt-12 group">
       <div className="absolute inset-0 w-full h-full">
