@@ -74,8 +74,7 @@ export default function Services() {
 
                 {services.map((service, index) => (
                     
-                    // <div key={index} className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group" onClick={() => handleCardClick(service.id)}>
-                    <div key={index} className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group" onClick={() => handleViewAllClick()}>
+                    <div key={index} className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group">
                     
                         <Card  className="card-navy relative my-2 mx-auto w-full max-w-lg py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                             <div className="flex flex-col h-full">
@@ -95,7 +94,7 @@ export default function Services() {
                                         <div className="flex flex-col gap-4">
                                             {tProducts(`${service.code}.cardSummary`)}
 
-                                            <Button variant="outline" className="cursor-pointer">
+                                            <Button variant="outline" className="cursor-pointer" onClick={() => handleCardClick(service.id)}>
                                                 <span className="text-sm font-medium">{tCommon('home.services_details')}</span>
                                                 <Icon icon="mdi:arrow-right-thin" className="w-7 h-7 sm:w-8 sm:h-8" />
                                             </Button>

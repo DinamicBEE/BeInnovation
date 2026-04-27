@@ -23,6 +23,28 @@ export interface Addon {
   isActive: boolean;
 }
 
+export interface Plans {
+  id: string;
+  name: string;
+  description: string;
+  billingModel: string;
+  pricePeriod: string;
+  currency: string;
+  region: string;
+  segment: string;
+  basePrice: number;
+  includedUsage: number;
+  setupFee: number;
+  usageUnit: string;
+  usagePrice: number;
+  minCommitMonths: number;
+  renewalPolicy: string;
+  sla: string;
+  validFrom: string;
+  validTo: string;
+  isActive: boolean;
+}
+
 export interface Service {
   id: string;
   code: string;
@@ -46,7 +68,7 @@ export interface Service {
   attachments: string[];
   billingModels: string[];
   implementationFees: ImplementationFee[];
-  plans: unknown[];
+  plans: Plans[];
   addons: Addon[];
   discountRules: unknown[];
   bundles: unknown[];

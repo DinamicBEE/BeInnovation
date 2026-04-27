@@ -5,8 +5,8 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import { Service } from "@/Models/products.types";
 import { getServiceById } from "@/services/productServices";
-import { Badge } from "@/components/ui/badge";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { CheckCircle, Calendar, DollarSign, TrendingUp, Target, Phone, Mail, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceDetailPage() {
     const params = useParams();
@@ -29,40 +29,7 @@ export default function ServiceDetailPage() {
         };
 
     fetchServices();
-    }, []);
-
-    const sections = [
-        {
-        title: "Problema que resuelve",
-        content: service.problemSolved,
-        type: "text",
-        },
-        {
-        title: "Propuesta de valor",
-        content: service.valueProposition,
-        type: "text",
-        },
-        {
-        title: "Características incluidas",
-        content: service.featuresIncluded,
-        type: "list",
-        },
-        {
-        title: "Beneficios medibles",
-        content: service.measurableBenefits,
-        type: "list",
-        },
-        {
-        title: "Casos de uso",
-        content: service.useCases,
-        type: "list",
-        },
-        {
-        title: "Requisitos previos",
-        content: service.prerequisites,
-        type: "list",
-        },
-    ];
+    }, [serviceId]);
 
     return (
         <div className="flex flex-col items-center justify-center ">
@@ -70,7 +37,7 @@ export default function ServiceDetailPage() {
             
                 <div className="absolute inset-0 w-full h-full">
                     <Image
-                        src={service.coverImageUrl || "/background/background_3.png"}
+                        src="/background/Focused_steam_velocity.png"//{service.coverImageUrl || "/background/Focused_steam_velocity.png"}
                         alt={service.name}
                         fill
                         className="object-cover"
@@ -98,70 +65,165 @@ export default function ServiceDetailPage() {
                 </div>
         
             </div>
-            <div className="container mx-auto px-4 py-12">
+            <div className="container mx-auto px-4 py-8">
                 <div className="max-w-4xl mx-auto">
-                    <div className="flex flex-wrap gap-2 mb-8 justify-center">
-                        <Badge className="bg-[#2d4b8f] text-white">
+                    <div className="flex flex-wrap gap-2 mb-4 justify-center">
+                        <span className="bg-[#2d4b8f] text-white px-4 py-2 rounded-full text-sm">
                         {service.category}
-                        </Badge>
-                        <Badge className="bg-[#7cb44c] text-white">
+                        </span>
+                        <span className="bg-[#7cb44c] text-white px-4 py-2 rounded-full text-sm">
                         {service.subcategory}
-                        </Badge>
-                        <Badge className="bg-[#289dbb] text-white">
-                        {service.status}
-                        </Badge>
+                        </span>
                     </div>
 
                     {service.applicableSectors && service.applicableSectors.length > 0 && (
-                        <div className="mb-8 text-center">
-                        <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                            Sectores aplicables
-                        </h3>
-                        <div className="flex flex-wrap gap-2 justify-center">
+
+                        <div className="mb-8 flex flex-wrap gap-2 justify-center">
                             {service.applicableSectors.map((sector, idx) => (
-                            <span
-                                key={idx}
-                                className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-xs text-gray-600 dark:text-gray-300"
-                            >
-                                {sector}
-                            </span>
+                                <span
+                                    key={idx}
+                                    className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300"
+                                >
+                                    {sector}
+                                </span>
                             ))}
-                        </div>
                         </div>
                     )}
 
-
-                    {/* <Accordion className="space-y-4">
-                        { sections && sections.map((section, idx) => (
-                        <AccordionItem
-                            key={idx}
-                            value={`item-${idx}`}
-                            className="border rounded-lg px-4 shadow-sm bg-white dark:bg-gray-900"
-                        >
-                            <AccordionTrigger className="text-[#2d4b8f] hover:text-[#2d4b8f]/80 font-medium">
-                            {section.title}
-                            </AccordionTrigger>
-                            <AccordionContent className="text-gray-600 dark:text-gray-300">
-                            {section.type === "text" ? (
-                                <p className="text-sm md:text-base leading-relaxed">
-                                {section.content as string}
-                                </p>
-                            ) : (
-                                <ul className="list-disc list-inside space-y-2">
-                                {(section.content as string[]).map((item, itemIdx) => (
-                                    <li key={itemIdx} className="text-sm md:text-base">
-                                    {item}
-                                    </li>
+                    {service.featuresIncluded && service.featuresIncluded.length > 0 && (
+                        <div className="mb-16">
+                            <div className="text-center mb-8">
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                                    Características incluidas
+                                </h2>
+                                <div className="w-12 h-0.5 bg-[#7cb44c] mx-auto" />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {service.featuresIncluded.map((feature, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
+                                    >
+                                        <CheckCircle className="w-5 h-5 text-[#7cb44c] mt-0.5 shrink-0" />
+                                        <span className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                                            {feature}
+                                        </span>
+                                    </div>
                                 ))}
-                                </ul>
-                            )}
-                            </AccordionContent>
-                        </AccordionItem>
-                        ))}
-                    </Accordion> */}
+                            </div>
+                        </div>
+                    )}
+
+                    {service.plans && service.plans.length > 0 && (
+                        <div className="mb-16">
+                            <div className="text-center mb-8">
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                                    Planes y precios
+                                </h2>
+                                <div className="w-12 h-0.5 bg-[#7cb44c] mx-auto" />
+                                <p className="text-gray-600 dark:text-gray-400 mt-3 text-sm">
+                                    Elige el plan que mejor se adapte a tus necesidades
+                                </p>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {service.plans.map((plan, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="group relative bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:border-[#7cb44c]/30"
+                                    >
+                                        {/* Badge destacado para plan principal */}
+                                        {plan.name === "GROWTH" && (
+                                            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <span className="bg-[#7cb44c] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                                    Más popular
+                                                </span>
+                                            </div>
+                                        )}
+                                        
+                                        <div className="text-center mb-6">
+                                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                                                {plan.name}
+                                            </h3>
+                                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                                                {plan.description}
+                                            </p>
+                                        </div>
+
+                                        <div className="text-center mb-6">
+                                            <div className="flex items-baseline justify-center gap-1">
+                                                <span className="text-3xl font-bold text-gray-900 dark:text-white">
+                                                    ${plan.basePrice.toLocaleString()}
+                                                </span>
+                                                <span className="text-gray-600 dark:text-gray-400">
+                                                    / {plan.pricePeriod === "MONTHLY" ? "mes" : "año"}
+                                                </span>
+                                            </div>
+                                            <p className="text-xs text-gray-500 mt-2">
+                                                {plan.includedUsage.toLocaleString()} {plan.usageUnit} incluidos
+                                            </p>
+                                        </div>
+
+                                        <div className="space-y-3 mb-6">
+                                            <div className="flex items-center gap-2 text-sm">
+                                                <DollarSign className="w-4 h-4 text-[#7cb44c]" />
+                                                <span className="text-gray-700 dark:text-gray-300">
+                                                    Setup: {plan.setupFee === 0 ? "Gratis" : `$${plan.setupFee}`}
+                                                </span>
+                                            </div>
+                                            <div className="flex items-center gap-2 text-sm">
+                                                <Calendar className="w-4 h-4 text-[#7cb44c]" />
+                                                <span className="text-gray-700 dark:text-gray-300">
+                                                    {plan.minCommitMonths === 0 ? "Sin permanencia" : `${plan.minCommitMonths} meses mínimo`}
+                                                </span>
+                                            </div>
+                                            <div className="flex items-center gap-2 text-sm">
+                                                <TrendingUp className="w-4 h-4 text-[#7cb44c]" />
+                                                <span className="text-gray-700 dark:text-gray-300">
+                                                    Renovación: {plan.renewalPolicy === "AUTOMATIC" ? "Automática" : "Manual"}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <button className="w-full py-2 px-4 bg-transparent border-2 border-[#7cb44c] text-[#7cb44c] rounded-lg font-semibold hover:bg-[#7cb44c] hover:text-white transition-all duration-300">
+                                            Seleccionar plan
+                                        </button>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {service.measurableBenefits && service.measurableBenefits.length > 0 && (
+                        <div className="mb-16">
+                            <div className="text-center mb-8">
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                                    Beneficios medibles
+                                </h2>
+                                <div className="w-12 h-0.5 bg-[#7cb44c] mx-auto" />
+                                <p className="text-gray-600 dark:text-gray-400 mt-3 text-sm">
+                                    Resultados cuantificables que obtendrás con esta solución
+                                </p>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {service.measurableBenefits.map((benefit, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="group p-4 bg-linear-to-r from-[#2d4b8f]/5 to-[#7cb44c]/5 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-md transition-all duration-300"
+                                    >
+                                        <div className="flex items-start gap-3">
+                                            <Target className="w-5 h-5 text-[#7cb44c] mt-0.5 shrink-0" />
+                                            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                                                {benefit}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
 
                     {service.implementationFees && service.implementationFees.length > 0 && (
-                        <div className="mt-8 p-6 bg-gradient-to-r from-[#2d4b8f]/10 to-[#7cb44c]/10 rounded-xl">
+                        <div className="mt-8 p-6 bg-linear-to-r from-[#2d4b8f]/10 to-[#7cb44c]/10 rounded-xl">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                             Inversión
                         </h3>
@@ -216,6 +278,45 @@ export default function ServiceDetailPage() {
                         </div>
                     )}
 
+                </div>
+            </div>
+            <div className="w-full bg-linear-to-r from-[#2d4b8f]/10 to-[#7cb44c]/10 py-16 px-4">
+                <div className="container mx-auto max-w-4xl text-center">
+                    {/* Icono decorativo */}
+                    <div className="inline-flex items-center justify-center w-16 h-16 bg-white dark:bg-gray-800 rounded-full shadow-lg mb-6">
+                        <Phone className="w-8 h-8 text-[#2d4b8f]" />
+                    </div>
+                    
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                        ¿Listo para transformar tu negocio?
+                    </h2>
+                    
+                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Para más información sobre este servicio, ponte en contacto con nuestros especialistas. 
+                        Te guiaremos en cada paso del proceso.
+                    </p>
+                    
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#2d4b8f] text-white rounded-lg font-semibold hover:bg-[#2d4b8f]/90 transition-all duration-300 group"
+                        >
+                            <Mail className="w-5 h-5" />
+                            Contactar especialista
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                        <a
+                            href="tel:+573043899883"
+                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-[#2d4b8f] text-[#2d4b8f] rounded-lg font-semibold hover:bg-[#2d4b8f] hover:text-white transition-all duration-300"
+                        >
+                            <Phone className="w-5 h-5" />
+                            Llamar ahora
+                        </a>
+                    </div>
+                    
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-6">
+                        Nuestro equipo te responderá en menos de 24 horas hábiles
+                    </p>
                 </div>
             </div>
         </div>

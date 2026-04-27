@@ -4,6 +4,7 @@ export interface BackgroundIndustriesCardProps {
   bgImage: string;
 }
 export interface BackgroundCardProps {
+  id: string;
   code: string;
   bgImage: string;
 }

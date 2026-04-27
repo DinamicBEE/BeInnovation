@@ -103,7 +103,7 @@ export default function ServicesPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
               {services.dev && services.dev.length > 0 && services.dev.map(service => (
-                  <BackgroundCard key={service.id} code={service.code} bgImage={service.coverImageUrl} />
+                  <BackgroundCard key={service.id} id={service.id} code={service.code} bgImage={service.coverImageUrl} />
                 )
               )}
             </div>
@@ -124,7 +124,7 @@ export default function ServicesPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
               {services.ai && services.ai.length > 0 && services.ai.map(service => (
-                  <BackgroundCard key={service.id} code={service.code} bgImage={service.coverImageUrl} />
+                  <BackgroundCard key={service.id} id={service.id} code={service.code} bgImage={service.coverImageUrl} />
                 )
               )}
             </div>
@@ -186,7 +186,7 @@ export default function ServicesPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
               {services.netsuite && services.netsuite.length > 0 && services.netsuite.map(service => (
-                  <BackgroundCard key={service.id} code={service.code} bgImage={service.coverImageUrl} />
+                  <BackgroundCard key={service.id} id={service.id} code={service.code} bgImage={service.coverImageUrl} />
                 )
               )}
             </div>
@@ -308,7 +308,7 @@ function ServicesPageSkeleton() {
   );
 }
 
-function BackgroundCard({ code, bgImage }: BackgroundCardProps) {
+function BackgroundCard({ id, code, bgImage }: BackgroundCardProps) {
   const params = useParams();
   const locale = params.locale as string;
   const router = useRouter();
@@ -344,7 +344,7 @@ function BackgroundCard({ code, bgImage }: BackgroundCardProps) {
           <div className="flex flex-col gap-4">
             {tProducts(`${code}.cardSummary`)}
 
-            <Button variant="outline" className="cursor-pointer">
+            <Button variant="outline" className="cursor-pointer" onClick={() => handleCardClick(id)}>
                 <span className="text-sm font-medium">{tCommon('home.services_details')}</span>
                 <Icon icon="mdi:arrow-right-thin" className="w-7 h-7 sm:w-8 sm:h-8" />
             </Button>
