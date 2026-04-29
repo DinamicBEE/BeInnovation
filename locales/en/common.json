@@ -41,12 +41,24 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Do you have a project in mind? We are here to make it happen. Tell us your ideas and we will help you transform them into innovative solutions.",
+    "form_title": "Send us a Message",
+    "form_subtitle": "Fill out the form and we'll get back to you soon",
     "name": "Name",
+    "lastName": "Last name",
     "email": "Email",
     "phone": "Phone",
     "company": "Company",
     "message": "Message",
-    "send": "Send message"
+    "send": "Send message",
+    "sending": "Sending...",
+    "sent": "Message sent!",
+    "info_title": "Contact Information",
+    "info_subtitle": "We're here to help you",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "address_label": "Address",
+    "schedule_label": "Business Hours",
+    "follow_us": "Follow Us"
   },
   "about":{
     "title": "About Us",

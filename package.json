@@ -1,6 +1,6 @@
 {
   "name": "beinnovate",
-  "version": "0.10.00",
+  "version": "0.10.01",
   "private": true,
   "scripts": {
     "dev": "next dev",

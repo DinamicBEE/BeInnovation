@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTranslation } from '@/lib/i18n/client';
 import { useParams } from 'next/navigation';
 import "./layout.css";
+import Link from "next/link";
 
 export default function Footer() {
   const params = useParams();
@@ -31,9 +32,9 @@ export default function Footer() {
             <div className="flex flex-col items-center mt-2">
                 <h1 className="text-center text-xs text-gray-600">© 2026 {t("footer.company")}. {t("footer.copyright")}</h1>
                 <div className="flex flex-col md:flex-row items-center text-center">
-                    <a href="/privacy" className="text-xs text-gray-600 hover:text-gray-900">{t("footer.privacy")}</a> 
+                    <Link href="/privacy" className="text-xs text-gray-600 hover:text-gray-900">{t("footer.privacy")}</Link> 
                     <div className="hidden md:block"> | </div> 
-                    <a href="/terms" className="text-xs text-gray-600 hover:text-gray-900">{t("footer.terms")}</a>
+                    <Link href="/terms" className="text-xs text-gray-600 hover:text-gray-900">{t("footer.terms")}</Link>
                 </div>
             </div>
           </div>

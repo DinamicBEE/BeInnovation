@@ -7,6 +7,7 @@ import Clients from './Clients';
 import ContactForm from './Form';
 import { useTranslation } from '@/lib/i18n/client';
 import { useParams } from 'next/navigation';
+import ContactInfo from './ContactInfo';
 
 
 export default function ContactPage() {
@@ -66,8 +67,17 @@ export default function ContactPage() {
 
       </section>
 
-      
-      <ContactForm />
+      <section className="w-full px-4 py-12 md:py-16 lg:py-20 bg-bg-secondary dark:bg-bg-secondary">
+        <div className="max-w-6xl mx-auto">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <ContactForm />
+            
+            <ContactInfo />
+          </div>
+        </div>
+      </section>
+      {/* <ContactForm /> */}
       
       <Clients />
 

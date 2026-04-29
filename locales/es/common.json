@@ -41,12 +41,24 @@
   "contact": {
     "title": "Contáctanos",
     "subtitle": "¿Tienes un proyecto en mente? Estamos aquí para hacerlo realidad. Cuéntanos tus ideas y te ayudaremos a transformarlas en soluciones innovadoras usando tecnología de vanguardia.",
+    "form_title": "Envíanos un Mensaje",
+    "form_subtitle": "Completa el formulario y te responderemos pronto",
     "name": "Nombre",
+    "lastName": "Apellido",
     "email": "Correo electrónico",
     "phone": "Teléfono",
     "company": "Empresa",
     "message": "Mensaje",
-    "send": "Enviar mensaje"
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "sent": "¡Mensaje enviado!",
+    "info_title": "Información de Contacto",
+    "info_subtitle": "Estamos aquí para ayudarte",
+    "phone_label": "Teléfono",
+    "email_label": "Correo Electrónico",
+    "address_label": "Dirección",
+    "schedule_label": "Horario de Atención",
+    "follow_us": "Síguenos"
   },
   "about":{
     "title": "Sobre Nosotros",
