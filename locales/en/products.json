@@ -1,178 +1,1509 @@
 {
-  "SHOP-NS-001": {
-    "title": "Shopify integration - NetSuite",
-    "summaryTitle": "Shopify + Melonn + NetSuite Integration",
-    "summary": "Connect your Shopify store, your Melonn logistics operator, and your NetSuite ERP in a seamless integration. Automate the synchronization of customers, orders, invoices, payments, credit notes, and inventory. Ideal for omnichannel businesses (online and physical stores) that need a single place to consolidate commercial, financial, and logistics information. Fewer errors, more efficiency.",
-    "cardSummaryTitle": "True Omnichannel",
-    "cardSummary": "Sync sales, logistics, and finance. Customers, orders, payments, and inventory always up to date.",
-    "category": "E-commerce Integration"
+  "detail": {
+    "title": "Product Details",
+    "title_2": "Our Products",
+    "description": "Description",
+    "description_full": "Innovative technology solutions that transform business and enhance results.",
+    "price": "Price",
+    "category": "Category",
+    "stock": "Stock available",
+    "add_to_cart": "Add to cart",
+    "buy_now": "Buy now",
+    "related_products": "Related products",
+    "reviews": "Reviews",
+    "specifications": "Technical specifications",
+    "features": "Features",
+    "availability": {
+      "in_stock": "In stock",
+      "out_of_stock": "Out of stock",
+      "low_stock": "Low stock"
+    },
+    "shipping": {
+      "free": "Free shipping",
+      "cost": "Shipping cost",
+      "estimated": "Estimated delivery time"
+    },
+    "plan_price": "plans and pricing",
+    "plan_label": "Choose the plan that best suits your needs",
+    "included": "included",
+    "setup_fee": "Setup",
+    "setup_free": "Free",
+    "no_commitment": "No minimum commitment",
+    "months_minimum": "month minimum",
+    "renewal": "Renovation",
+    "renewal_automatic": "Automatic renewal",
+    "renewal_manual": "Manual renewal",
+    "select_plan": "Select plan",
+    "most_popular": "Most popular",
+    "investment": "Investment",
+    "additional_services": "Additional services",
+    "features_included": "Features included",
+    "measurable_benefits": "Measurable benefits",
+    "results_you_will_get": "Quantifiable results you will get with this solution",
+    "ready_to_transform": "Ready to transform your business?",
+    "contact_specialist": "Contact specialist",
+    "call_now": "Call now",
+    "response_time": "Our team will respond within 24 business hours",
+    "more_info": "For more information about this service, contact our specialists. We will guide you through each step of the process."
   },
-  "AI-KM-001": {
-    "title": "KnowledgeHub AI - Smart knowledge base with conversational search",
-    "summaryTitle": "AI-Powered Enterprise Search (Knowledge GPT)",
-    "summary": "Turn manuals, policies, SOPs, wikis, and contracts into an intelligent knowledge base. Our system indexes your files using vector embeddings and allows any employee to ask questions in natural language. Get accurate answers with the original source cited. Your company's knowledge, available without tedious searching.",
-    "cardSummaryTitle": "Ask and get the source",
-    "cardSummary": "Ask in natural language. Accurate answers citing manuals, policies, or contracts.",
-    "category": "Enterprise Artificial Intelligence"
-  },
-  "DEV-INT-001": {
-    "title": "Custom Integrations and Connectors",
-    "summaryTitle": "Custom System Integrations",
-    "summary": "Have systems that don't communicate natively? We design custom bridges: ERP with e-commerce, CRM with marketing platforms, legacy systems with cloud applications, or third-party APIs with internal processes. We automate data flows where silos once existed. No patches, no chaos: clean and reliable integrations.",
-    "cardSummaryTitle": "Connecting the disconnected",
-    "cardSummary": "ERP, CRM, legacy, or APIs. Smooth, automated data flows.",
-    "category": "Software Development"
-  },
-  "DEV-MOB-001": {
-    "title": "Mobile app development",
-    "summaryTitle": "Enterprise Mobile Apps (iOS/Android)",
-    "summary": "We create iOS and Android apps (native or cross-platform) focused on results: field apps for operational teams, self-service apps for customers, internal productivity tools, or mobile extensions of your enterprise systems. Functional design, real performance, and professional user experience.",
-    "cardSummaryTitle": "Empower your mobile operations",
-    "cardSummary": "For field, customers, or internal productivity. Native or cross-platform apps.",
-    "category": "Software Development"
-  },
-  "DEV-WEB-001": {
-    "title": "Web Application Development",
-    "summaryTitle": "Modern & Scalable Web Applications",
-    "summary": "We build responsive, fast, and scalable web applications: corporate portals, SaaS platforms, operational dashboards, intranets, or self-service apps for customers or employees. We use modern frameworks and cloud deployment. Clean technology, minimalist design, and performance that drives your operation.",
-    "cardSummaryTitle": "Platforms that grow with you",
-    "cardSummary": "Portals, SaaS, dashboards, intranets. Modern, responsive, cloud-native.",
-    "category": "Software Development"
-  },
-  "DEV-CUSTOM-001": {
-    "title": "Custom software development",
-    "summaryTitle": "Custom Software",
-    "summary": "When off-the-shelf solutions don't meet your needs, we develop custom software that solves your exact problem. Includes requirements analysis, architecture, development, testing, deployment, and post-launch support. An exact solution for a specific business.",
-    "cardSummaryTitle": "Build, not buy",
-    "cardSummary": "Solutions where no commercial product exists. From analysis to post-launch support.",
-    "category": "Software Development"
-  },
-  "AI-IPA-001": {
-    "title": "FlowMind AI - Intelligent business process automation",
-    "summaryTitle": "Intelligent Process Automation (RPA + AI)",
-    "summary": "We combine configurable workflows with artificial intelligence to automate end-to-end business processes: document reading, rule-based and ML decision-making, action execution in systems, exception handling, and intelligent escalation. Your operation on autopilot.",
-    "cardSummaryTitle": "End-to-end processes",
-    "cardSummary": "Reads documents, decides, executes, and escalates exceptions. No human intervention.",
-    "category": "Enterprise Artificial Intelligence"
-  },
-  "AI-VOICE-001": {
-    "title": "VoiceAgent AI - Smart voice agent for phone service",
-    "summaryTitle": "AI Phone Agent",
-    "summary": "Answer calls with natural voice, understand the caller's intent, access internal systems to provide real answers, and escalate to human agents only when necessary. Replace traditional IVRs, reduce call center costs, and dramatically improve customer experience.",
-    "cardSummaryTitle": "Goodbye to IVR",
-    "cardSummary": "Natural voice, real answers, human escalation only when needed.",
-    "category": "Enterprise Artificial Intelligence"
-  },
-  "AI-CHAT-001": {
-    "title": "AssistBot AI - Business transactional chatbot with systems integration",
-    "summaryTitle": "Action-Oriented Enterprise Chatbot",
-    "summary": "It doesn't just answer questions — it takes real actions. Check orders in the ERP, schedule appointments, process requests, generate quotes, and create tickets, all from WhatsApp, web, or messaging channels. Connected to your internal systems. An assistant that truly works.",
-    "cardSummaryTitle": "It doesn't just reply — it acts",
-    "cardSummary": "Check orders, schedule appointments, or generate quotes from WhatsApp.",
-    "category": "Enterprise Artificial Intelligence"
-  },
-  "AI-PRED-001": {
-    "title": "ForecastAI - Demand prediction and forecasting with machine learning",
-    "summaryTitle": "Demand Forecasting with Machine Learning",
-    "summary": "Analyze sales history, seasonality, external events, and market signals to generate forecasts at the SKU, location, and period level. Integrates with your ERP to drive purchasing, production, and inventory planning. Less overstock, fewer stockouts.",
-    "cardSummaryTitle": "Accurate forecasts",
-    "cardSummary": "By SKU and location. Drives purchasing, production, and inventory.",
-    "category": "Enterprise Artificial Intelligence"
-  },
-  "AI-NL2SQL-001": {
-    "title": "DataTalk AI - Natural language database queries",
-    "summaryTitle": "Query Databases in Natural Language",
-    "summary": "Allow business users to query databases, data warehouses, and enterprise systems in Spanish or English. They get instant answers with tables, charts, and explanatory narratives. No SQL required, no dependence on technical teams. Analytical autonomy for the entire team.",
-    "cardSummaryTitle": "Ask in plain language",
-    "cardSummary": "Get charts and tables. No SQL, no technical teams.",
-    "category": "Enterprise Artificial Intelligence"
-  },
-  "BM-001": {
-    "title": "Minimum Bases",
-    "summaryTitle": "Automatic Tax Withholding (El Salvador)",
-    "summary": "Automate the decision to apply or not apply tax withholdings on purchase invoices, based on minimum amount thresholds established by Salvadoran tax law. Ensures that the 1% withholding on the VAT taxable base is calculated only when the amount exceeds $100 USD. Zero errors, guaranteed compliance.",
-    "cardSummaryTitle": "Comply with the law without manual calculations",
-    "cardSummary": "Applies 1% VAT only if exceeding $100. Automatic and precise.",
-    "category": "Tax & Compliance"
-  },
-  "MEL-001": {
-    "title": "Melonn - Fulfillment integration with NetSuite",
-    "summaryTitle": "Fulfillment + NetSuite: Synchronized Logistics",
-    "summary": "Fulfillment and logistics platform for e-commerce that manages the complete order fulfillment cycle. Its integration with NetSuite automatically synchronizes inventory transfers, adjustments, order execution, invoicing, and returns. Eliminates manual entry and ensures financial and operational traceability.",
-    "cardSummaryTitle": "Frictionless logistics",
-    "cardSummary": "Orders, inventory, and returns synchronized with NetSuite.",
-    "category": "Logistics & Fulfillment"
-  },
-  "NOV-NS-001": {
-    "title": "Novasoft integration - NetSuite ERP",
-    "summaryTitle": "Novasoft Payroll → NetSuite",
-    "summary": "Connect the Novasoft payroll and HR platform with NetSuite to automatically synchronize employees, accounting accounts, and journal entries. Eliminate double data entry and ensure financial and HR consistency.",
-    "cardSummaryTitle": "HR and accounting aligned",
-    "cardSummary": "Employees, accounts, and entries without double entry.",
-    "category": "HR - Finance Integration"
-  },
-  "YUJU-001": {
-    "title": "YUJU - Marketplace integration with NetSuite",
-    "summaryTitle": "Marketplace Connected to NetSuite",
-    "summary": "Marketplace platform with bidirectional integration to NetSuite ERP that synchronizes product catalogs, sales orders, shipping executions, and invoicing. Companies selling through multiple channels manage their entire commercial cycle centralized in NetSuite. Manual operations out, control in.",
-    "cardSummaryTitle": "Sell through channels, operate in NetSuite",
-    "cardSummary": "Catalogs, orders, and invoicing in one place. No manual operation.",
-    "category": "E-commerce Integration"
-  },
-  "PR-001": {
-    "title": "Restrictive budget",
-    "summaryTitle": "Budget Control in NetSuite",
-    "summary": "Define, manage, and enforce spending limits by department or project. Automatically block purchase transactions that exceed budgeted amounts. Financial discipline and real-time visibility of budget execution without relying on spreadsheets.",
-    "cardSummaryTitle": "Spend only what you planned",
-    "cardSummary": "Blocks purchases that exceed budget. Real-time visibility.",
-    "category": "Finance & Internal Control"
-  },
-  "TAX-001": {
-    "title": "TaxMX",
-    "summaryTitle": "Automated Mexican Tax Compliance on NetSuite",
-    "summary": "Automate three critical tax processes for Mexican companies: VAT reclassification upon cash collection/payment, DIOT generation in SAT-importable format, and controlled CFDI cancellation. Meet your tax obligations without manual intervention or errors.",
-    "cardSummaryTitle": "VAT, DIOT, and CFDI without stress",
-    "cardSummary": "Comply with SAT automatically from NetSuite.",
-    "category": "Tax & Compliance"
-  },
-  "PP-001": {
-    "title": "Supplier Portal",
-    "summaryTitle": "Supplier Portal with CFDI",
-    "summary": "Allow your suppliers to access a secure web portal to upload digital tax receipts (CFDI) in XML and PDF, associate them with purchase orders, and automatically generate supplier invoices in NetSuite. Eliminate manual entry, centralize document receipt, and ensure Mexican tax compliance.",
-    "cardSummaryTitle": "They upload, NetSuite invoices",
-    "cardSummary": "Portal for suppliers: upload XML/PDF, the system generates the invoice in NetSuite.",
-    "category": "Tax & Compliance"
-  },
-  "H2H-001": {
-    "title": "H2H (Host to Host) - NetSuite integration with banks",
-    "summaryTitle": "Santander Bank Payments + NetSuite",
-    "summary": "Connect NetSuite with Banco Santander's payment services to automate supplier payment disbursement and bank reconciliation. Eliminate manual mass payment operations, centralizing the generation, approval, and sending of payment files through encrypted secure communication.",
-    "cardSummaryTitle": "Automated disbursement and reconciliation",
-    "cardSummary": "Secure mass payments and effortless bank reconciliation.",
-    "category": "Banking Integration"
-  },
-  "POS-001": {
-    "title": "POS - Point of Sale Integration",
-    "summaryTitle": "POS (JONAS, Micros, Simphony, Aloha) with NetSuite",
-    "summary": "Connect Point of Sale systems (JONAS, Micros 9700, Simphony, Aloha) with NetSuite to automatically record sales, electronic CFDI/SAT invoicing, and the correct accounting impact on revenue accounts. Eliminate manual entry and centralize operational information from your physical stores.",
-    "cardSummaryTitle": "Your POS issues electronic invoices",
-    "cardSummary": "Physical sales with CFDI/SAT invoicing. Automatic accounting impact.",
-    "category": "Retail Integration"
-  },
-  "VXML-001": {
-    "title": "XML Validator",
-    "summaryTitle": "XML Validator in NetSuite",
-    "summary": "Automate the receipt, validation, and assignment of digital tax receipts (XML) to purchase and expense transactions in NetSuite. Ensure Mexican tax compliance by guaranteeing that each invoice has its properly validated and linked XML. No risks, no invalid invoices.",
-    "cardSummaryTitle": "Every invoice with its valid XML",
-    "cardSummary": "Automatic receipt, validation, and linking of CFDI in NetSuite.",
-    "category": "Tax & Compliance"
-  },
-  "AI-DOC-001": {
-    "title": "DocuMind AI - Intelligent platform for automated document extraction and registration",
-    "summaryTitle": "AI Document Reader for ERP",
-    "summary": "Read invoices, purchase orders, XML files, and other documents, automatically extract relevant information, validate it against enterprise catalogs, and generate transactions ready to be recorded in the ERP. Intelligent capture, zero typing errors, faster and more reliable accounts payable processes.",
-    "cardSummaryTitle": "From documents to ready-to-use transactions",
-    "cardSummary": "Extract, validate, and generate ERP entries. No typing errors.",
-    "category": "Enterprise Artificial Intelligence"
+  "products": {
+    "SHOP-NS-001": {
+      "title": "Shopify Integration – NetSuite",
+      "summaryTitle": "Shopify-NetSuite",
+      "summary": "Integration product that connects Shopify and the Melonn logistics system with NetSuite, enabling automatic synchronization of customers, sales orders, invoices, payments, credit notes, and inventory. Designed for companies with online sales and physical POS that need to consolidate commercial, financial, and inventory information.",
+      "cardSummaryTitle": "Shopify-NetSuite",
+      "cardSummary": "Integration product that connects Shopify and the Melonn logistics system with NetSuite, enabling automatic synchronization of customers, sales orders, invoices, payments, credit notes, and inventory.",
+      "category": "E-commerce Integration",
+      "subcategory": "Omnichannel",
+      "valueProposition": "Automates bidirectional communication between Shopify, Melonn, and NetSuite so that all commercial, logistics, and financial activity is recorded in the ERP in real time, without manual intervention, complying with Colombian tax requirements (DIAN).",
+      "featuresIncluded": [
+        "Customer synchronization Shopify→NetSuite",
+        "Sales orders from Shopify",
+        "Cash Sales from POS",
+        "Invoices and payments",
+        "Credit notes and refunds",
+        "Sales execution from Melonn",
+        "Inventory transfers",
+        "Bidirectional inventory adjustments",
+        "Receiving orders NetSuite→Melonn",
+        "Return authorization",
+        "DIAN tax fields"
+      ],
+      "applicableSectors": ["E-commerce", "Retail", "Fashion"],
+      "measurableBenefits": [
+        "% of orders registered without manual intervention (target: 100%)",
+        "Transaction reflection time (target: real time)",
+        "Reduction in reconciliation errors",
+        "% of correct DIAN invoices",
+        "Stock discrepancy with Melonn (target: 0)"
+      ],
+      "implementationFees": [
+        {
+          "name": "Shopify-NetSuite Implementation",
+          "description": "Shopify Melonn DIAN Integration",
+          "amount": 10000,
+          "currency": "USD",
+          "estimatedTimeline": "6 to 8 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional order",
+          "description": "Extra consumption per order outside the plan",
+          "amount": 0.06,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 1,000 orders/month",
+          "basePrice": 300,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1000,
+          "usageUnit": "orders",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 5,000 orders/month",
+          "basePrice": 700,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5000,
+          "usageUnit": "orders",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "AI-KM-001": {
+      "title": "KnowledgeHub AI - Intelligent knowledge base with conversational search",
+      "summaryTitle": "KnowledgeHub AI",
+      "summary": "Enterprise knowledge management system that ingests internal documents (manuals, policies, SOPs, wikis, contracts), indexes them with vector embeddings, and allows any employee to ask questions in natural language, obtaining accurate answers with the source cited.",
+      "cardSummaryTitle": "KnowledgeHub AI",
+      "cardSummary": "Enterprise knowledge management system that ingests internal documents (manuals, policies, SOPs, wikis, contracts), indexes them with vector embeddings, and allows any employee to ask questions in natural language, obtaining accurate answers with the source cited.",
+      "category": "Enterprise Artificial Intelligence",
+      "subcategory": "Knowledge Management & Productivity",
+      "valueProposition": "Centralizes all enterprise knowledge into an AI conversational system that answers precise questions with cited sources, drastically reduces search and onboarding times, and continuously updates as new documents are added.",
+      "featuresIncluded": [
+        "Automated document ingestion (PDF, DOCX, PPTX, HTML, Confluence, SharePoint, Google Drive)",
+        "Vector embedding indexing",
+        "RAG conversational search engine",
+        "Source citation in every answer",
+        "Document administration panel",
+        "Area/role-based access control",
+        "Usage metrics and FAQs",
+        "Incremental knowledge base update"
+      ],
+      "applicableSectors": ["Technology", "Professional Services", "Manufacturing", "Healthcare", "Education", "Government", "Financial Services"],
+      "measurableBenefits": [
+        "60-80% reduction in information search time",
+        "Accelerated onboarding of new employees (from weeks to days)",
+        "Preservation of institutional knowledge",
+        "Consistency in answers to frequently asked questions",
+        "Identification of documentation gaps"
+      ],
+      "implementationFees": [
+        {
+          "name": "KnowledgeHub AI Implementation",
+          "description": "Document ingestion, embeddings, access configuration",
+          "amount": 10000,
+          "currency": "USD",
+          "estimatedTimeline": "3 to 5 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Support and maintenance",
+          "description": "Corrective support, re-indexing of new documents, monitoring and continuous model improvement",
+          "amount": 800,
+          "currency": "USD"
+        },
+        {
+          "name": "Massive re-indexing",
+          "description": "Complete re-indexing due to documentation restructuring or repository change",
+          "amount": 2000,
+          "currency": "USD"
+        }
+      ],
+      "plans": [],
+      "commercialConditions": [
+        "Single implementation payment",
+        "Optional monthly support and maintenance",
+        "90-day post-launch warranty",
+        "Model updates included in support"
+      ]
+    },
+    "DEV-INT-001": {
+      "title": "Custom Integrations and Connectors",
+      "summaryTitle": "Dev Integrations",
+      "summary": "Integration design and development service between enterprise systems that do not communicate natively: ERP with e-commerce, CRM with marketing platforms, legacy systems with cloud applications, third-party APIs with internal processes, and any combination that requires automated data flow.",
+      "cardSummaryTitle": "Dev Integrations",
+      "cardSummary": "Integration design and development service between enterprise systems that do not communicate natively: ERP with e-commerce, CRM with marketing platforms, legacy systems with cloud applications, third-party APIs with internal processes, and any combination that requires automated data flow.",
+      "category": "Software Development",
+      "subcategory": "Integrations & Middleware",
+      "valueProposition": "Robust, secure, and monitored connectors that synchronize data between any combination of systems, eliminating manual entry, ensuring information consistency, and enabling end-to-end automated business flows.",
+      "featuresIncluded": [
+        "Systems and data flow analysis",
+        "Integration architecture design",
+        "Connector development (REST API, SOAP, SFTP, webhooks)",
+        "Data transformation and mapping",
+        "Error handling and retries",
+        "Monitoring and alerts",
+        "Technical documentation",
+        "Integration testing",
+        "Post-launch support"
+      ],
+      "applicableSectors": ["Any sector with more than 2 management systems that need to communicate"],
+      "measurableBenefits": [
+        "Elimination of double entry and manual processes",
+        "Data consistency across systems",
+        "Reduction in reconciliation errors",
+        "End-to-end automated business flows",
+        "Real-time information visibility"
+      ],
+      "implementationFees": [
+        {
+          "name": "Integration Development",
+          "description": "Quote based on specific project requirements",
+          "amount": 0,
+          "currency": "USD",
+          "estimatedTimeline": "3 to 16 weeks depending on complexity"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Monitoring and support",
+          "description": "Continuous monitoring, alerts, and corrective support for integrations",
+          "amount": 500,
+          "currency": "USD"
+        }
+      ],
+      "plans": [],
+      "commercialConditions": [
+        "Quote per defined scope",
+        "Milestone payments",
+        "90-day post-launch warranty",
+        "Continuous support available as add-on"
+      ]
+    },
+    "DEV-MOB-001": {
+      "title": "Mobile App Development",
+      "summaryTitle": "Dev Mobile",
+      "summary": "Design and development of native or cross-platform mobile applications (iOS and Android) for business needs: field apps for operational teams, self-service apps for customers, internal productivity tools, or mobile extensions of existing enterprise systems.",
+      "cardSummaryTitle": "Dev Mobile",
+      "cardSummary": "Design and development of native or cross-platform mobile applications (iOS and Android) for business needs",
+      "category": "Software Development",
+      "subcategory": "Mobile Applications",
+      "valueProposition": "Professional mobile applications that extend enterprise systems to the cell phone, allowing field teams, customers and employees to access information, execute tasks and report from anywhere, with or without an internet connection.",
+      "problemSolved": "Field teams, salespeople, delivery drivers and customers need access to business information and tools from their cell phones, but enterprise systems lack adequate mobile interfaces, forcing paper processes, phone calls or waiting until returning to the office.",
+      "featuresIncluded": [
+        "Mobile UI/UX design",
+        "Cross-platform (React Native/Flutter) or native development",
+        "Backend and APIs",
+        "Push notifications",
+        "Offline mode with synchronization",
+        "Biometric authentication",
+        "App Store and Google Play publishing",
+        "Real device testing",
+        "Documentation",
+        "Training"
+      ],
+      "featuresExcluded": [
+        "Developer accounts on App Store/Google Play (client property)",
+        "Mobile devices for users",
+        "Content generation",
+        "App marketing",
+        "Post-delivery server administration"
+      ],
+      "applicableSectors": [
+        "Logistics",
+        "Distribution",
+        "Field services",
+        "Retail",
+        "Healthcare",
+        "Construction",
+        "Sales",
+        "Hospitality"
+      ],
+      "prerequisites": [
+        "Definition of target users and priority use cases",
+        "Backend systems with APIs or willingness to develop them",
+        "Developer accounts on App Store and/or Google Play",
+        "Test devices available"
+      ],
+      "measurableBenefits": [
+        "Field team productivity without depending on office",
+        "Real-time information from anywhere",
+        "Data capture at source eliminating rework",
+        "Better customer or employee experience",
+        "Reduction of paper and manual processes"
+      ],
+      "implementationFees": [
+        {
+          "name": "Mobile Development",
+          "description": "Quote according to specific project requirements",
+          "pricingModel": "FIXED",
+          "billingType": "ONE_TIME",
+          "amount": 0,
+          "currency": "USD",
+          "estimatedTimeline": "8 to 30 weeks depending on scope",
+          "notes": "Quote according to specific project requirements"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Mobile support and maintenance",
+          "description": "OS updates, fixes and monthly improvements",
+          "pricingType": "FIXED",
+          "amount": 600,
+          "currency": "USD"
+        },
+        {
+          "name": "Additional platform",
+          "description": "Development for additional platform (if started with only iOS or only Android)",
+          "pricingType": "FIXED",
+          "amount": 0,
+          "currency": "USD"
+        }
+      ],
+      "plans": [],
+      "commercialConditions": [
+        "Quote per defined scope",
+        "Milestone payments",
+        "90-day post-launch warranty",
+        "Scope changes quoted separately"
+      ],
+      "billingModels": ["IMPLEMENTATION"]
+    },
+    "DEV-WEB-001": {
+      "title": "Web Application Development",
+      "summaryTitle": "Dev Web",
+      "summary": "Design and development of modern, responsive, and scalable web applications: from corporate portals and SaaS platforms to operational dashboards, intranets, and self-service applications for customers or employees, built with modern frameworks and deployed in the cloud.",
+      "cardSummaryTitle": "Dev Web",
+      "cardSummary": "Design and development of modern, responsive, and scalable web applications: from corporate portals and SaaS platforms to operational dashboards, intranets, and self-service applications for customers or employees, built with modern frameworks and deployed in the cloud.",
+      "category": "Software Development",
+      "subcategory": "Web Applications",
+      "valueProposition": "Professional-level web applications, responsive, fast, and secure, built with modern technologies (React, Next.js, Node.js), deployed in the cloud with CI/CD, designed for the specific end-user experience of the client.",
+      "featuresIncluded": [
+        "UI/UX design",
+        "Frontend development (React/Next.js)",
+        "Backend development (Node.js/Python)",
+        "Database",
+        "Authentication and access control",
+        "RESTful APIs",
+        "Cloud deployment (AWS/GCP/Azure)",
+        "SSL certificate",
+        "Responsive design",
+        "Testing",
+        "Documentation",
+        "Training"
+      ],
+      "applicableSectors": ["Any sector requiring web presence", "internal tools or digital platforms"],
+      "measurableBenefits": [
+        "Professional and modern digital presence",
+        "Access from any device",
+        "Reduction of manual processes",
+        "Better user experience",
+        "Cloud scalability"
+      ],
+      "implementationFees": [
+        {
+          "name": "Web Development",
+          "description": "Quote based on specific project requirements",
+          "amount": 0,
+          "currency": "USD",
+          "estimatedTimeline": "6 to 24 weeks depending on scope"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Hosting and maintenance",
+          "description": "Cloud hosting, monitoring, backups and monthly maintenance",
+          "amount": 300,
+          "currency": "USD"
+        },
+        {
+          "name": "Support and improvements",
+          "description": "Monthly hour pool for continuous improvements",
+          "amount": 800,
+          "currency": "USD"
+        }
+      ],
+      "plans": [],
+      "commercialConditions": [
+        "Quote per defined scope",
+        "Milestone payments",
+        "90-day post-launch warranty",
+        "Scope changes quoted separately"
+      ]
+    },
+    "DEV-CUSTOM-001": {
+      "title": "Custom Software Development",
+      "summaryTitle": "Dev Custom",
+      "summary": "Custom software design, development and implementation service that solves specific business needs not covered by commercial solutions. Includes requirements analysis, architecture, development, testing, deployment and post-launch support.",
+      "cardSummaryTitle": "Dev Custom",
+      "cardSummary": "Custom software design, development and implementation service that solves specific business needs not covered by commercial solutions. Includes requirements analysis, architecture, development, testing, deployment and post-launch support.",
+      "category": "Software Development",
+      "subcategory": "Custom Development",
+      "valueProposition": "Software designed exactly for the client's specific processes, rules and flows, built with modern, scalable, maintainable technologies, with client intellectual property, eliminating dependence on generic solutions that don't fit.",
+      "featuresIncluded": [
+        "Requirements gathering and documentation",
+        "Architecture and database design",
+        "Backend and frontend development",
+        "Functional and integration testing",
+        "Deployment on client infrastructure or cloud",
+        "Technical and user documentation",
+        "End-user training",
+        "Post-launch corrective support (warranty)"
+      ],
+      "applicableSectors": ["Any sector requiring digitization of unique processes not covered by commercial software"],
+      "measurableBenefits": [
+        "Software that adapts 100% to the business process",
+        "Elimination of workarounds and manual processes",
+        "Scalability as the operation grows",
+        "Client intellectual property",
+        "Reduction of errors and operation times"
+      ],
+      "implementationFees": [
+        {
+          "name": "Custom Development",
+          "description": "Quote based on specific project requirements",
+          "amount": 0,
+          "currency": "USD",
+          "estimatedTimeline": "Variable depending on scope"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Post-warranty support",
+          "description": "Monthly hour pool for improvements, fixes and support",
+          "amount": 800,
+          "currency": "USD"
+        }
+      ],
+      "plans": [],
+      "commercialConditions": [
+        "Quote per defined scope",
+        "Milestone payments",
+        "90-day post-launch warranty",
+        "Scope changes quoted separately"
+      ]
+    },
+    "AI-IPA-001": {
+      "title": "FlowMind AI - Intelligent business process automation",
+      "summaryTitle": "FlowMind AI",
+      "summary": "Automation platform that combines configurable workflows with artificial intelligence to automate end-to-end business processes: document reading, rule-based and ML decision making, system action execution, exception handling and intelligent escalation.",
+      "cardSummaryTitle": "FlowMind AI",
+      "cardSummary": "Automation platform that combines configurable workflows with artificial intelligence to automate end-to-end business processes: document reading, rule-based and ML decision making, system action execution, exception handling and intelligent escalation.",
+      "category": "Enterprise Artificial Intelligence",
+      "subcategory": "Intelligent Process Automation",
+      "valueProposition": "Goes beyond RPA: combines workflow automation with AI to read unstructured documents, make intelligent decisions, handle exceptions and execute actions across multiple systems, automating complete processes that previously required constant human intervention.",
+      "featuresIncluded": [
+        "Target process mapping and redesign",
+        "Configurable workflow engine",
+        "AI integration for document reading, classification and decisions",
+        "Connections to ERP, CRM, email, shared folders via API",
+        "Exception handling with intelligent escalation",
+        "Process monitoring dashboard",
+        "Efficiency metrics (time, volume, errors)",
+        "Configurable alerts and notifications"
+      ],
+      "applicableSectors": ["Financial services", "Insurance", "Manufacturing", "Distribution", "Professional services", "Government"],
+      "measurableBenefits": [
+        "50-80% reduction in processing time",
+        "90%+ reduction in manual entry errors",
+        "Scalability without proportional headcount increase",
+        "Complete traceability of each process step",
+        "Team liberation for higher value tasks"
+      ],
+      "implementationFees": [
+        {
+          "name": "FlowMind AI Implementation",
+          "description": "Process mapping, workflow configuration, integrations, AI training",
+          "amount": 15000,
+          "currency": "USD",
+          "estimatedTimeline": "6 to 10 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional process",
+          "description": "Additional process automation",
+          "amount": 5000,
+          "currency": "USD"
+        },
+        {
+          "name": "Additional executions",
+          "description": "1000 extra executions package",
+          "amount": 150,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "1 automated process, up to 1000 executions/month",
+          "basePrice": 800,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1000,
+          "usageUnit": "executions"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 3 processes, 5000 executions/month",
+          "basePrice": 2500,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5000,
+          "usageUnit": "executions"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "AI-VOICE-001": {
+      "title": "VoiceAgent AI - Smart voice agent for phone service",
+      "summaryTitle": "VoiceAgent AI",
+      "summary": "AI-powered phone agent that answers calls with natural voice, understands the caller's intent, accesses internal systems to provide real answers, and escalates to human agents when necessary. Replaces traditional IVRs and reduces call center costs.",
+      "cardSummaryTitle": "VoiceAgent AI",
+      "cardSummary": "AI-powered phone agent that answers calls with natural voice, understands the caller's intent, accesses internal systems to provide real answers, and escalates to human agents when necessary. Replaces traditional IVRs and reduces call center costs.",
+      "category": "Enterprise Artificial Intelligence",
+      "subcategory": "Customer service and conversational interfaces",
+      "valueProposition": "AI voice agent that answers calls 24/7 with natural conversations in Spanish, accesses internal systems to solve real queries, and intelligently escalates to humans only for complex cases, reducing call center costs by up to 60% and eliminating wait times.",
+      "featuresIncluded": [
+        "Voice agent with LLM and natural voice synthesis",
+        "Telephony integration (Twilio, SIP)",
+        "Connections to CRM, ERP, calendars via API",
+        "Configurable conversation flows",
+        "Intelligent escalation to human agents with context",
+        "Metrics panel (resolution, duration, satisfaction)",
+        "Call recording and transcription",
+        "Spanish and English support"
+      ],
+      "applicableSectors": ["Clinics and hospitals", "Hospitality", "Restaurants", "Financial services", "Telecommunications", "Government", "Professional services"],
+      "measurableBenefits": [
+        "40-60% reduction in call center costs",
+        "24/7 service without additional shift costs",
+        "Elimination of wait times",
+        "Consistency in service quality",
+        "Scalability without proportional hiring"
+      ],
+      "implementationFees": [
+        {
+          "name": "VoiceAgent AI Implementation",
+          "description": "Telephony integration, voice flows, system connection",
+          "amount": 15000,
+          "currency": "USD",
+          "estimatedTimeline": "5 to 7 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional minute",
+          "description": "Extra consumption per minute outside the plan",
+          "amount": 0.12,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 1000 minutes/month",
+          "basePrice": 800,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1000,
+          "usageUnit": "minutes"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 5000 minutes/month",
+          "basePrice": 2500,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5000,
+          "usageUnit": "minutes"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "AI-CHAT-001": {
+      "title": "AssistBot AI - Business transactional chatbot with systems integration",
+      "summaryTitle": "AssistBot AI",
+      "summary": "Enterprise chatbot with generative AI that not only answers questions but also performs real actions: checks orders in the ERP, schedules appointments, processes requests, generates quotes, and creates tickets, all from WhatsApp, web, or messaging channels, connected to the company's internal systems.",
+      "cardSummaryTitle": "AssistBot AI",
+      "cardSummary": "Enterprise chatbot with generative AI that not only answers questions but also performs real actions: checks orders in the ERP, schedules appointments, processes requests, generates quotes, and creates tickets, all from WhatsApp, web, or messaging channels, connected to the company's internal systems.",
+      "category": "Enterprise Artificial Intelligence",
+      "subcategory": "Customer service and conversational interfaces",
+      "valueProposition": "AI chatbot that understands intent, accesses internal systems (ERP, CRM, inventory, calendars) and executes real transactions on behalf of the customer or employee, resolving up to 80% of queries without human escalation, available 24/7 on WhatsApp and web.",
+      "featuresIncluded": [
+        "Conversational bot with LLM",
+        "Integration with WhatsApp Business API and/or web widget",
+        "Connections to ERP, CRM, inventory, calendars via API",
+        "Intent engine and business flows",
+        "Intelligent escalation to human agents",
+        "Metrics and conversation panel",
+        "Initial training with client knowledge base",
+        "Multi-language support (Spanish/English)"
+      ],
+      "applicableSectors": ["Retail", "Restaurants", "Clinics and hospitals", "Logistics", "Financial services", "Education", "Hospitality"],
+      "measurableBenefits": [
+        "60-80% resolution of queries without human intervention",
+        "24/7 availability without incremental staff cost",
+        "40-60% reduction in average first response time",
+        "Higher customer satisfaction (CSAT)",
+        "Human team liberation for complex cases"
+      ],
+      "implementationFees": [
+        {
+          "name": "AssistBot AI Implementation",
+          "description": "System integrations, flows, training",
+          "amount": 12000,
+          "currency": "USD",
+          "estimatedTimeline": "4 to 6 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional conversation",
+          "description": "Extra consumption per conversation outside the plan",
+          "amount": 0.08,
+          "currency": "USD"
+        },
+        {
+          "name": "Additional channel",
+          "description": "Additional messaging channel (Telegram, Instagram, etc.)",
+          "amount": 200,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 2000 conversations/month",
+          "basePrice": 600,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 2000,
+          "usageUnit": "conversations"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 10000 conversations/month",
+          "basePrice": 1800,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 10000,
+          "usageUnit": "conversations"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "AI-PRED-001": {
+      "title": "ForecastAI - Demand prediction and forecasting with machine learning",
+      "summaryTitle": "ForecastAI",
+      "summary": "Demand prediction system based on machine learning that analyzes sales history, seasonality, external events, and market signals to generate forecasts at SKU, location, and period level, integrating with the ERP to feed purchasing, production, and inventory planning.",
+      "cardSummaryTitle": "ForecastAI",
+      "cardSummary": "Demand prediction system based on machine learning that analyzes sales history, seasonality, external events, and market signals to generate forecasts at SKU, location, and period level, integrating with the ERP to feed purchasing, production, and inventory planning.",
+      "category": "Enterprise Artificial Intelligence",
+      "subcategory": "Prediction and advanced analytics",
+      "valueProposition": "ML models that continuously retrain with real data, considering seasonality, trends, special events, and external signals to generate demand predictions up to 20% more accurate than traditional methods, with direct ERP integration to automate planning.",
+      "featuresIncluded": [
+        "Automated data pipeline",
+        "ML models (Prophet, XGBoost, LSTM as applicable)",
+        "Feature engineering with external variables (weather, calendar, events)",
+        "Scheduled automatic retraining",
+        "Prediction API",
+        "Forecast vs actual dashboard",
+        "Deviation alerts",
+        "ERP integration to feed planning"
+      ],
+      "applicableSectors": ["Food distribution", "Retail", "Consumer manufacturing", "Restaurants", "Pharmacies", "E-commerce"],
+      "measurableBenefits": [
+        "15-25% improvement in forecast accuracy (benchmark: Coca-Cola achieved +20%)",
+        "10-30% reduction in overstock",
+        "5-15% reduction in stockouts",
+        "Working capital optimization",
+        "Proactive data-driven planning"
+      ],
+      "implementationFees": [
+        {
+          "name": "ForecastAI Implementation",
+          "description": "Data pipeline, model training, ERP integration",
+          "amount": 25000,
+          "currency": "USD",
+          "estimatedTimeline": "8 to 12 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional SKU",
+          "description": "Extra SKU outside the plan",
+          "amount": 1.5,
+          "currency": "USD"
+        },
+        {
+          "name": "External source",
+          "description": "Integration of additional external data source (weather, events, etc.)",
+          "amount": 500,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 500 SKUs",
+          "basePrice": 1500,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 500,
+          "usageUnit": "SKUs"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 5000 SKUs",
+          "basePrice": 4000,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5000,
+          "usageUnit": "SKUs"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "AI-NL2SQL-001": {
+      "title": "DataTalk AI - Natural language database queries",
+      "summaryTitle": "DataTalk AI",
+      "summary": "Platform that allows business users to query databases, data warehouses, and enterprise systems in natural language (Spanish/English), getting instant answers with tables, charts, and explanatory narratives without writing SQL or depending on technical teams.",
+      "cardSummaryTitle": "DataTalk AI",
+      "cardSummary": "Platform that allows business users to query databases, data warehouses, and enterprise systems in natural language (Spanish/English), getting instant answers with tables, charts, and explanatory narratives without writing SQL or depending on technical teams.",
+      "category": "Enterprise Artificial Intelligence",
+      "subcategory": "Conversational analytics and data access",
+      "valueProposition": "Democratizes access to enterprise data through conversational AI: any user asks in Spanish, the system generates optimized SQL, executes the query, and returns answers with visualizations and natural language explanations, with semantic layer ensuring metric consistency.",
+      "featuresIncluded": [
+        "Database connection (PostgreSQL, MySQL, SQL Server, BigQuery, Snowflake, Oracle)",
+        "Semantic layer of metrics and dimensions",
+        "NL2SQL engine with validation",
+        "Automatic visualization generation",
+        "Natural language explanatory narratives",
+        "Administration panel",
+        "Role-based access control",
+        "Query history",
+        "Initial model training with client schema"
+      ],
+      "applicableSectors": ["Retail", "Distribution", "Manufacturing", "Financial services", "Logistics"],
+      "measurableBenefits": [
+        "80% reduction in insight generation time",
+        "Elimination of request backlog to data team",
+        "Democratization of information access for decision makers",
+        "Faster reaction speed to market changes"
+      ],
+      "implementationFees": [
+        {
+          "name": "DataTalk AI Implementation",
+          "description": "DB connection, semantic layer, model training",
+          "amount": 15000,
+          "currency": "USD",
+          "estimatedTimeline": "4 to 6 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional query",
+          "description": "Extra consumption per query outside the plan",
+          "amount": 0.25,
+          "currency": "USD"
+        },
+        {
+          "name": "Additional datasource",
+          "description": "Connection to additional database",
+          "amount": 300,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 500 queries/month",
+          "basePrice": 800,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 500,
+          "usageUnit": "queries"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 3000 queries/month",
+          "basePrice": 2500,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 3000,
+          "usageUnit": "queries"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "BM-001": {
+      "title": "Minimum Bases",
+      "summaryTitle": "Minimum Bases",
+      "summary": "Solution that automates the decision to apply or not apply tax withholdings on purchase invoices, based on minimum amount thresholds established by Salvadoran tax law. Ensures that the 1% withholding on the VAT taxable base is calculated only when the amount exceeds $100 USD.",
+      "cardSummaryTitle": "Minimum Bases",
+      "cardSummary": "Solution that automates the decision to apply or not apply tax withholdings on purchase invoices, based on minimum amount thresholds established by Salvadoran tax law. Ensures that the 1% withholding on the VAT taxable base is calculated only when the amount exceeds $100 USD.",
+      "category": "Tax Compliance",
+      "subcategory": "Withholdings",
+      "valueProposition": "Automates validation of the $100 USD threshold on purchase invoices to determine whether the 1% VAT withholding applies, totaling all invoice lines and respecting existing tax regime rules, without manual user intervention.",
+      "featuresIncluded": [
+        "Automatic validation of total amount vs $100 USD threshold",
+        "Application or suppression of 1% VAT withholding based on result",
+        "Totalization of all lines (goods and services)",
+        "Savings and tax preview operation",
+        "Respect for existing tax regime rules (Suite Tax)"
+      ],
+      "applicableSectors": ["Business services", "Consulting", "Business administration"],
+      "measurableBenefits": [
+        "% of invoices with withholding correctly applied/suppressed according to threshold",
+        "Zero manual adjustments for improper withholdings",
+        "Automated Salvadoran tax regulatory compliance"
+      ],
+      "implementationFees": [
+        {
+          "name": "Minimum Bases Implementation",
+          "description": "Suite Tax El Salvador configuration",
+          "amount": 2500,
+          "currency": "USD",
+          "estimatedTimeline": "1 to 2 weeks"
+        }
+      ],
+      "addons": [],
+      "plans": [],
+      "commercialConditions": [
+        "One-time payment",
+        "Mandatory implementation",
+        "Corrective support included first year"
+      ]
+    },
+    "MEL-001": {
+      "title": "Melonn – Fulfillment Integration with NetSuite",
+      "summaryTitle": "Melonn",
+      "summary": "Fulfillment and logistics platform for e-commerce that manages the complete order fulfillment cycle. Its integration with NetSuite automatically synchronizes inventory transfers, adjustments, order execution, invoicing, and returns, eliminating manual entry and ensuring financial and operational traceability.",
+      "cardSummaryTitle": "Melonn",
+      "cardSummary": "Fulfillment and logistics platform for e-commerce that manages the complete order fulfillment cycle. Its integration with NetSuite automatically synchronizes inventory transfers, adjustments, order execution, invoicing, and returns, eliminating manual entry and ensuring financial and operational traceability.",
+      "category": "Logistics Integration",
+      "subcategory": "Fulfillment",
+      "valueProposition": "Automates synchronization of operational and logistics data between Melonn and NetSuite: inventory transfers, adjustments, order execution with tax invoicing (VAT/PAC), and returns, with idempotency control to avoid duplication in high transactional volumes.",
+      "featuresIncluded": [
+        "Creation of inventory transfers Melonn→NetSuite",
+        "Inventory adjustments Melonn→NetSuite",
+        "Sales order execution with invoicing",
+        "Return authorization and merchandise receipt management",
+        "Custom field mapping",
+        "Multiple subsidiary handling with tax configurations"
+      ],
+      "applicableSectors": ["E-commerce", "Retail", "Fashion", "Consumer Goods"],
+      "measurableBenefits": [
+        "% of Melonn orders automatically reflected in NetSuite",
+        "Average Melonn→NetSuite synchronization time",
+        "Post-integration inventory discrepancy rate",
+        "Elimination of transaction duplication"
+      ],
+      "implementationFees": [
+        {
+          "name": "Melonn-NetSuite Implementation",
+          "description": "Integration of transfers, adjustments, fulfillment, returns",
+          "amount": 8000,
+          "currency": "USD",
+          "estimatedTimeline": "5 to 6 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional line",
+          "description": "Extra consumption per line outside the plan",
+          "amount": 0.008,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 10,000 lines/month",
+          "basePrice": 350,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 10000,
+          "usageUnit": "lines"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 50,000 lines/month",
+          "basePrice": 800,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 50000,
+          "usageUnit": "lines"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "NOV-NS-001": {
+      "title": "Novasoft Integration – NetSuite ERP",
+      "summaryTitle": "Novasoft-NetSuite",
+      "summary": "Integration solution connecting the Novasoft payroll and HR platform with NetSuite, enabling automated synchronization of employees, accounting accounts, and journal entries. Eliminates double data entry and ensures financial and HR consistency.",
+      "cardSummaryTitle": "Novasoft-NetSuite",
+      "cardSummary": "Integration solution connecting the Novasoft payroll and HR platform with NetSuite, enabling automated synchronization of employees, accounting accounts, and journal entries. Eliminates double data entry and ensures financial and HR consistency.",
+      "category": "HR/Payroll Integration",
+      "subcategory": "Payroll Accounting",
+      "valueProposition": "Automates bidirectional transfer of employees, accounting accounts, and journal entries between Novasoft and NetSuite with automatic validations that notify discrepancies, guaranteeing 100% data consistency and eliminating manual intervention in financial closings.",
+      "featuresIncluded": [
+        "Registration and updating of employees (third parties) on both platforms",
+        "Creation and modification of synchronized accounting accounts",
+        "Generation and validation of Journal Entries in NetSuite from Novasoft",
+        "Error or discrepancy notification",
+        "Service exposure via Web Service (version 160)"
+      ],
+      "applicableSectors": ["Fintech", "Financial services", "Services"],
+      "measurableBenefits": [
+        "100% of Journal Entries correctly reflected without manual intervention",
+        "Zero undetected discrepancies between employees and accounts",
+        "Time reduction in monthly financial closings"
+      ],
+      "implementationFees": [
+        {
+          "name": "Novasoft-NetSuite Implementation",
+          "description": "Integration employees accounts JE",
+          "amount": 7000,
+          "currency": "USD",
+          "estimatedTimeline": "4 to 5 weeks"
+        }
+      ],
+      "addons": [],
+      "plans": [
+        {
+          "name": "Base",
+          "description": "Monthly active synchronization",
+          "basePrice": 400,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1,
+          "usageUnit": "connection"
+        }
+      ],
+      "commercialConditions": [
+        "One-time implementation payment",
+        "Support and maintenance included in monthly fee",
+        "Minimum 12-month contract"
+      ]
+    },
+    "YUJU-001": {
+      "title": "YUJU – Marketplace Integration with NetSuite",
+      "summaryTitle": "YUJU",
+      "summary": "Marketplace platform requiring bidirectional integration with NetSuite ERP to synchronize product catalogs, sales orders, shipping executions, and invoicing. Enables companies selling through marketplace channels to manage their entire commercial cycle in a centralized way within NetSuite, eliminating manual operation.",
+      "cardSummaryTitle": "YUJU",
+      "cardSummary": "Marketplace platform requiring bidirectional integration with NetSuite ERP to synchronize product catalogs, sales orders, shipping executions, and invoicing. Enables companies selling through marketplace channels to manage their entire commercial cycle in a centralized way within NetSuite, eliminating manual operation.",
+      "category": "E-commerce Integration",
+      "subcategory": "Marketplace",
+      "valueProposition": "Automated bidirectional integration between YUJU and NetSuite that synchronizes the complete sales cycle: product catalog, orders with confirmed payment, fulfillment with shipping status update, and differentiated invoicing by channel (direct vs marketplace), with reconciliation reports.",
+      "featuresIncluded": [
+        "Bidirectional item registration and update (catalog)",
+        "Automatic Sales Order creation from orders with confirmed payment",
+        "Order execution (fulfillment) with shipping status update to YUJU",
+        "Automatic or manual invoicing by channel",
+        "PDF shipping guide download and storage",
+        "Comparative report for reconciliation",
+        "Custom fields (sales channel, shipping data, guide, carrier)"
+      ],
+      "applicableSectors": ["E-commerce", "Marketplace", "Distribution"],
+      "measurableBenefits": [
+        "95% of integration scenarios without incidents",
+        "Reduction in order processing time (payment → creation in NetSuite)",
+        "Elimination of manual entry errors",
+        "Reliable financial reconciliation between platforms"
+      ],
+      "implementationFees": [
+        {
+          "name": "YUJU-NetSuite Implementation",
+          "description": "Catalog orders fulfillment integration",
+          "amount": 9000,
+          "currency": "USD",
+          "estimatedTimeline": "5 to 7 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional order",
+          "description": "Extra consumption per order outside the plan",
+          "amount": 0.06,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 1,000 orders/month",
+          "basePrice": 300,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1000,
+          "usageUnit": "orders"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 5,000 orders/month",
+          "basePrice": 700,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5000,
+          "usageUnit": "orders"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "PR-001": {
+      "title": "Restrictive Budget",
+      "summaryTitle": "Restrictive Budget",
+      "summary": "Budget control module on NetSuite that allows defining, managing, and enforcing spending limits by department or project. Automatically blocks purchase transactions that exceed budgeted amounts, ensuring financial discipline and real-time visibility of budget execution.",
+      "cardSummaryTitle": "Restrictive Budget",
+      "cardSummary": "Budget control module on NetSuite that allows defining, managing, and enforcing spending limits by department or project. Automatically blocks purchase transactions that exceed budgeted amounts, ensuring financial discipline and real-time visibility of budget execution.",
+      "category": "Financial Control",
+      "subcategory": "Budget",
+      "valueProposition": "Automatic blocking of transactions exceeding assigned budget, with real-time alerts, controlled fund reallocation with approval workflows, and budget execution reports, all within NetSuite without dependence on external spreadsheets.",
+      "featuresIncluded": [
+        "Budget definition and loading (subsidiary, department, branch/project, account/line item)",
+        "Restrictive validation on POs, Vendor Bills, expense reports, and purchase requests",
+        "Automatic blocking with alerts",
+        "Email notifications",
+        "Reallocation between accounts/branches of the same department or line items of the same project",
+        "Approval workflows",
+        "Budget execution reports",
+        "Role and permission management"
+      ],
+      "applicableSectors": ["Food distribution", "Electrical sector", "Manufacturing", "Services"],
+      "measurableBenefits": [
+        "% of transactions blocked when exceeding budget (target: 100%)",
+        "Reduction of undetected deviations at closing",
+        "Overspend response time",
+        "% of reallocations within the module vs manual adjustments"
+      ],
+      "implementationFees": [
+        {
+          "name": "Restrictive Budget Implementation",
+          "description": "Departments approvals configuration",
+          "amount": 6000,
+          "currency": "USD",
+          "estimatedTimeline": "4 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional subsidiary",
+          "description": "Extra subsidiary outside the plan",
+          "amount": 250,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Base",
+          "description": "1 subsidiary",
+          "basePrice": 600,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1,
+          "usageUnit": "subsidiary"
+        },
+        {
+          "name": "Multi",
+          "description": "Up to 5 subsidiaries",
+          "basePrice": 1400,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5,
+          "usageUnit": "subsidiaries"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "TAX-001": {
+      "title": "TaxMX",
+      "summaryTitle": "TaxMX",
+      "summary": "Product on NetSuite that automates three critical tax processes for Mexican companies: VAT accounting reclassification at the time of collection/payment, DIOT generation in SAT-importable format, and controlled CFDI cancellation. Enables automated tax compliance.",
+      "cardSummaryTitle": "TaxMX",
+      "cardSummary": "Product on NetSuite that automates three critical tax processes for Mexican companies: VAT accounting reclassification at the time of collection/payment, DIOT generation in SAT-importable format, and controlled CFDI cancellation. Enables automated tax compliance.",
+      "category": "Tax Compliance",
+      "subcategory": "VAT / DIOT / CFDI",
+      "valueProposition": "Comprehensively automates Mexican tax compliance within NetSuite: VAT reclassification to cash flow (full payments, partial, advances, returns), DIOT generation in SAT format, and CFDI cancellation with complete traceability, freeing the accounting team from repetitive processes.",
+      "featuresIncluded": [
+        "Creditable VAT reclassification (pending→paid)",
+        "Transferred VAT reclassification (uncollected→collected)",
+        "Multiple rates (16%, 0%, exempt)",
+        "Customer and supplier advance payments",
+        "DIOT generation (SAT-importable TXT)",
+        "Supplier classification (Domestic, Foreign, Global)",
+        "CFDI cancellation with SAT reasons (01-04)",
+        "Custom fields for DIOT",
+        "Saved searches and reports",
+        "ISR and VAT withholdings"
+      ],
+      "applicableSectors": ["Manufacturing", "Industrial footwear", "Financial sector", "Restaurants/Hospitality", "Industrial"],
+      "measurableBenefits": [
+        "Reduction in monthly accounting closing time (VAT reclassification)",
+        "% of DIOT generated without errors on first attempt",
+        "Automatic entries vs manual adjustments per period",
+        "CFDI cancellation processing time",
+        "Reduction of SAT observations for VAT/DIOT"
+      ],
+      "implementationFees": [
+        {
+          "name": "TaxMX Implementation",
+          "description": "VAT DIOT CFDI cancellation configuration",
+          "amount": 5000,
+          "currency": "USD",
+          "estimatedTimeline": "3 to 4 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "XML Validator",
+          "description": "Receipt and automatic validation of purchase XMLs",
+          "amount": 3500,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "TaxMX Complete",
+          "description": "VAT + DIOT + CFDI Cancellation",
+          "basePrice": 8000,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1,
+          "usageUnit": "license"
+        },
+        {
+          "name": "TaxMX Modular",
+          "description": "Individual module (VAT, DIOT or Cancellation)",
+          "basePrice": 3500,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1,
+          "usageUnit": "module"
+        }
+      ],
+      "commercialConditions": [
+        "One-time payment per contracted module",
+        "Mandatory implementation",
+        "Corrective support included first year"
+      ]
+    },
+    "PP-001": {
+      "title": "Supplier Portal",
+      "summaryTitle": "Supplier Portal",
+      "summary": "Solution that allows suppliers to access a secure web portal to upload digital tax receipts (CFDI) in XML and PDF, associate them with purchase orders, and automatically generate supplier invoices in NetSuite. Eliminates manual entry, centralizes document receipt, and ensures Mexican tax compliance.",
+      "cardSummaryTitle": "Supplier Portal",
+      "cardSummary": "Solution that allows suppliers to access a secure web portal to upload digital tax receipts (CFDI) in XML and PDF, associate them with purchase orders, and automatically generate supplier invoices in NetSuite. Eliminates manual entry, centralizes document receipt, and ensures Mexican tax compliance.",
+      "category": "Portal / Self-service",
+      "subcategory": "Accounts Payable",
+      "valueProposition": "Secure self-service portal where suppliers upload their CFDI, automatically validated against SAT rules and NetSuite data, generating Vendor Bills without manual intervention and with immediate feedback to the supplier on the result.",
+      "featuresIncluded": [
+        "Supplier registration with credentials",
+        "Secure login and subsidiary selection",
+        "View pending POs",
+        "XML and PDF upload",
+        "Automatic SAT validations (CFDI, RFC, UUID, amounts, keys)",
+        "Automatic Vendor Bill creation",
+        "Supplier notification",
+        "Partial invoicing and partial receipts",
+        "Internal approval workflows",
+        "Payment complements",
+        "Advance payments"
+      ],
+      "applicableSectors": ["Food", "Entertainment/Hospitality", "Insurance/Financial", "Manufacturing"],
+      "measurableBenefits": [
+        "% of invoices processed without manual intervention",
+        "First-time rejection rate",
+        "Time from upload to registration in NetSuite",
+        "% of scenarios without incidents (Wings target: 95%)",
+        "Reduction of tax errors in audits"
+      ],
+      "implementationFees": [
+        {
+          "name": "Supplier Portal Implementation",
+          "description": "Portal configuration and SAT rules",
+          "amount": 8000,
+          "currency": "USD",
+          "estimatedTimeline": "4 to 6 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional supplier",
+          "description": "Extra active supplier outside the plan",
+          "amount": 5,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Up to 50 active suppliers",
+          "basePrice": 500,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 50,
+          "usageUnit": "suppliers"
+        },
+        {
+          "name": "Growth",
+          "description": "Up to 200 active suppliers",
+          "basePrice": 1200,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 200,
+          "usageUnit": "suppliers"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "H2H-001": {
+      "title": "H2H (Host to Host) – NetSuite Integration with Banks",
+      "summaryTitle": "H2H",
+      "summary": "Bank integration solution that connects NetSuite with Banco Santander's payment services, enabling automation of supplier payment disbursement and bank reconciliation. Eliminates manual mass payment operations, centralizing the generation, approval, and sending of payment files through encrypted secure communication.",
+      "cardSummaryTitle": "H2H",
+      "cardSummary": "Bank integration solution that connects NetSuite with Banco Santander's payment services, enabling automation of supplier payment disbursement and bank reconciliation. Eliminates manual mass payment operations, centralizing the generation, approval, and sending of payment files through encrypted secure communication.",
+      "category": "Banking Integration",
+      "subcategory": "Payment Disbursement",
+      "valueProposition": "Automates the complete payment cycle from NetSuite to Santander, including disbursement file generation, multi-level approval flow, secure SFTP/PGP transmission, and bank response reconciliation, reducing errors, times, and fraud risks.",
+      "featuresIncluded": [
+        "Selection and pre-selection of pending invoices",
+        "Partial payment and installment plan management",
+        "Grouping by subsidiary, zone, and currency",
+        "National and crossborder TXT generation",
+        "Multi-level approval flow",
+        "SFTP transmission with PGP encryption",
+        "Bank response receipt and reconciliation",
+        "Email notifications",
+        "TXT preview and download"
+      ],
+      "applicableSectors": ["Manufacturing", "Distribution", "Hospitality", "Services"],
+      "measurableBenefits": [
+        "Reduction in mass payment processing time",
+        "% of payments without corrective manual intervention",
+        "Reduction in bank errors/rejections",
+        "Bank reconciliation time",
+        "% of batches approved on time"
+      ],
+      "implementationFees": [
+        {
+          "name": "H2H Implementation",
+          "description": "H2H Integration",
+          "amount": 12000,
+          "currency": "USD",
+          "estimatedTimeline": "6 to 8 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional file",
+          "description": "Extra consumption per file",
+          "amount": 0.02,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Base files",
+          "basePrice": 400,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5000,
+          "usageUnit": "files"
+        },
+        {
+          "name": "Growth",
+          "description": "Scale files",
+          "basePrice": 1200,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 25000,
+          "usageUnit": "files"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "POS-001": {
+      "title": "POS – Point of Sale Integration",
+      "summaryTitle": "POS NetSuite",
+      "summary": "Integration solution connecting Point of Sale systems (JONAS, Micros 9700, Simphony, Aloha) with NetSuite, enabling automated sales recording, electronic CFDI/SAT invoicing, and correct accounting impact on revenue accounts. Eliminates manual entry and centralizes operational information.",
+      "cardSummaryTitle": "POS NetSuite",
+      "cardSummary": "Integration solution connecting Point of Sale systems (JONAS, Micros 9700, Simphony, Aloha) with NetSuite, enabling automated sales recording, electronic CFDI/SAT invoicing, and correct accounting impact on revenue accounts. Eliminates manual entry and centralizes operational information.",
+      "category": "POS Integration",
+      "subcategory": "Sales and Invoicing",
+      "valueProposition": "Automates POS sales import into NetSuite, generates SAT-stamped CFDI with full traceability, and reflects the correct accounting impact by payment method, discounts, and taxes, enabling real-time operational reports.",
+      "featuresIncluded": [
+        "Automated sales import (cash and credit)",
+        "Master catalog synchronization",
+        "Parent item grouping for CFDI",
+        "Stamping and certification with PAC/SAT",
+        "UUID/XML/PDF distribution",
+        "Accounting reclassification by payment method",
+        "Line and global discounts",
+        "Gratuities",
+        "Assemblies/production",
+        "Sales reports",
+        "Cash drawer closing",
+        "Error handling",
+        "Tax cancellations",
+        "Post-stamping date updates"
+      ],
+      "applicableSectors": ["Restaurants", "Clubs", "Hospitality", "Food and Beverage"],
+      "measurableBenefits": [
+        "% of transactions imported without manual intervention (target: ~100%)",
+        "Reduction in daily accounting closing time",
+        "POS-ERP error rate (target: <1%)",
+        "% of CFDI correctly stamped on first attempt",
+        "Suspense account 'Sales to be invoiced' balance at zero at closing"
+      ],
+      "implementationFees": [
+        {
+          "name": "POS Implementation",
+          "description": "POS Pipeline",
+          "amount": 9000,
+          "currency": "USD",
+          "estimatedTimeline": "6 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional ticket",
+          "description": "Extra consumption per ticket",
+          "amount": 0.003,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Base tickets",
+          "basePrice": 400,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 50000,
+          "usageUnit": "tickets"
+        },
+        {
+          "name": "Growth",
+          "description": "Scale tickets",
+          "basePrice": 1200,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 200000,
+          "usageUnit": "tickets"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly volume-based billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    },
+    "VXML-001": {
+      "title": "XML Validator",
+      "summaryTitle": "XML Validator",
+      "summary": "NetSuite product that automates the receipt, validation and assignment of digital tax receipts (XML) to purchase and expense transactions in the ERP. Guarantees Mexican tax compliance by ensuring that each invoice has its XML properly validated and linked.",
+      "cardSummaryTitle": "XML Validator",
+      "cardSummary": "NetSuite product that automates the receipt, validation and assignment of digital tax receipts (XML) to purchase and expense transactions in the ERP. Guarantees Mexican tax compliance by ensuring that each invoice has its XML properly validated and linked.",
+      "category": "Tax Compliance",
+      "subcategory": "Document Validation",
+      "valueProposition": "Automates mass import, validation (duplicity, UUID, RFC, amounts) and assignment of XML to transactions in NetSuite, with automatic status classification and tracking views, eliminating manual processes and reducing tax risk.",
+      "featuresIncluded": [
+        "Individual and .zip XML import (up to 10 MB)",
+        "Automatic decompression",
+        "Duplicity validation",
+        "UUID validation",
+        "Receiver RFC vs subsidiary validation",
+        "Issuer RFC vs supplier validation",
+        "Total amount validation",
+        "Reassignment to folders (Pending/Error)",
+        "Storage of unassigned XML",
+        "Tracking views and reports",
+        "Custom fields"
+      ],
+      "applicableSectors": ["Industrial", "Manufacturing", "Distribution"],
+      "measurableBenefits": [
+        "% of invoices with XML correctly validated and assigned",
+        "Average processing time XML→assignment",
+        "Reduction of tax incidents in audits",
+        "Volume of XML in error folder (quality indicator)"
+      ],
+      "implementationFees": [
+        {
+          "name": "XML Validator Implementation",
+          "description": "Included in TaxMX implementation if contracted together",
+          "amount": 2000,
+          "currency": "USD",
+          "estimatedTimeline": "2 to 3 weeks"
+        }
+      ],
+      "addons": [],
+      "plans": [],
+      "commercialConditions": [
+        "Only marketed as a complement to TaxMX",
+        "One-time payment",
+        "Corrective support included first year"
+      ]
+    },
+    "AI-DOC-001": {
+      "title": "DocuMind AI - Intelligent platform for automated document extraction and registration",
+      "summaryTitle": "DocuMind AI",
+      "summary": "AI solution that reads invoices, purchase orders, XML and other documents, automatically extracts relevant information, validates it against enterprise catalogs, and generates transactions ready to be recorded in the ERP.",
+      "cardSummaryTitle": "DocuMind AI",
+      "cardSummary": "AI solution that reads invoices, purchase orders, XML and other documents, automatically extracts relevant information, validates it against enterprise catalogs, and generates transactions ready to be recorded in the ERP.",
+      "category": "Enterprise Artificial Intelligence",
+      "subcategory": "Document and Transactional Automation",
+      "valueProposition": "Transforms unstructured documents into actionable data using AI, accelerating accounting and operational recording with greater accuracy, traceability and scalability.",
+      "featuresIncluded": [
+        "AI extraction",
+        "interpretation of unstructured documents",
+        "reading of PDF/XML/Excel/image",
+        "intelligent mapping of suppliers",
+        "items and locations",
+        "validations",
+        "automatic suggestions",
+        "ERP integration",
+        "traceability and learning memory"
+      ],
+      "applicableSectors": [
+        "Organizations that receive invoices",
+        "POs",
+        "XML",
+        "PDFs",
+        "images or Excel files and need to transform them into operational or accounting records"
+      ],
+      "measurableBenefits": [
+        "Reduction in capture time",
+        "lower manual error",
+        "faster processing speed",
+        "better data quality",
+        "less rework and greater productivity of the administrative team"
+      ],
+      "implementationFees": [
+        {
+          "name": "AI Docs Implementation",
+          "description": "Model training",
+          "amount": 12000,
+          "currency": "USD",
+          "estimatedTimeline": "4 to 6 weeks"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Additional document",
+          "description": "Extra consumption per document",
+          "amount": 0.15,
+          "currency": "USD"
+        }
+      ],
+      "plans": [
+        {
+          "name": "Starter",
+          "description": "Base documents",
+          "basePrice": 800,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 1000,
+          "usageUnit": "documents"
+        },
+        {
+          "name": "Growth",
+          "description": "Scale documents",
+          "basePrice": 2000,
+          "pricePeriod": "MONTHLY",
+          "includedUsage": 5000,
+          "usageUnit": "documents"
+        }
+      ],
+      "commercialConditions": [
+        "Minimum 12-month contract",
+        "Monthly advance billing",
+        "Mandatory implementation",
+        "Support and maintenance included in monthly fee"
+      ]
+    }
   }
 }

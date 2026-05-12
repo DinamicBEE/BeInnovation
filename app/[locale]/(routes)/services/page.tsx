@@ -14,6 +14,10 @@ import { useParams } from 'next/navigation';
 import "./services.css"
 
 export default function ServicesPage() {
+  const params = useParams();
+  const locale = params.locale as string;
+
+  const { t } = useTranslation(locale, 'products');
 
   const [services, setServices] = useState<ServicesByCategory>({} as ServicesByCategory);
   const [loading, setLoading] = useState(true);
@@ -61,13 +65,13 @@ export default function ServicesPage() {
           <div className="text-center max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white drop-shadow-lg text-shadow-lg/30 tracking-tight">
-              Nuestros productos
+              {t('detail.title_2')}
             </h1>
             
             <div className="w-16 sm:w-20 h-1 bg-[#7cb44c] mx-auto rounded-full" />
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed px-2">
-              Soluciones tecnológicas innovadoras que transforman negocios y potencian resultados.
+              {t('detail.description_full')}
             </p>
           </div>
         </div>
@@ -325,7 +329,7 @@ function BackgroundCard({ id, code, bgImage }: BackgroundCardProps) {
       <div className="absolute inset-0 w-full h-full">
         <Image
           src={bgImage}
-          alt={tProducts(`${code}.title`)}
+          alt={tProducts(`products.${code}.title`)}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-700"
@@ -338,11 +342,11 @@ function BackgroundCard({ id, code, bgImage }: BackgroundCardProps) {
       <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
         <CardHeader className="p-0 space-y-2">
           <CardTitle className="text-white text-xl font-bold drop-shadow-lg">
-            {tProducts(`${code}.title`)}
+            {tProducts(`products.${code}.title`)}
           </CardTitle>
           <CardDescription className="text-white/90 text-sm leading-relaxed line-clamp-3 drop-shadow">
           <div className="flex flex-col gap-4">
-            {tProducts(`${code}.cardSummary`)}
+            {tProducts(`products.${code}.cardSummary`)}
 
             <Button variant="outline" className="cursor-pointer" onClick={() => handleCardClick(id)}>
                 <span className="text-sm font-medium">{tCommon('home.services_details')}</span>

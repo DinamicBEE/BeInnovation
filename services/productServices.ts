@@ -62,7 +62,7 @@ export const getServiceById = async (id: string): Promise<Service> => {
         if (!response.ok) {
             throw new Error(`Error fetching services: ${response.status}`);
         }
-        
+        const imgUrls = [...IMG_DEV_CATEGORY, ...IMG_AI_CATEGORY, ...IMG_NETSUITE_CATEGORY];
         const data: Service = await response.json().then(services => services.find((service: Service) => service.id === id));
         
         const transformedBillingType = data.implementationFees[0].billingType ? billingTransform(data.implementationFees[0].billingType) : undefined;
@@ -74,6 +74,7 @@ export const getServiceById = async (id: string): Promise<Service> => {
         
         const dataT = {
             ...data,
+            coverImageUrl: imgUrls.find(img => img.code === data.code)?.url || data.coverImageUrl,
             implementationFees:[
                 {
                     ...data.implementationFees[0],

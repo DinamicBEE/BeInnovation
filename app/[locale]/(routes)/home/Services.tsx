@@ -62,69 +62,58 @@ export default function Services() {
 
     return (
         <section className="relative container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 w-full items-stretch py-16 px-8">
-                    {/* <div className="absolute inset-0 z-0 w-full h-full">
-                      <Image
-                        src="/background/Invert_flow_concept.png"
-                        alt="Background"
-                        fill
-                        className="object-cover"
-                        priority={false}
-                      />
-                    </div> */}
-
-                {services.map((service, index) => (
-                    
-                    <div key={index} className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group">
-                    
-                        <Card  className="card-navy relative my-2 mx-auto w-full max-w-lg py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
-                            <div className="flex flex-col h-full">
-                                {service.coverImageUrl && (
-                                    <div className="relative w-full aspect-video bg-linear-to-br from-primary-dark/5 to-accent-teal/5 overflow-hidden shrink-0">
-                                        <Image src={service.coverImageUrl } alt={service.shortName} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" priority={false} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"/>
-                                        <div className="absolute top-3 left-3">
-                                            <Badge className="bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300">
-                                                {tProducts(`${service.code}.category`)}
-                                            </Badge>
-                                        </div>
+            {services.map((service, index) => (
+                
+                <div key={index} className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group">
+                
+                    <Card  className="card-navy relative my-2 mx-auto w-full max-w-lg py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                        <div className="flex flex-col h-full">
+                            {service.coverImageUrl && (
+                                <div className="relative w-full aspect-video bg-linear-to-br from-primary-dark/5 to-accent-teal/5 overflow-hidden shrink-0">
+                                    <Image src={service.coverImageUrl } alt={service.shortName} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" priority={false} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"/>
+                                    <div className="absolute top-3 left-3">
+                                        <Badge className="bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300">
+                                            {tProducts(`products.${service.code}.category`)}
+                                        </Badge>
                                     </div>
-                                )}
-                                <CardHeader className="w-full py-4 bg-linear-to-t from-white to-bg-tertiary/30 flex-1">
-                                    <CardTitle className="text-text-primary">{tProducts(`${service.code}.title`)}</CardTitle>
-                                    <CardDescription className="text-text-secondary">
-                                        <div className="flex flex-col gap-4">
-                                            {tProducts(`${service.code}.cardSummary`)}
+                                </div>
+                            )}
+                            <CardHeader className="w-full py-4 bg-linear-to-t from-white to-bg-tertiary/30 flex-1">
+                                <CardTitle className="text-text-primary">{tProducts(`products.${service.code}.title`)}</CardTitle>
+                                <CardDescription className="text-text-secondary">
+                                    <div className="flex flex-col gap-4">
+                                        {tProducts(`products.${service.code}.cardSummary`)}
 
-                                            <Button variant="outline" className="cursor-pointer" onClick={() => handleCardClick(service.id)}>
-                                                <span className="text-sm font-medium">{tCommon('home.services_details')}</span>
-                                                <Icon icon="mdi:arrow-right-thin" className="w-7 h-7 sm:w-8 sm:h-8" />
-                                            </Button>
-                                        </div>
-                                    </CardDescription>
-                                </CardHeader>
-                            </div>
-                        </Card>
-                
-                    </div>
-                
-                ))}
-
-                <div className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group cursor-pointer" onClick={handleViewAllClick} >
-                    <Card className="home-cards relative my-2 mx-auto w-full max-w-sm py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl bg-white dark:bg-gray-900 border-2 border-dashed border-[#7cb44c]/30">
-                        <div className="flex flex-col items-center justify-center h-full p-8 text-center flex-1">
-                            <div className="w-12 h-12 rounded-full bg-[#7cb44c]/20 flex items-center justify-center mb-3">
-                                <span className="text-2xl font-bold text-[#7cb44c]">+</span>
-                            </div>
-                            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                                {tCommon('home.services_contactTitle')}
-                            </h3>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">
-                                {tCommon('home.services_contactSubtitle')}
-                            </p>
+                                        <Button variant="outline" className="cursor-pointer" onClick={() => handleCardClick(service.id)}>
+                                            <span className="text-sm font-medium">{tCommon('home.services_details')}</span>
+                                            <Icon icon="mdi:arrow-right-thin" className="w-7 h-7 sm:w-8 sm:h-8" />
+                                        </Button>
+                                    </div>
+                                </CardDescription>
+                            </CardHeader>
                         </div>
                     </Card>
+            
                 </div>
             
+            ))}
 
+            <div className="flex flex-col items-center text-center sm:items-start sm:text-left h-full group cursor-pointer" onClick={handleViewAllClick} >
+                <Card className="home-cards relative my-2 mx-auto w-full max-w-sm py-0 overflow-hidden rounded-lg h-full flex flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl bg-white dark:bg-gray-900 border-2 border-dashed border-[#7cb44c]/30">
+                    <div className="flex flex-col items-center justify-center h-full p-8 text-center flex-1">
+                        <div className="w-12 h-12 rounded-full bg-[#7cb44c]/20 flex items-center justify-center mb-3">
+                            <span className="text-2xl font-bold text-[#7cb44c]">+</span>
+                        </div>
+                        <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
+                            {tCommon('home.services_contactTitle')}
+                        </h3>
+                        <p className="text-xs text-gray-500 dark:text-gray-400">
+                            {tCommon('home.services_contactSubtitle')}
+                        </p>
+                    </div>
+                </Card>
+            </div>
+            
         </section>
     )
 }

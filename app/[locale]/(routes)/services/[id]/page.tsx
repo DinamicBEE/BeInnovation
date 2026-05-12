@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslation } from '@/lib/i18n/client';
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import { Service } from "@/Models/products.types";
+import { Addon, ImplementationFee, Plans, Service } from "@/Models/products.types";
 import { getServiceById } from "@/services/productServices";
 import { CheckCircle, Calendar, DollarSign, TrendingUp, Target, Phone, Mail, ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -11,6 +12,9 @@ import Link from "next/link";
 export default function ServiceDetailPage() {
     const params = useParams();
     const serviceId = params.id as string;
+    const locale = params.locale as string;
+    
+    const { t } = useTranslation(locale, 'products');
 
     const [service, setService] = useState<Service>({} as Service);
     
@@ -37,7 +41,7 @@ export default function ServiceDetailPage() {
             
                 <div className="absolute inset-0 w-full h-full">
                     <Image
-                        src="/background/Focused_steam_velocity.png"//{service.coverImageUrl || "/background/Focused_steam_velocity.png"}
+                        src={service.coverImageUrl || "/background/Focused_steam_velocity.png"}//"/background/Focused_steam_velocity.png"//
                         alt={service.name}
                         fill
                         className="object-cover"
@@ -53,13 +57,13 @@ export default function ServiceDetailPage() {
                     <div className="text-center max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
                     
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white drop-shadow-lg text-shadow-lg/30 tracking-tight">
-                        {service.shortName}
+                        {t(`products.${service.code}.title`)}
                     </h1>
                     
                     <div className="w-16 sm:w-20 h-1 bg-[#7cb44c] mx-auto rounded-full" />
                     
                     <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed px-2">
-                        {service.valueProposition}
+                        {t(`products.${service.code}.valueProposition`)}
                     </p>
                     </div>
                 </div>
@@ -69,17 +73,17 @@ export default function ServiceDetailPage() {
                 <div className="max-w-4xl mx-auto">
                     <div className="flex flex-wrap gap-2 mb-4 justify-center">
                         <span className="bg-[#2d4b8f] text-white px-4 py-2 rounded-full text-sm">
-                        {service.category}
+                        {t(`products.${service.code}.category`)}
                         </span>
                         <span className="bg-[#7cb44c] text-white px-4 py-2 rounded-full text-sm">
-                        {service.subcategory}
+                        {t(`products.${service.code}.subcategory`)}
                         </span>
                     </div>
 
                     {service.applicableSectors && service.applicableSectors.length > 0 && (
 
                         <div className="mb-8 flex flex-wrap gap-2 justify-center">
-                            {service.applicableSectors.map((sector, idx) => (
+                            {(t(`products.${service.code}.applicableSectors`, { returnObjects: true }) as string[]).map((sector, idx) => (
                                 <span
                                     key={idx}
                                     className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300"
@@ -94,12 +98,12 @@ export default function ServiceDetailPage() {
                         <div className="mb-16">
                             <div className="text-center mb-8">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                                    Características incluidas
+                                    {t(`detail.features_included`)}
                                 </h2>
                                 <div className="w-12 h-0.5 bg-[#7cb44c] mx-auto" />
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                {service.featuresIncluded.map((feature, idx) => (
+                                {(t(`products.${service.code}.featuresIncluded`, { returnObjects: true }) as string[]).map((feature, idx) => (
                                     <div
                                         key={idx}
                                         className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
@@ -118,15 +122,15 @@ export default function ServiceDetailPage() {
                         <div className="mb-16">
                             <div className="text-center mb-8">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                                    Planes y precios
+                                    {t(`detail.plan_price`)}
                                 </h2>
                                 <div className="w-12 h-0.5 bg-[#7cb44c] mx-auto" />
                                 <p className="text-gray-600 dark:text-gray-400 mt-3 text-sm">
-                                    Elige el plan que mejor se adapte a tus necesidades
+                                    {t(`detail.plan_label`)}
                                 </p>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {service.plans.map((plan, idx) => (
+                                {(t(`products.${service.code}.plans`, { returnObjects: true }) as Plans[]).map((plan, idx) => (
                                     <div
                                         key={idx}
                                         className="group relative bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:border-[#7cb44c]/30"
@@ -159,7 +163,7 @@ export default function ServiceDetailPage() {
                                                 </span>
                                             </div>
                                             <p className="text-xs text-gray-500 mt-2">
-                                                {plan.includedUsage.toLocaleString()} {plan.usageUnit} incluidos
+                                                {plan.includedUsage.toLocaleString()} {plan.usageUnit} {t(`detail.included`)}
                                             </p>
                                         </div>
 
@@ -167,25 +171,25 @@ export default function ServiceDetailPage() {
                                             <div className="flex items-center gap-2 text-sm">
                                                 <DollarSign className="w-4 h-4 text-[#7cb44c]" />
                                                 <span className="text-gray-700 dark:text-gray-300">
-                                                    Setup: {plan.setupFee === 0 ? "Gratis" : `$${plan.setupFee}`}
+                                                    Setup: {plan.setupFee === 0 ? t('detail.setup_free') : `$${plan.setupFee}`}
                                                 </span>
                                             </div>
                                             <div className="flex items-center gap-2 text-sm">
                                                 <Calendar className="w-4 h-4 text-[#7cb44c]" />
                                                 <span className="text-gray-700 dark:text-gray-300">
-                                                    {plan.minCommitMonths === 0 ? "Sin permanencia" : `${plan.minCommitMonths} meses mínimo`}
+                                                    {plan.minCommitMonths === 0 ? t('detail.no_commitment') : `${plan.minCommitMonths} ${t('detail.months_minimum')}`}
                                                 </span>
                                             </div>
                                             <div className="flex items-center gap-2 text-sm">
                                                 <TrendingUp className="w-4 h-4 text-[#7cb44c]" />
                                                 <span className="text-gray-700 dark:text-gray-300">
-                                                    Renovación: {plan.renewalPolicy === "AUTOMATIC" ? "Automática" : "Manual"}
+                                                    {t('detail.renewal')}: {plan.renewalPolicy === "AUTOMATIC" ? t('detail.renewal_automatic') : t('detail.renewal_manual')}
                                                 </span>
                                             </div>
                                         </div>
 
                                         <button className="w-full py-2 px-4 bg-transparent border-2 border-[#7cb44c] text-[#7cb44c] rounded-lg font-semibold hover:bg-[#7cb44c] hover:text-white transition-all duration-300">
-                                            Seleccionar plan
+                                            {t(`detail.select_plan`)}
                                         </button>
                                     </div>
                                 ))}
@@ -197,15 +201,15 @@ export default function ServiceDetailPage() {
                         <div className="mb-16">
                             <div className="text-center mb-8">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                                    Beneficios medibles
+                                    {t('detail.measurable_benefits')}
                                 </h2>
                                 <div className="w-12 h-0.5 bg-[#7cb44c] mx-auto" />
                                 <p className="text-gray-600 dark:text-gray-400 mt-3 text-sm">
-                                    Resultados cuantificables que obtendrás con esta solución
+                                    {t('detail.results_you_will_get')}
                                 </p>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {service.measurableBenefits.map((benefit, idx) => (
+                                {(t(`products.${service.code}.measurableBenefits`, { returnObjects: true }) as string[]).map((benefit, idx) => (
                                     <div
                                         key={idx}
                                         className="group p-4 bg-linear-to-r from-[#2d4b8f]/5 to-[#7cb44c]/5 rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-md transition-all duration-300"
@@ -225,10 +229,10 @@ export default function ServiceDetailPage() {
                     {service.implementationFees && service.implementationFees.length > 0 && (
                         <div className="mt-8 p-6 bg-linear-to-r from-[#2d4b8f]/10 to-[#7cb44c]/10 rounded-xl">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                            Inversión
+                            {t('detail.investment')}
                         </h3>
                         <div className="space-y-4">
-                            {service.implementationFees.map((fee, idx) => (
+                            {(t(`products.${service.code}.implementationFees`, { returnObjects: true }) as ImplementationFee[]).map((fee, idx) => (
                             <div
                                 key={idx}
                                 className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg"
@@ -257,10 +261,10 @@ export default function ServiceDetailPage() {
                     {service.addons && service.addons.length > 0 && (
                         <div className="mt-8">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                            Servicios adicionales
+                            {t('detail.additional_services')}
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {service.addons.map((addon, idx) => (
+                            {(t(`products.${service.code}.addons`, { returnObjects: true }) as Addon[]).map((addon, idx) => (
                             <div
                                 key={idx}
                                 className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg"
@@ -288,12 +292,11 @@ export default function ServiceDetailPage() {
                     </div>
                     
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                        ¿Listo para transformar tu negocio?
+                        {t('detail.ready_to_transform')}
                     </h2>
                     
                     <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                        Para más información sobre este servicio, ponte en contacto con nuestros especialistas. 
-                        Te guiaremos en cada paso del proceso.
+                        {t('detail.more_info')}
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -302,7 +305,7 @@ export default function ServiceDetailPage() {
                             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#2d4b8f] text-white rounded-lg font-semibold hover:bg-[#2d4b8f]/90 transition-all duration-300 group"
                         >
                             <Mail className="w-5 h-5" />
-                            Contactar especialista
+                            {t('detail.contact_specialist')}
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                         <a
@@ -310,12 +313,12 @@ export default function ServiceDetailPage() {
                             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-[#2d4b8f] text-[#2d4b8f] rounded-lg font-semibold hover:bg-[#2d4b8f] hover:text-white transition-all duration-300"
                         >
                             <Phone className="w-5 h-5" />
-                            Llamar ahora
+                            {t('detail.call_now')}
                         </a>
                     </div>
                     
                     <p className="text-xs text-gray-500 dark:text-gray-400 mt-6">
-                        Nuestro equipo te responderá en menos de 24 horas hábiles
+                        {t('detail.response_time')}
                     </p>
                 </div>
             </div>
