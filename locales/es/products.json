@@ -496,7 +496,10 @@
           "basePrice": 800,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1000,
-          "usageUnit": "ejecuciones"
+          "usageUnit": "ejecuciones",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -504,7 +507,10 @@
           "basePrice": 2500,
           "pricePeriod": "MONTHLY",
           "includedUsage": 5000,
-          "usageUnit": "ejecuciones"
+          "usageUnit": "ejecuciones",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -565,7 +571,10 @@
           "basePrice": 800,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1000,
-          "usageUnit": "minutos"
+          "usageUnit": "minutos",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -573,7 +582,10 @@
           "basePrice": 2500,
           "pricePeriod": "MONTHLY",
           "includedUsage": 5000,
-          "usageUnit": "minutos"
+          "usageUnit": "minutos",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -640,7 +652,10 @@
           "basePrice": 600,
           "pricePeriod": "MONTHLY",
           "includedUsage": 2000,
-          "usageUnit": "conversaciones"
+          "usageUnit": "conversaciones",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -648,7 +663,10 @@
           "basePrice": 1800,
           "pricePeriod": "MONTHLY",
           "includedUsage": 10000,
-          "usageUnit": "conversaciones"
+          "usageUnit": "conversaciones",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -715,7 +733,10 @@
           "basePrice": 1500,
           "pricePeriod": "MONTHLY",
           "includedUsage": 500,
-          "usageUnit": "SKUs"
+          "usageUnit": "SKUs",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -723,7 +744,10 @@
           "basePrice": 4000,
           "pricePeriod": "MONTHLY",
           "includedUsage": 5000,
-          "usageUnit": "SKUs"
+          "usageUnit": "SKUs",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -790,7 +814,10 @@
           "basePrice": 800,
           "pricePeriod": "MONTHLY",
           "includedUsage": 500,
-          "usageUnit": "consultas"
+          "usageUnit": "consultas",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -798,7 +825,10 @@
           "basePrice": 2500,
           "pricePeriod": "MONTHLY",
           "includedUsage": 3000,
-          "usageUnit": "consultas"
+          "usageUnit": "consultas",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -895,7 +925,10 @@
           "basePrice": 350,
           "pricePeriod": "MONTHLY",
           "includedUsage": 10000,
-          "usageUnit": "líneas"
+          "usageUnit": "líneas",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -903,7 +936,10 @@
           "basePrice": 800,
           "pricePeriod": "MONTHLY",
           "includedUsage": 50000,
-          "usageUnit": "líneas"
+          "usageUnit": "líneas",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -952,7 +988,10 @@
           "basePrice": 400,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1,
-          "usageUnit": "conexión"
+          "usageUnit": "conexión",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -1010,7 +1049,10 @@
           "basePrice": 300,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1000,
-          "usageUnit": "órdenes"
+          "usageUnit": "órdenes",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -1018,7 +1060,10 @@
           "basePrice": 700,
           "pricePeriod": "MONTHLY",
           "includedUsage": 5000,
-          "usageUnit": "órdenes"
+          "usageUnit": "órdenes",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -1078,7 +1123,10 @@
           "basePrice": 600,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1,
-          "usageUnit": "subsidiaria"
+          "usageUnit": "subsidiaria",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Multi",
@@ -1086,7 +1134,10 @@
           "basePrice": 1400,
           "pricePeriod": "MONTHLY",
           "includedUsage": 5,
-          "usageUnit": "subsidiarias"
+          "usageUnit": "subsidiarias",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -1149,7 +1200,10 @@
           "basePrice": 8000,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1,
-          "usageUnit": "licencia"
+          "usageUnit": "licencia",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "NOT_APPLICABLE"
         },
         {
           "name": "TaxMX Modular",
@@ -1157,7 +1211,10 @@
           "basePrice": 3500,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1,
-          "usageUnit": "módulo"
+          "usageUnit": "módulo",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "NOT_APPLICABLE"
         }
       ],
       "commercialConditions": [
@@ -1220,7 +1277,10 @@
           "basePrice": 500,
           "pricePeriod": "MONTHLY",
           "includedUsage": 50,
-          "usageUnit": "proveedores"
+          "usageUnit": "proveedores",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -1228,7 +1288,10 @@
           "basePrice": 1200,
           "pricePeriod": "MONTHLY",
           "includedUsage": 200,
-          "usageUnit": "proveedores"
+          "usageUnit": "proveedores",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -1290,7 +1353,10 @@
           "basePrice": 400,
           "pricePeriod": "MONTHLY",
           "includedUsage": 5000,
-          "usageUnit": "archivos"
+          "usageUnit": "archivos",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -1298,7 +1364,10 @@
           "basePrice": 1200,
           "pricePeriod": "MONTHLY",
           "includedUsage": 25000,
-          "usageUnit": "archivos"
+          "usageUnit": "archivos",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -1365,7 +1434,10 @@
           "basePrice": 400,
           "pricePeriod": "MONTHLY",
           "includedUsage": 50000,
-          "usageUnit": "tickets"
+          "usageUnit": "tickets",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -1373,7 +1445,10 @@
           "basePrice": 1200,
           "pricePeriod": "MONTHLY",
           "includedUsage": 200000,
-          "usageUnit": "tickets"
+          "usageUnit": "tickets",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [
@@ -1487,7 +1562,10 @@
           "basePrice": 800,
           "pricePeriod": "MONTHLY",
           "includedUsage": 1000,
-          "usageUnit": "documentos"
+          "usageUnit": "documentos",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         },
         {
           "name": "Growth",
@@ -1495,7 +1573,10 @@
           "basePrice": 2000,
           "pricePeriod": "MONTHLY",
           "includedUsage": 5000,
-          "usageUnit": "documentos"
+          "usageUnit": "documentos",
+          "setupFee": 0,
+          "minCommitMonths": 0,
+          "renewalPolicy": "AUTOMATIC"
         }
       ],
       "commercialConditions": [

@@ -24,6 +24,7 @@ export default function ServiceDetailPage() {
             try {
                 //setLoading(true);
                 const data = await getServiceById(serviceId);
+
                 setService(data);
             } catch (err) {
                 console.error("Error loading services:", err);
