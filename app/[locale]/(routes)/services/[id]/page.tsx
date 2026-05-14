@@ -17,24 +17,29 @@ export default function ServiceDetailPage() {
     const { t } = useTranslation(locale, 'products');
 
     const [service, setService] = useState<Service>({} as Service);
-    
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         const fetchServices = async () => {
             if (!serviceId) return;
             try {
-                //setLoading(true);
+                setLoading(true);
                 const data = await getServiceById(serviceId);
 
                 setService(data);
             } catch (err) {
                 console.error("Error loading services:", err);
             } finally {
-                //setLoading(false);
+                setLoading(false);
             }
         };
 
     fetchServices();
     }, [serviceId]);
+
+    if (loading) {
+        return <ServicesPageSkeleton />;
+    }
 
     return (
         <div className="flex flex-col items-center justify-center ">
@@ -326,4 +331,102 @@ export default function ServiceDetailPage() {
         </div>
     );
 
+}
+
+function ServicesPageSkeleton() {
+  return (
+    <div className="flex flex-col items-center justify-center font-sans animate-pulse">
+
+      <section className="relative mb-4 w-full h-[55vh] md:h-[65vh] lg:h-[75vh] bg-gray-200 dark:bg-gray-800">
+        <div className="absolute inset-0 bg-gray-300 dark:bg-gray-700" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 sm:px-6">
+          <div className="text-center max-w-4xl mx-auto space-y-4 sm:space-y-5 md:space-y-6">
+            <div className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-48 sm:w-64 md:w-80 lg:w-96 bg-gray-300 dark:bg-gray-600 rounded-lg mx-auto" />
+            <div className="w-16 sm:w-20 h-1 bg-gray-300 dark:bg-gray-600 mx-auto rounded-full" />
+            <div className="space-y-2">
+              <div className="h-4 sm:h-5 md:h-6 w-full max-w-2xl mx-auto bg-gray-300 dark:bg-gray-600 rounded" />
+              <div className="h-4 sm:h-5 md:h-6 w-3/4 max-w-2xl mx-auto bg-gray-300 dark:bg-gray-600 rounded" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-wrap gap-2 mb-4 justify-center">
+            <div className="h-8 w-60 bg-gray-300 dark:bg-gray-600 rounded-full mb-2" />
+            <div className="h-8 w-60 bg-gray-300 dark:bg-gray-600 rounded-full" />
+          </div>
+          <div className="mb-8 flex flex-wrap gap-2 justify-center">
+            <div className="h-8 w-32 bg-gray-300 dark:bg-gray-600 rounded-full mb-2" />
+            <div className="h-8 w-32 bg-gray-300 dark:bg-gray-600 rounded-full" />
+            <div className="h-8 w-32 bg-gray-300 dark:bg-gray-600 rounded-full mb-2" />
+            <div className="h-8 w-32 bg-gray-300 dark:bg-gray-600 rounded-full" />
+          </div>
+
+          <div className="mb-16">
+            <div className="flex justify-center mb-8">
+                <div className="h-12 w-64 bg-gray-300 dark:bg-gray-600 rounded" />
+            </div>
+                
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9  ].map((i) => (
+                <div key={i} className="flex items-start gap-3 p-3 w-full h-20 bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden">
+                    <div className="h-6 w-6 bg-gray-300 dark:bg-gray-600 rounded-full" />
+                    <div className="h-6 w-full bg-gray-300 dark:bg-gray-600 rounded" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+        <div className="mb-16">
+            <div className="flex justify-center mb-8">
+                <div className="h-12 w-64 bg-gray-300 dark:bg-gray-600 rounded" />
+            </div>
+                
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9  ].map((i) => (
+                <div key={i} className="flex items-start gap-3 p-3 w-full h-20 bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden">
+                    <div className="h-6 w-6 bg-gray-300 dark:bg-gray-600 rounded-full" />
+                    <div className="h-6 w-full bg-gray-300 dark:bg-gray-600 rounded" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-12 h-0.5 bg-gray-200 dark:bg-gray-700" />
+      </div>
+
+      <section className="w-full py-6 md:py-10 lg:py-14 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 max-w-8xl mx-auto">
+          <div className="w-full lg:w-3/5 xl:w-2/3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+              {[1, 2].map((i) => (
+                <div key={i} className="relative w-full h-80 bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden">
+                  <div className="absolute bottom-0 left-0 right-0 p-5 space-y-2">
+                    <div className="h-6 w-3/4 bg-gray-300 dark:bg-gray-600 rounded" />
+                    <div className="h-4 w-full bg-gray-300 dark:bg-gray-600 rounded" />
+                    <div className="h-4 w-2/3 bg-gray-300 dark:bg-gray-600 rounded" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="w-full lg:w-2/5 xl:w-1/3">
+            <div className="relative aspect-video w-full h-full bg-gray-200 dark:bg-gray-800 rounded-xl">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="h-8 w-40 bg-gray-300 dark:bg-gray-600 rounded mb-2" />
+                <div className="h-4 w-32 bg-gray-300 dark:bg-gray-600 rounded" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  );
 }
