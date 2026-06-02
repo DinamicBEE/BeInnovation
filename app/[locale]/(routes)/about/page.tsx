@@ -171,7 +171,7 @@ export default function AboutPage() {
 
       </section>
 
-      {/* <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
+      <div className="w-full px-4 sm:px-8 lg:px-32 mx-auto py-12">
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 
           {
@@ -181,7 +181,7 @@ export default function AboutPage() {
             ))
           }
         </div>
-      </div> */}
+      </div>
     </main>
   )
 }
@@ -207,7 +207,7 @@ function CardsAbout () {
       </div>
 
       <div className={clsx("relative bottom-0 left-0 right-0 bg-white overflow-hidden transition-all duration-500 ease-in-out p-6 rounded-b-2xl")}>
-        <div className="flex flex-col md:flex-row items-center justify-between px-4">
+        <div className="flex flex-col items-center justify-between px-4">
           <h3 className="text-xl font-bold text-gray-800 mb-2">
             Mario Vasquez
           </h3>
